@@ -1,0 +1,981 @@
+Tue May  3 21:49:05 2022       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 460.32.03    Driver Version: 495.29.05    CUDA Version: 11.5     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                               |                      |               MIG M. |
+|===============================+======================+======================|
+|   0  Quadro RTX 6000     On   | 00000000:03:00.0 Off |                    0 |
+| N/A   28C    P8    12W / 250W |      0MiB / 22698MiB |      0%      Default |
+|                               |                      |                  N/A |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                                  |
+|  GPU   GI   CI        PID   Type   Process name                  GPU Memory |
+|        ID   ID                                                   Usage      |
+|=============================================================================|
+|  No running processes found                                                 |
++-----------------------------------------------------------------------------+
+{'loss': 1.1142, 'learning_rate': 2e-05, 'epoch': 1.0}
+              precision    recall  f1-score   support
+
+           0       0.36      0.64      0.46       830
+           1       0.37      0.29      0.33       830
+           2       0.32      0.15      0.20       830
+
+    accuracy                           0.36      2490
+   macro avg       0.35      0.36      0.33      2490
+weighted avg       0.35      0.36      0.33      2490
+
+{'eval_loss': 1.0886636972427368, 'eval_accuracy': 0.3602409638554217, 'eval_runtime': 0.9143, 'eval_samples_per_second': 2723.49, 'eval_steps_per_second': 21.875, 'epoch': 1.0}
+{'loss': 1.093, 'learning_rate': 2e-05, 'epoch': 2.0}
+              precision    recall  f1-score   support
+
+           0       0.40      0.49      0.44       830
+           1       0.40      0.65      0.49       830
+           2       0.31      0.04      0.07       830
+
+    accuracy                           0.39      2490
+   macro avg       0.37      0.39      0.33      2490
+weighted avg       0.37      0.39      0.33      2490
+
+{'eval_loss': 1.0825214385986328, 'eval_accuracy': 0.39437751004016064, 'eval_runtime': 0.9151, 'eval_samples_per_second': 2721.002, 'eval_steps_per_second': 21.855, 'epoch': 2.0}
+{'loss': 1.0955, 'learning_rate': 2e-05, 'epoch': 3.0}
+              precision    recall  f1-score   support
+
+           0       0.37      0.67      0.47       830
+           1       0.41      0.48      0.44       830
+           2       0.00      0.00      0.00       830
+
+    accuracy                           0.38      2490
+   macro avg       0.26      0.38      0.30      2490
+weighted avg       0.26      0.38      0.30      2490
+
+{'eval_loss': 1.0931862592697144, 'eval_accuracy': 0.38313253012048193, 'eval_runtime': 0.9141, 'eval_samples_per_second': 2723.952, 'eval_steps_per_second': 21.879, 'epoch': 3.0}
+{'loss': 1.0936, 'learning_rate': 2e-05, 'epoch': 4.0}
+              precision    recall  f1-score   support
+
+           0       0.42      0.32      0.36       830
+           1       0.41      0.47      0.44       830
+           2       0.35      0.40      0.37       830
+
+    accuracy                           0.39      2490
+   macro avg       0.40      0.39      0.39      2490
+weighted avg       0.40      0.39      0.39      2490
+
+{'eval_loss': 1.0845493078231812, 'eval_accuracy': 0.39397590361445783, 'eval_runtime': 0.9169, 'eval_samples_per_second': 2715.693, 'eval_steps_per_second': 21.813, 'epoch': 4.0}
+{'loss': 1.0918, 'learning_rate': 2e-05, 'epoch': 5.0}
+              precision    recall  f1-score   support
+
+           0       0.40      0.50      0.44       830
+           1       0.41      0.54      0.47       830
+           2       0.38      0.17      0.23       830
+
+    accuracy                           0.40      2490
+   macro avg       0.40      0.40      0.38      2490
+weighted avg       0.40      0.40      0.38      2490
+
+{'eval_loss': 1.0840482711791992, 'eval_accuracy': 0.40120481927710844, 'eval_runtime': 0.9077, 'eval_samples_per_second': 2743.071, 'eval_steps_per_second': 22.033, 'epoch': 5.0}
+{'loss': 1.0935, 'learning_rate': 2e-05, 'epoch': 6.0}
+              precision    recall  f1-score   support
+
+           0       0.40      0.55      0.46       830
+           1       0.41      0.57      0.48       830
+           2       0.46      0.11      0.18       830
+
+    accuracy                           0.41      2490
+   macro avg       0.42      0.41      0.37      2490
+weighted avg       0.42      0.41      0.37      2490
+
+{'eval_loss': 1.0816059112548828, 'eval_accuracy': 0.40883534136546185, 'eval_runtime': 0.9192, 'eval_samples_per_second': 2708.764, 'eval_steps_per_second': 21.757, 'epoch': 6.0}
+{'loss': 1.1003, 'learning_rate': 2e-05, 'epoch': 7.0}
+              precision    recall  f1-score   support
+
+           0       0.42      0.41      0.42       830
+           1       0.41      0.60      0.49       830
+           2       0.38      0.22      0.28       830
+
+    accuracy                           0.41      2490
+   macro avg       0.41      0.41      0.39      2490
+weighted avg       0.41      0.41      0.39      2490
+
+{'eval_loss': 1.0778264999389648, 'eval_accuracy': 0.41004016064257026, 'eval_runtime': 0.9351, 'eval_samples_per_second': 2662.925, 'eval_steps_per_second': 21.389, 'epoch': 7.0}
+{'loss': 1.0947, 'learning_rate': 2e-05, 'epoch': 8.0}
+              precision    recall  f1-score   support
+
+           0       0.40      0.55      0.46       830
+           1       0.40      0.65      0.49       830
+           2       1.00      0.00      0.00       830
+
+    accuracy                           0.40      2490
+   macro avg       0.60      0.40      0.32      2490
+weighted avg       0.60      0.40      0.32      2490
+
+{'eval_loss': 1.0843403339385986, 'eval_accuracy': 0.39919678714859436, 'eval_runtime': 0.9094, 'eval_samples_per_second': 2738.216, 'eval_steps_per_second': 21.994, 'epoch': 8.0}
+{'loss': 1.0971, 'learning_rate': 2e-05, 'epoch': 9.0}
+              precision    recall  f1-score   support
+
+           0       0.42      0.43      0.43       830
+           1       0.43      0.34      0.38       830
+           2       0.37      0.44      0.40       830
+
+    accuracy                           0.40      2490
+   macro avg       0.41      0.40      0.40      2490
+weighted avg       0.41      0.40      0.40      2490
+
+{'eval_loss': 1.0844489336013794, 'eval_accuracy': 0.40401606425702813, 'eval_runtime': 0.9172, 'eval_samples_per_second': 2714.721, 'eval_steps_per_second': 21.805, 'epoch': 9.0}
+{'loss': 1.0883, 'learning_rate': 2e-05, 'epoch': 10.0}
+              precision    recall  f1-score   support
+
+           0       0.42      0.42      0.42       830
+           1       0.42      0.57      0.48       830
+           2       0.39      0.25      0.30       830
+
+    accuracy                           0.41      2490
+   macro avg       0.41      0.41      0.40      2490
+weighted avg       0.41      0.41      0.40      2490
+
+{'eval_loss': 1.0755975246429443, 'eval_accuracy': 0.41445783132530123, 'eval_runtime': 0.914, 'eval_samples_per_second': 2724.203, 'eval_steps_per_second': 21.881, 'epoch': 10.0}
+{'loss': 1.0904, 'learning_rate': 2e-05, 'epoch': 11.0}
+              precision    recall  f1-score   support
+
+           0       0.54      0.09      0.15       830
+           1       0.43      0.45      0.44       830
+           2       0.37      0.67      0.48       830
+
+    accuracy                           0.40      2490
+   macro avg       0.45      0.40      0.36      2490
+weighted avg       0.45      0.40      0.36      2490
+
+{'eval_loss': 1.0825942754745483, 'eval_accuracy': 0.40240963855421685, 'eval_runtime': 0.9169, 'eval_samples_per_second': 2715.749, 'eval_steps_per_second': 21.813, 'epoch': 11.0}
+{'loss': 1.0981, 'learning_rate': 2e-05, 'epoch': 12.0}
+              precision    recall  f1-score   support
+
+           0       0.39      0.58      0.47       830
+           1       0.41      0.62      0.49       830
+           2       0.61      0.01      0.03       830
+
+    accuracy                           0.40      2490
+   macro avg       0.47      0.40      0.33      2490
+weighted avg       0.47      0.40      0.33      2490
+
+{'eval_loss': 1.0794414281845093, 'eval_accuracy': 0.40281124497991966, 'eval_runtime': 0.9132, 'eval_samples_per_second': 2726.592, 'eval_steps_per_second': 21.9, 'epoch': 12.0}
+{'loss': 1.0927, 'learning_rate': 2e-05, 'epoch': 13.0}
+              precision    recall  f1-score   support
+
+           0       0.40      0.54      0.46       830
+           1       0.41      0.61      0.49       830
+           2       0.51      0.08      0.14       830
+
+    accuracy                           0.41      2490
+   macro avg       0.44      0.41      0.37      2490
+weighted avg       0.44      0.41      0.37      2490
+
+{'eval_loss': 1.0745124816894531, 'eval_accuracy': 0.41285140562248995, 'eval_runtime': 0.9127, 'eval_samples_per_second': 2728.088, 'eval_steps_per_second': 21.912, 'epoch': 13.0}
+{'loss': 1.0905, 'learning_rate': 2e-05, 'epoch': 14.0}
+              precision    recall  f1-score   support
+
+           0       0.42      0.47      0.45       830
+           1       0.41      0.67      0.51       830
+           2       0.45      0.11      0.18       830
+
+    accuracy                           0.42      2490
+   macro avg       0.43      0.42      0.38      2490
+weighted avg       0.43      0.42      0.38      2490
+
+{'eval_loss': 1.0728219747543335, 'eval_accuracy': 0.41726907630522087, 'eval_runtime': 0.912, 'eval_samples_per_second': 2730.33, 'eval_steps_per_second': 21.93, 'epoch': 14.0}
+{'loss': 1.0868, 'learning_rate': 2e-05, 'epoch': 15.0}
+              precision    recall  f1-score   support
+
+           0       0.41      0.54      0.46       830
+           1       0.42      0.51      0.46       830
+           2       0.43      0.20      0.28       830
+
+    accuracy                           0.42      2490
+   macro avg       0.42      0.42      0.40      2490
+weighted avg       0.42      0.42      0.40      2490
+
+{'eval_loss': 1.0769766569137573, 'eval_accuracy': 0.41686746987951806, 'eval_runtime': 0.9344, 'eval_samples_per_second': 2664.924, 'eval_steps_per_second': 21.405, 'epoch': 15.0}
+{'loss': 1.0883, 'learning_rate': 2e-05, 'epoch': 16.0}
+              precision    recall  f1-score   support
+
+           0       0.42      0.43      0.43       830
+           1       0.40      0.70      0.51       830
+           2       0.45      0.10      0.17       830
+
+    accuracy                           0.41      2490
+   macro avg       0.42      0.41      0.37      2490
+weighted avg       0.42      0.41      0.37      2490
+
+{'eval_loss': 1.0739840269088745, 'eval_accuracy': 0.41204819277108434, 'eval_runtime': 0.9156, 'eval_samples_per_second': 2719.645, 'eval_steps_per_second': 21.845, 'epoch': 16.0}
+{'loss': 1.0795, 'learning_rate': 2e-05, 'epoch': 17.0}
+              precision    recall  f1-score   support
+
+           0       0.42      0.47      0.44       830
+           1       0.42      0.57      0.49       830
+           2       0.42      0.22      0.29       830
+
+    accuracy                           0.42      2490
+   macro avg       0.42      0.42      0.41      2490
+weighted avg       0.42      0.42      0.41      2490
+
+{'eval_loss': 1.0701453685760498, 'eval_accuracy': 0.42088353413654617, 'eval_runtime': 0.9117, 'eval_samples_per_second': 2731.029, 'eval_steps_per_second': 21.936, 'epoch': 17.0}
+{'loss': 1.0874, 'learning_rate': 2e-05, 'epoch': 18.0}
+              precision    recall  f1-score   support
+
+           0       0.42      0.44      0.43       830
+           1       0.43      0.48      0.46       830
+           2       0.40      0.35      0.37       830
+
+    accuracy                           0.42      2490
+   macro avg       0.42      0.42      0.42      2490
+weighted avg       0.42      0.42      0.42      2490
+
+{'eval_loss': 1.0714384317398071, 'eval_accuracy': 0.42208835341365464, 'eval_runtime': 0.906, 'eval_samples_per_second': 2748.209, 'eval_steps_per_second': 22.074, 'epoch': 18.0}
+{'loss': 1.0826, 'learning_rate': 2e-05, 'epoch': 19.0}
+              precision    recall  f1-score   support
+
+           0       0.47      0.32      0.38       830
+           1       0.39      0.77      0.52       830
+           2       0.52      0.20      0.28       830
+
+    accuracy                           0.43      2490
+   macro avg       0.46      0.43      0.39      2490
+weighted avg       0.46      0.43      0.39      2490
+
+{'eval_loss': 1.0826289653778076, 'eval_accuracy': 0.42650602409638555, 'eval_runtime': 0.9121, 'eval_samples_per_second': 2729.845, 'eval_steps_per_second': 21.926, 'epoch': 19.0}
+{'loss': 1.0872, 'learning_rate': 2e-05, 'epoch': 20.0}
+              precision    recall  f1-score   support
+
+           0       0.41      0.54      0.47       830
+           1       0.42      0.60      0.49       830
+           2       0.53      0.14      0.22       830
+
+    accuracy                           0.43      2490
+   macro avg       0.45      0.43      0.39      2490
+weighted avg       0.45      0.43      0.39      2490
+
+{'eval_loss': 1.070226788520813, 'eval_accuracy': 0.42570281124497994, 'eval_runtime': 0.9087, 'eval_samples_per_second': 2740.183, 'eval_steps_per_second': 22.01, 'epoch': 20.0}
+{'loss': 1.084, 'learning_rate': 2e-05, 'epoch': 21.0}
+              precision    recall  f1-score   support
+
+           0       0.42      0.50      0.45       830
+           1       0.42      0.63      0.50       830
+           2       0.50      0.14      0.22       830
+
+    accuracy                           0.42      2490
+   macro avg       0.45      0.42      0.39      2490
+weighted avg       0.45      0.42      0.39      2490
+
+{'eval_loss': 1.0679117441177368, 'eval_accuracy': 0.4248995983935743, 'eval_runtime': 0.9246, 'eval_samples_per_second': 2693.169, 'eval_steps_per_second': 21.632, 'epoch': 21.0}
+{'loss': 1.0915, 'learning_rate': 2e-05, 'epoch': 22.0}
+              precision    recall  f1-score   support
+
+           0       0.43      0.45      0.44       830
+           1       0.43      0.50      0.46       830
+           2       0.43      0.34      0.38       830
+
+    accuracy                           0.43      2490
+   macro avg       0.43      0.43      0.43      2490
+weighted avg       0.43      0.43      0.43      2490
+
+{'eval_loss': 1.0684454441070557, 'eval_accuracy': 0.43092369477911646, 'eval_runtime': 0.9167, 'eval_samples_per_second': 2716.25, 'eval_steps_per_second': 21.817, 'epoch': 22.0}
+{'loss': 1.0882, 'learning_rate': 2e-05, 'epoch': 23.0}
+              precision    recall  f1-score   support
+
+           0       0.43      0.44      0.44       830
+           1       0.40      0.74      0.52       830
+           2       0.60      0.06      0.11       830
+
+    accuracy                           0.42      2490
+   macro avg       0.48      0.42      0.36      2490
+weighted avg       0.48      0.42      0.36      2490
+
+{'eval_loss': 1.0707284212112427, 'eval_accuracy': 0.41646586345381525, 'eval_runtime': 0.9181, 'eval_samples_per_second': 2711.984, 'eval_steps_per_second': 21.783, 'epoch': 23.0}
+{'loss': 1.0814, 'learning_rate': 2e-05, 'epoch': 24.0}
+              precision    recall  f1-score   support
+
+           0       0.41      0.55      0.47       830
+           1       0.42      0.61      0.50       830
+           2       0.56      0.11      0.18       830
+
+    accuracy                           0.42      2490
+   macro avg       0.46      0.42      0.38      2490
+weighted avg       0.46      0.42      0.38      2490
+
+{'eval_loss': 1.0683937072753906, 'eval_accuracy': 0.42168674698795183, 'eval_runtime': 0.9478, 'eval_samples_per_second': 2627.143, 'eval_steps_per_second': 21.102, 'epoch': 24.0}
+{'loss': 1.0779, 'learning_rate': 2e-05, 'epoch': 25.0}
+              precision    recall  f1-score   support
+
+           0       0.44      0.43      0.43       830
+           1       0.43      0.55      0.48       830
+           2       0.44      0.33      0.38       830
+
+    accuracy                           0.44      2490
+   macro avg       0.44      0.44      0.43      2490
+weighted avg       0.44      0.44      0.43      2490
+
+{'eval_loss': 1.0655853748321533, 'eval_accuracy': 0.4353413654618474, 'eval_runtime': 0.9219, 'eval_samples_per_second': 2700.874, 'eval_steps_per_second': 21.694, 'epoch': 25.0}
+{'loss': 1.0864, 'learning_rate': 2e-05, 'epoch': 26.0}
+              precision    recall  f1-score   support
+
+           0       0.42      0.50      0.46       830
+           1       0.41      0.64      0.50       830
+           2       0.52      0.13      0.21       830
+
+    accuracy                           0.43      2490
+   macro avg       0.45      0.43      0.39      2490
+weighted avg       0.45      0.43      0.39      2490
+
+{'eval_loss': 1.0650653839111328, 'eval_accuracy': 0.42610441767068274, 'eval_runtime': 0.9142, 'eval_samples_per_second': 2723.694, 'eval_steps_per_second': 21.877, 'epoch': 26.0}
+{'loss': 1.0878, 'learning_rate': 2e-05, 'epoch': 27.0}
+              precision    recall  f1-score   support
+
+           0       0.43      0.45      0.44       830
+           1       0.41      0.67      0.51       830
+           2       0.50      0.15      0.23       830
+
+    accuracy                           0.42      2490
+   macro avg       0.45      0.42      0.39      2490
+weighted avg       0.45      0.42      0.39      2490
+
+{'eval_loss': 1.0657984018325806, 'eval_accuracy': 0.42369477911646586, 'eval_runtime': 0.9111, 'eval_samples_per_second': 2733.109, 'eval_steps_per_second': 21.953, 'epoch': 27.0}
+{'loss': 1.0851, 'learning_rate': 2e-05, 'epoch': 28.0}
+              precision    recall  f1-score   support
+
+           0       0.42      0.50      0.46       830
+           1       0.42      0.60      0.50       830
+           2       0.49      0.19      0.27       830
+
+    accuracy                           0.43      2490
+   macro avg       0.44      0.43      0.41      2490
+weighted avg       0.44      0.43      0.41      2490
+
+{'eval_loss': 1.0638763904571533, 'eval_accuracy': 0.43092369477911646, 'eval_runtime': 0.9095, 'eval_samples_per_second': 2737.87, 'eval_steps_per_second': 21.991, 'epoch': 28.0}
+{'loss': 1.0843, 'learning_rate': 2e-05, 'epoch': 29.0}
+              precision    recall  f1-score   support
+
+           0       0.43      0.45      0.44       830
+           1       0.42      0.59      0.49       830
+           2       0.48      0.26      0.34       830
+
+    accuracy                           0.44      2490
+   macro avg       0.45      0.44      0.43      2490
+weighted avg       0.45      0.44      0.43      2490
+
+{'eval_loss': 1.0631040334701538, 'eval_accuracy': 0.43734939759036146, 'eval_runtime': 0.9217, 'eval_samples_per_second': 2701.526, 'eval_steps_per_second': 21.699, 'epoch': 29.0}
+{'loss': 1.0834, 'learning_rate': 2e-05, 'epoch': 30.0}
+              precision    recall  f1-score   support
+
+           0       0.45      0.43      0.44       830
+           1       0.41      0.71      0.52       830
+           2       0.54      0.18      0.27       830
+
+    accuracy                           0.44      2490
+   macro avg       0.47      0.44      0.41      2490
+weighted avg       0.47      0.44      0.41      2490
+
+{'eval_loss': 1.06561279296875, 'eval_accuracy': 0.43654618473895584, 'eval_runtime': 0.9209, 'eval_samples_per_second': 2703.864, 'eval_steps_per_second': 21.718, 'epoch': 30.0}
+{'loss': 1.0803, 'learning_rate': 2e-05, 'epoch': 31.0}
+              precision    recall  f1-score   support
+
+           0       0.42      0.48      0.45       830
+           1       0.43      0.48      0.46       830
+           2       0.44      0.32      0.37       830
+
+    accuracy                           0.43      2490
+   macro avg       0.43      0.43      0.43      2490
+weighted avg       0.43      0.43      0.43      2490
+
+{'eval_loss': 1.0642551183700562, 'eval_accuracy': 0.43012048192771085, 'eval_runtime': 0.9169, 'eval_samples_per_second': 2715.617, 'eval_steps_per_second': 21.812, 'epoch': 31.0}
+{'loss': 1.0823, 'learning_rate': 2e-05, 'epoch': 32.0}
+              precision    recall  f1-score   support
+
+           0       0.45      0.40      0.42       830
+           1       0.43      0.55      0.48       830
+           2       0.46      0.38      0.42       830
+
+    accuracy                           0.44      2490
+   macro avg       0.45      0.44      0.44      2490
+weighted avg       0.45      0.44      0.44      2490
+
+{'eval_loss': 1.0623841285705566, 'eval_accuracy': 0.44377510040160645, 'eval_runtime': 0.9219, 'eval_samples_per_second': 2700.826, 'eval_steps_per_second': 21.693, 'epoch': 32.0}
+{'loss': 1.0745, 'learning_rate': 2e-05, 'epoch': 33.0}
+              precision    recall  f1-score   support
+
+           0       0.43      0.50      0.46       830
+           1       0.42      0.61      0.50       830
+           2       0.53      0.20      0.29       830
+
+    accuracy                           0.44      2490
+   macro avg       0.46      0.44      0.42      2490
+weighted avg       0.46      0.44      0.42      2490
+
+{'eval_loss': 1.0605782270431519, 'eval_accuracy': 0.43694779116465865, 'eval_runtime': 0.913, 'eval_samples_per_second': 2727.183, 'eval_steps_per_second': 21.905, 'epoch': 33.0}
+{'loss': 1.0764, 'learning_rate': 2e-05, 'epoch': 34.0}
+              precision    recall  f1-score   support
+
+           0       0.42      0.50      0.46       830
+           1       0.42      0.62      0.50       830
+           2       0.53      0.19      0.28       830
+
+    accuracy                           0.43      2490
+   macro avg       0.46      0.43      0.41      2490
+weighted avg       0.46      0.43      0.41      2490
+
+{'eval_loss': 1.0604593753814697, 'eval_accuracy': 0.43493975903614457, 'eval_runtime': 0.9099, 'eval_samples_per_second': 2736.6, 'eval_steps_per_second': 21.981, 'epoch': 34.0}
+{'loss': 1.0784, 'learning_rate': 2e-05, 'epoch': 35.0}
+              precision    recall  f1-score   support
+
+           0       0.44      0.45      0.44       830
+           1       0.43      0.57      0.49       830
+           2       0.49      0.32      0.39       830
+
+    accuracy                           0.45      2490
+   macro avg       0.45      0.45      0.44      2490
+weighted avg       0.45      0.45      0.44      2490
+
+{'eval_loss': 1.0598177909851074, 'eval_accuracy': 0.4465863453815261, 'eval_runtime': 0.917, 'eval_samples_per_second': 2715.374, 'eval_steps_per_second': 21.81, 'epoch': 35.0}
+{'loss': 1.0843, 'learning_rate': 2e-05, 'epoch': 36.0}
+              precision    recall  f1-score   support
+
+           0       0.41      0.51      0.46       830
+           1       0.40      0.67      0.51       830
+           2       0.66      0.06      0.11       830
+
+    accuracy                           0.42      2490
+   macro avg       0.49      0.42      0.36      2490
+weighted avg       0.49      0.42      0.36      2490
+
+{'eval_loss': 1.0622305870056152, 'eval_accuracy': 0.41526104417670684, 'eval_runtime': 0.9299, 'eval_samples_per_second': 2677.574, 'eval_steps_per_second': 21.507, 'epoch': 36.0}
+{'loss': 1.081, 'learning_rate': 2e-05, 'epoch': 37.0}
+              precision    recall  f1-score   support
+
+           0       0.45      0.41      0.43       830
+           1       0.44      0.54      0.48       830
+           2       0.47      0.40      0.44       830
+
+    accuracy                           0.45      2490
+   macro avg       0.45      0.45      0.45      2490
+weighted avg       0.45      0.45      0.45      2490
+
+{'eval_loss': 1.060075044631958, 'eval_accuracy': 0.45180722891566266, 'eval_runtime': 0.9111, 'eval_samples_per_second': 2732.918, 'eval_steps_per_second': 21.951, 'epoch': 37.0}
+{'loss': 1.0714, 'learning_rate': 2e-05, 'epoch': 38.0}
+              precision    recall  f1-score   support
+
+           0       0.50      0.29      0.36       830
+           1       0.44      0.47      0.45       830
+           2       0.43      0.58      0.49       830
+
+    accuracy                           0.44      2490
+   macro avg       0.45      0.44      0.44      2490
+weighted avg       0.45      0.44      0.44      2490
+
+{'eval_loss': 1.062896728515625, 'eval_accuracy': 0.44457831325301206, 'eval_runtime': 0.9137, 'eval_samples_per_second': 2725.312, 'eval_steps_per_second': 21.89, 'epoch': 38.0}
+{'loss': 1.0773, 'learning_rate': 2e-05, 'epoch': 39.0}
+              precision    recall  f1-score   support
+
+           0       0.41      0.51      0.46       830
+           1       0.41      0.68      0.51       830
+           2       0.64      0.07      0.12       830
+
+    accuracy                           0.42      2490
+   macro avg       0.49      0.42      0.36      2490
+weighted avg       0.49      0.42      0.36      2490
+
+{'eval_loss': 1.0619195699691772, 'eval_accuracy': 0.41726907630522087, 'eval_runtime': 0.9142, 'eval_samples_per_second': 2723.568, 'eval_steps_per_second': 21.876, 'epoch': 39.0}
+{'loss': 1.0795, 'learning_rate': 2e-05, 'epoch': 40.0}
+              precision    recall  f1-score   support
+
+           0       0.43      0.48      0.46       830
+           1       0.42      0.62      0.50       830
+           2       0.54      0.23      0.32       830
+
+    accuracy                           0.44      2490
+   macro avg       0.46      0.44      0.43      2490
+weighted avg       0.46      0.44      0.43      2490
+
+{'eval_loss': 1.0580343008041382, 'eval_accuracy': 0.44216867469879517, 'eval_runtime': 0.9136, 'eval_samples_per_second': 2725.544, 'eval_steps_per_second': 21.892, 'epoch': 40.0}
+{'loss': 1.0836, 'learning_rate': 2e-05, 'epoch': 41.0}
+              precision    recall  f1-score   support
+
+           0       0.47      0.39      0.43       830
+           1       0.44      0.53      0.48       830
+           2       0.47      0.45      0.46       830
+
+    accuracy                           0.46      2490
+   macro avg       0.46      0.46      0.46      2490
+weighted avg       0.46      0.46      0.46      2490
+
+{'eval_loss': 1.058140516281128, 'eval_accuracy': 0.457429718875502, 'eval_runtime': 0.9232, 'eval_samples_per_second': 2697.08, 'eval_steps_per_second': 21.663, 'epoch': 41.0}
+{'loss': 1.0815, 'learning_rate': 2e-05, 'epoch': 42.0}
+              precision    recall  f1-score   support
+
+           0       0.41      0.52      0.46       830
+           1       0.41      0.67      0.51       830
+           2       0.69      0.07      0.12       830
+
+    accuracy                           0.42      2490
+   macro avg       0.50      0.42      0.36      2490
+weighted avg       0.50      0.42      0.36      2490
+
+{'eval_loss': 1.060503363609314, 'eval_accuracy': 0.41847389558232934, 'eval_runtime': 1.0272, 'eval_samples_per_second': 2423.952, 'eval_steps_per_second': 19.469, 'epoch': 42.0}
+{'loss': 1.0788, 'learning_rate': 2e-05, 'epoch': 43.0}
+              precision    recall  f1-score   support
+
+           0       0.43      0.51      0.46       830
+           1       0.42      0.63      0.51       830
+           2       0.60      0.19      0.28       830
+
+    accuracy                           0.44      2490
+   macro avg       0.48      0.44      0.42      2490
+weighted avg       0.48      0.44      0.42      2490
+
+{'eval_loss': 1.057158350944519, 'eval_accuracy': 0.44136546184738956, 'eval_runtime': 0.9195, 'eval_samples_per_second': 2708.002, 'eval_steps_per_second': 21.751, 'epoch': 43.0}
+{'loss': 1.0775, 'learning_rate': 2e-05, 'epoch': 44.0}
+              precision    recall  f1-score   support
+
+           0       0.43      0.49      0.46       830
+           1       0.42      0.65      0.51       830
+           2       0.61      0.18      0.28       830
+
+    accuracy                           0.44      2490
+   macro avg       0.49      0.44      0.42      2490
+weighted avg       0.49      0.44      0.42      2490
+
+{'eval_loss': 1.056477665901184, 'eval_accuracy': 0.44216867469879517, 'eval_runtime': 0.9132, 'eval_samples_per_second': 2726.777, 'eval_steps_per_second': 21.902, 'epoch': 44.0}
+{'loss': 1.0743, 'learning_rate': 2e-05, 'epoch': 45.0}
+              precision    recall  f1-score   support
+
+           0       0.46      0.42      0.44       830
+           1       0.42      0.67      0.51       830
+           2       0.56      0.27      0.36       830
+
+    accuracy                           0.45      2490
+   macro avg       0.48      0.45      0.44      2490
+weighted avg       0.48      0.45      0.44      2490
+
+{'eval_loss': 1.056452989578247, 'eval_accuracy': 0.4526104417670683, 'eval_runtime': 0.9092, 'eval_samples_per_second': 2738.721, 'eval_steps_per_second': 21.998, 'epoch': 45.0}
+{'loss': 1.0801, 'learning_rate': 2e-05, 'epoch': 46.0}
+              precision    recall  f1-score   support
+
+           0       0.47      0.39      0.43       830
+           1       0.42      0.60      0.49       830
+           2       0.49      0.37      0.42       830
+
+    accuracy                           0.45      2490
+   macro avg       0.46      0.45      0.45      2490
+weighted avg       0.46      0.45      0.45      2490
+
+{'eval_loss': 1.0563974380493164, 'eval_accuracy': 0.4526104417670683, 'eval_runtime': 0.914, 'eval_samples_per_second': 2724.344, 'eval_steps_per_second': 21.882, 'epoch': 46.0}
+{'loss': 1.0761, 'learning_rate': 2e-05, 'epoch': 47.0}
+              precision    recall  f1-score   support
+
+           0       0.48      0.38      0.42       830
+           1       0.42      0.64      0.51       830
+           2       0.50      0.35      0.42       830
+
+    accuracy                           0.46      2490
+   macro avg       0.47      0.46      0.45      2490
+weighted avg       0.47      0.46      0.45      2490
+
+{'eval_loss': 1.0553956031799316, 'eval_accuracy': 0.457429718875502, 'eval_runtime': 0.9167, 'eval_samples_per_second': 2716.366, 'eval_steps_per_second': 21.818, 'epoch': 47.0}
+{'loss': 1.0749, 'learning_rate': 2e-05, 'epoch': 48.0}
+              precision    recall  f1-score   support
+
+           0       0.42      0.60      0.49       830
+           1       0.44      0.53      0.48       830
+           2       0.57      0.21      0.30       830
+
+    accuracy                           0.45      2490
+   macro avg       0.48      0.45      0.43      2490
+weighted avg       0.48      0.45      0.43      2490
+
+{'eval_loss': 1.0612412691116333, 'eval_accuracy': 0.4461847389558233, 'eval_runtime': 0.9181, 'eval_samples_per_second': 2712.194, 'eval_steps_per_second': 21.785, 'epoch': 48.0}
+{'loss': 1.0696, 'learning_rate': 2e-05, 'epoch': 49.0}
+              precision    recall  f1-score   support
+
+           0       0.42      0.52      0.46       830
+           1       0.42      0.63      0.50       830
+           2       0.63      0.16      0.26       830
+
+    accuracy                           0.44      2490
+   macro avg       0.49      0.44      0.41      2490
+weighted avg       0.49      0.44      0.41      2490
+
+{'eval_loss': 1.0547049045562744, 'eval_accuracy': 0.43815261044176707, 'eval_runtime': 0.9203, 'eval_samples_per_second': 2705.603, 'eval_steps_per_second': 21.732, 'epoch': 49.0}
+{'loss': 1.0715, 'learning_rate': 2e-05, 'epoch': 50.0}
+              precision    recall  f1-score   support
+
+           0       0.44      0.47      0.45       830
+           1       0.42      0.65      0.51       830
+           2       0.59      0.22      0.32       830
+
+    accuracy                           0.44      2490
+   macro avg       0.48      0.44      0.43      2490
+weighted avg       0.48      0.44      0.43      2490
+
+{'eval_loss': 1.0537632703781128, 'eval_accuracy': 0.44497991967871486, 'eval_runtime': 0.9174, 'eval_samples_per_second': 2714.312, 'eval_steps_per_second': 21.802, 'epoch': 50.0}
+{'loss': 1.0793, 'learning_rate': 2e-05, 'epoch': 51.0}
+              precision    recall  f1-score   support
+
+           0       0.43      0.51      0.47       830
+           1       0.44      0.49      0.47       830
+           2       0.50      0.35      0.41       830
+
+    accuracy                           0.45      2490
+   macro avg       0.46      0.45      0.45      2490
+weighted avg       0.46      0.45      0.45      2490
+
+{'eval_loss': 1.0564208030700684, 'eval_accuracy': 0.45220883534136547, 'eval_runtime': 0.9202, 'eval_samples_per_second': 2705.994, 'eval_steps_per_second': 21.735, 'epoch': 51.0}
+{'loss': 1.0725, 'learning_rate': 2e-05, 'epoch': 52.0}
+              precision    recall  f1-score   support
+
+           0       0.46      0.42      0.44       830
+           1       0.43      0.59      0.49       830
+           2       0.51      0.35      0.42       830
+
+    accuracy                           0.46      2490
+   macro avg       0.46      0.46      0.45      2490
+weighted avg       0.46      0.46      0.45      2490
+
+{'eval_loss': 1.0529356002807617, 'eval_accuracy': 0.45542168674698796, 'eval_runtime': 0.9175, 'eval_samples_per_second': 2713.913, 'eval_steps_per_second': 21.798, 'epoch': 52.0}
+{'loss': 1.0764, 'learning_rate': 2e-05, 'epoch': 53.0}
+              precision    recall  f1-score   support
+
+           0       0.44      0.49      0.46       830
+           1       0.42      0.63      0.51       830
+           2       0.58      0.23      0.33       830
+
+    accuracy                           0.45      2490
+   macro avg       0.48      0.45      0.43      2490
+weighted avg       0.48      0.45      0.43      2490
+
+{'eval_loss': 1.05253005027771, 'eval_accuracy': 0.4497991967871486, 'eval_runtime': 0.9162, 'eval_samples_per_second': 2717.674, 'eval_steps_per_second': 21.829, 'epoch': 53.0}
+{'loss': 1.0749, 'learning_rate': 2e-05, 'epoch': 54.0}
+              precision    recall  f1-score   support
+
+           0       0.44      0.48      0.46       830
+           1       0.43      0.57      0.49       830
+           2       0.52      0.31      0.39       830
+
+    accuracy                           0.45      2490
+   macro avg       0.46      0.45      0.45      2490
+weighted avg       0.46      0.45      0.45      2490
+
+{'eval_loss': 1.0521931648254395, 'eval_accuracy': 0.45220883534136547, 'eval_runtime': 0.9175, 'eval_samples_per_second': 2713.949, 'eval_steps_per_second': 21.799, 'epoch': 54.0}
+{'loss': 1.0749, 'learning_rate': 2e-05, 'epoch': 55.0}
+              precision    recall  f1-score   support
+
+           0       0.44      0.47      0.46       830
+           1       0.43      0.61      0.50       830
+           2       0.54      0.27      0.36       830
+
+    accuracy                           0.45      2490
+   macro avg       0.47      0.45      0.44      2490
+weighted avg       0.47      0.45      0.44      2490
+
+{'eval_loss': 1.0517019033432007, 'eval_accuracy': 0.4502008032128514, 'eval_runtime': 0.9312, 'eval_samples_per_second': 2674.011, 'eval_steps_per_second': 21.478, 'epoch': 55.0}
+{'loss': 1.0737, 'learning_rate': 2e-05, 'epoch': 56.0}
+              precision    recall  f1-score   support
+
+           0       0.46      0.42      0.44       830
+           1       0.44      0.57      0.50       830
+           2       0.50      0.40      0.45       830
+
+    accuracy                           0.46      2490
+   macro avg       0.47      0.46      0.46      2490
+weighted avg       0.47      0.46      0.46      2490
+
+{'eval_loss': 1.0518697500228882, 'eval_accuracy': 0.4634538152610442, 'eval_runtime': 0.9143, 'eval_samples_per_second': 2723.335, 'eval_steps_per_second': 21.874, 'epoch': 56.0}
+{'loss': 1.0668, 'learning_rate': 2e-05, 'epoch': 57.0}
+              precision    recall  f1-score   support
+
+           0       0.43      0.49      0.46       830
+           1       0.42      0.67      0.51       830
+           2       0.66      0.16      0.25       830
+
+    accuracy                           0.44      2490
+   macro avg       0.50      0.44      0.41      2490
+weighted avg       0.50      0.44      0.41      2490
+
+{'eval_loss': 1.0526666641235352, 'eval_accuracy': 0.4397590361445783, 'eval_runtime': 0.921, 'eval_samples_per_second': 2703.524, 'eval_steps_per_second': 21.715, 'epoch': 57.0}
+{'loss': 1.0724, 'learning_rate': 2e-05, 'epoch': 58.0}
+              precision    recall  f1-score   support
+
+           0       0.42      0.53      0.47       830
+           1       0.42      0.66      0.51       830
+           2       0.70      0.10      0.18       830
+
+    accuracy                           0.43      2490
+   macro avg       0.51      0.43      0.39      2490
+weighted avg       0.51      0.43      0.39      2490
+
+{'eval_loss': 1.0546778440475464, 'eval_accuracy': 0.43132530120481927, 'eval_runtime': 0.9174, 'eval_samples_per_second': 2714.186, 'eval_steps_per_second': 21.801, 'epoch': 58.0}
+{'loss': 1.071, 'learning_rate': 2e-05, 'epoch': 59.0}
+              precision    recall  f1-score   support
+
+           0       0.42      0.52      0.46       830
+           1       0.42      0.65      0.51       830
+           2       0.67      0.14      0.23       830
+
+    accuracy                           0.44      2490
+   macro avg       0.50      0.44      0.40      2490
+weighted avg       0.50      0.44      0.40      2490
+
+{'eval_loss': 1.0531924962997437, 'eval_accuracy': 0.43654618473895584, 'eval_runtime': 0.9144, 'eval_samples_per_second': 2723.031, 'eval_steps_per_second': 21.872, 'epoch': 59.0}
+{'loss': 1.0698, 'learning_rate': 2e-05, 'epoch': 60.0}
+              precision    recall  f1-score   support
+
+           0       0.43      0.48      0.46       830
+           1       0.44      0.58      0.50       830
+           2       0.53      0.30      0.38       830
+
+    accuracy                           0.45      2490
+   macro avg       0.47      0.45      0.44      2490
+weighted avg       0.47      0.45      0.44      2490
+
+{'eval_loss': 1.0505459308624268, 'eval_accuracy': 0.4530120481927711, 'eval_runtime': 0.9493, 'eval_samples_per_second': 2622.891, 'eval_steps_per_second': 21.067, 'epoch': 60.0}
+{'loss': 1.0707, 'learning_rate': 2e-05, 'epoch': 61.0}
+              precision    recall  f1-score   support
+
+           0       0.45      0.44      0.44       830
+           1       0.42      0.67      0.52       830
+           2       0.57      0.23      0.33       830
+
+    accuracy                           0.45      2490
+   macro avg       0.48      0.45      0.43      2490
+weighted avg       0.48      0.45      0.43      2490
+
+{'eval_loss': 1.0515003204345703, 'eval_accuracy': 0.4493975903614458, 'eval_runtime': 0.9298, 'eval_samples_per_second': 2677.908, 'eval_steps_per_second': 21.509, 'epoch': 61.0}
+{'loss': 1.0768, 'learning_rate': 2e-05, 'epoch': 62.0}
+              precision    recall  f1-score   support
+
+           0       0.44      0.46      0.45       830
+           1       0.44      0.57      0.49       830
+           2       0.51      0.35      0.42       830
+
+    accuracy                           0.46      2490
+   macro avg       0.46      0.46      0.45      2490
+weighted avg       0.46      0.46      0.45      2490
+
+{'eval_loss': 1.0498323440551758, 'eval_accuracy': 0.4570281124497992, 'eval_runtime': 0.9175, 'eval_samples_per_second': 2714.007, 'eval_steps_per_second': 21.799, 'epoch': 62.0}
+{'loss': 1.0698, 'learning_rate': 2e-05, 'epoch': 63.0}
+              precision    recall  f1-score   support
+
+           0       0.46      0.42      0.44       830
+           1       0.43      0.61      0.50       830
+           2       0.53      0.35      0.42       830
+
+    accuracy                           0.46      2490
+   macro avg       0.47      0.46      0.46      2490
+weighted avg       0.47      0.46      0.46      2490
+
+{'eval_loss': 1.0501869916915894, 'eval_accuracy': 0.4614457831325301, 'eval_runtime': 0.9098, 'eval_samples_per_second': 2736.903, 'eval_steps_per_second': 21.983, 'epoch': 63.0}
+{'loss': 1.0675, 'learning_rate': 2e-05, 'epoch': 64.0}
+              precision    recall  f1-score   support
+
+           0       0.45      0.45      0.45       830
+           1       0.44      0.58      0.50       830
+           2       0.52      0.35      0.42       830
+
+    accuracy                           0.46      2490
+   macro avg       0.47      0.46      0.45      2490
+weighted avg       0.47      0.46      0.45      2490
+
+{'eval_loss': 1.049245834350586, 'eval_accuracy': 0.4578313253012048, 'eval_runtime': 0.9236, 'eval_samples_per_second': 2695.837, 'eval_steps_per_second': 21.653, 'epoch': 64.0}
+{'loss': 1.0705, 'learning_rate': 2e-05, 'epoch': 65.0}
+              precision    recall  f1-score   support
+
+           0       0.43      0.53      0.47       830
+           1       0.43      0.58      0.49       830
+           2       0.58      0.25      0.35       830
+
+    accuracy                           0.45      2490
+   macro avg       0.48      0.45      0.44      2490
+weighted avg       0.48      0.45      0.44      2490
+
+{'eval_loss': 1.050902009010315, 'eval_accuracy': 0.45220883534136547, 'eval_runtime': 0.9181, 'eval_samples_per_second': 2712.073, 'eval_steps_per_second': 21.784, 'epoch': 65.0}
+{'loss': 1.0728, 'learning_rate': 2e-05, 'epoch': 66.0}
+              precision    recall  f1-score   support
+
+           0       0.46      0.43      0.44       830
+           1       0.42      0.69      0.52       830
+           2       0.62      0.25      0.35       830
+
+    accuracy                           0.46      2490
+   macro avg       0.50      0.46      0.44      2490
+weighted avg       0.50      0.46      0.44      2490
+
+{'eval_loss': 1.0505750179290771, 'eval_accuracy': 0.45582329317269077, 'eval_runtime': 0.9207, 'eval_samples_per_second': 2704.486, 'eval_steps_per_second': 21.723, 'epoch': 66.0}
+{'loss': 1.0753, 'learning_rate': 2e-05, 'epoch': 67.0}
+              precision    recall  f1-score   support
+
+           0       0.47      0.41      0.44       830
+           1       0.45      0.54      0.49       830
+           2       0.50      0.46      0.48       830
+
+    accuracy                           0.47      2490
+   macro avg       0.47      0.47      0.47      2490
+weighted avg       0.47      0.47      0.47      2490
+
+{'eval_loss': 1.0491161346435547, 'eval_accuracy': 0.472289156626506, 'eval_runtime': 0.9122, 'eval_samples_per_second': 2729.765, 'eval_steps_per_second': 21.926, 'epoch': 67.0}
+{'loss': 1.0695, 'learning_rate': 2e-05, 'epoch': 68.0}
+              precision    recall  f1-score   support
+
+           0       0.45      0.47      0.46       830
+           1       0.42      0.65      0.51       830
+           2       0.60      0.25      0.35       830
+
+    accuracy                           0.45      2490
+   macro avg       0.49      0.45      0.44      2490
+weighted avg       0.49      0.45      0.44      2490
+
+{'eval_loss': 1.0481951236724854, 'eval_accuracy': 0.4542168674698795, 'eval_runtime': 0.9171, 'eval_samples_per_second': 2714.986, 'eval_steps_per_second': 21.807, 'epoch': 68.0}
+{'loss': 1.0653, 'learning_rate': 2e-05, 'epoch': 69.0}
+              precision    recall  f1-score   support
+
+           0       0.45      0.46      0.45       830
+           1       0.44      0.58      0.50       830
+           2       0.54      0.36      0.43       830
+
+    accuracy                           0.46      2490
+   macro avg       0.47      0.46      0.46      2490
+weighted avg       0.47      0.46      0.46      2490
+
+{'eval_loss': 1.0474183559417725, 'eval_accuracy': 0.4646586345381526, 'eval_runtime': 0.9125, 'eval_samples_per_second': 2728.782, 'eval_steps_per_second': 21.918, 'epoch': 69.0}
+{'loss': 1.0716, 'learning_rate': 2e-05, 'epoch': 70.0}
+              precision    recall  f1-score   support
+
+           0       0.46      0.44      0.45       830
+           1       0.42      0.68      0.52       830
+           2       0.61      0.25      0.35       830
+
+    accuracy                           0.46      2490
+   macro avg       0.49      0.46      0.44      2490
+weighted avg       0.49      0.46      0.44      2490
+
+{'eval_loss': 1.0486836433410645, 'eval_accuracy': 0.4570281124497992, 'eval_runtime': 0.9196, 'eval_samples_per_second': 2707.787, 'eval_steps_per_second': 21.749, 'epoch': 70.0}
+{'loss': 1.0762, 'learning_rate': 2e-05, 'epoch': 71.0}
+              precision    recall  f1-score   support
+
+           0       0.46      0.44      0.45       830
+           1       0.45      0.56      0.50       830
+           2       0.53      0.41      0.46       830
+
+    accuracy                           0.47      2490
+   macro avg       0.48      0.47      0.47      2490
+weighted avg       0.48      0.47      0.47      2490
+
+{'eval_loss': 1.0475736856460571, 'eval_accuracy': 0.4714859437751004, 'eval_runtime': 0.9154, 'eval_samples_per_second': 2720.165, 'eval_steps_per_second': 21.849, 'epoch': 71.0}
+{'loss': 1.0658, 'learning_rate': 2e-05, 'epoch': 72.0}
+              precision    recall  f1-score   support
+
+           0       0.45      0.46      0.45       830
+           1       0.41      0.66      0.51       830
+           2       0.60      0.23      0.33       830
+
+    accuracy                           0.45      2490
+   macro avg       0.49      0.45      0.43      2490
+weighted avg       0.49      0.45      0.43      2490
+
+{'eval_loss': 1.0478006601333618, 'eval_accuracy': 0.4493975903614458, 'eval_runtime': 0.9184, 'eval_samples_per_second': 2711.26, 'eval_steps_per_second': 21.777, 'epoch': 72.0}
+{'loss': 1.0726, 'learning_rate': 2e-05, 'epoch': 73.0}
+              precision    recall  f1-score   support
+
+           0       0.48      0.42      0.45       830
+           1       0.42      0.71      0.53       830
+           2       0.62      0.26      0.37       830
+
+    accuracy                           0.46      2490
+   macro avg       0.51      0.46      0.45      2490
+weighted avg       0.51      0.46      0.45      2490
+
+{'eval_loss': 1.0491396188735962, 'eval_accuracy': 0.4642570281124498, 'eval_runtime': 0.9102, 'eval_samples_per_second': 2735.736, 'eval_steps_per_second': 21.974, 'epoch': 73.0}
+{'loss': 1.0731, 'learning_rate': 2e-05, 'epoch': 74.0}
+              precision    recall  f1-score   support
+
+           0       0.42      0.62      0.50       830
+           1       0.44      0.55      0.49       830
+           2       0.62      0.19      0.29       830
+
+    accuracy                           0.45      2490
+   macro avg       0.50      0.45      0.43      2490
+weighted avg       0.50      0.45      0.43      2490
+
+{'eval_loss': 1.0531665086746216, 'eval_accuracy': 0.4493975903614458, 'eval_runtime': 0.9494, 'eval_samples_per_second': 2622.774, 'eval_steps_per_second': 21.066, 'epoch': 74.0}
+{'loss': 1.0728, 'learning_rate': 2e-05, 'epoch': 75.0}
+              precision    recall  f1-score   support
+
+           0       0.47      0.41      0.44       830
+           1       0.45      0.55      0.49       830
+           2       0.51      0.45      0.48       830
+
+    accuracy                           0.47      2490
+   macro avg       0.47      0.47      0.47      2490
+weighted avg       0.47      0.47      0.47      2490
+
+{'eval_loss': 1.047081470489502, 'eval_accuracy': 0.4706827309236948, 'eval_runtime': 0.91, 'eval_samples_per_second': 2736.171, 'eval_steps_per_second': 21.977, 'epoch': 75.0}
+{'loss': 1.0659, 'learning_rate': 2e-05, 'epoch': 76.0}
+              precision    recall  f1-score   support
+
+           0       0.42      0.53      0.47       830
+           1       0.41      0.67      0.51       830
+           2       0.75      0.09      0.16       830
+
+    accuracy                           0.43      2490
+   macro avg       0.53      0.43      0.38      2490
+weighted avg       0.53      0.43      0.38      2490
+
+{'eval_loss': 1.0519795417785645, 'eval_accuracy': 0.42811244979919677, 'eval_runtime': 0.9273, 'eval_samples_per_second': 2685.244, 'eval_steps_per_second': 21.568, 'epoch': 76.0}
+{'loss': 1.0722, 'learning_rate': 2e-05, 'epoch': 77.0}
+              precision    recall  f1-score   support
+
+           0       0.45      0.46      0.45       830
+           1       0.45      0.54      0.49       830
+           2       0.52      0.41      0.46       830
+
+    accuracy                           0.47      2490
+   macro avg       0.47      0.47      0.47      2490
+weighted avg       0.47      0.47      0.47      2490
+
+{'eval_loss': 1.046265721321106, 'eval_accuracy': 0.4682730923694779, 'eval_runtime': 0.9257, 'eval_samples_per_second': 2689.986, 'eval_steps_per_second': 21.606, 'epoch': 77.0}
+{'loss': 1.072, 'learning_rate': 2e-05, 'epoch': 78.0}
+              precision    recall  f1-score   support
+
+           0       0.42      0.53      0.47       830
+           1       0.41      0.67      0.51       830
+           2       0.74      0.09      0.16       830
+
+    accuracy                           0.43      2490
+   macro avg       0.52      0.43      0.38      2490
+weighted avg       0.52      0.43      0.38      2490
+
+{'eval_loss': 1.0515267848968506, 'eval_accuracy': 0.42811244979919677, 'eval_runtime': 0.9144, 'eval_samples_per_second': 2723.125, 'eval_steps_per_second': 21.872, 'epoch': 78.0}
+{'loss': 1.0765, 'learning_rate': 2e-05, 'epoch': 79.0}
+              precision    recall  f1-score   support
+
+           0       0.44      0.50      0.47       830
+           1       0.44      0.59      0.50       830
+           2       0.58      0.30      0.40       830
+
+    accuracy                           0.46      2490
+   macro avg       0.49      0.46      0.46      2490
+weighted avg       0.49      0.46      0.46      2490
+
+{'eval_loss': 1.0454895496368408, 'eval_accuracy': 0.4634538152610442, 'eval_runtime': 0.9117, 'eval_samples_per_second': 2731.021, 'eval_steps_per_second': 21.936, 'epoch': 79.0}
+{'loss': 1.0706, 'learning_rate': 2e-05, 'epoch': 80.0}
+              precision    recall  f1-score   support
+
+           0       0.44      0.48      0.46       830
+           1       0.42      0.65      0.51       830
+           2       0.63      0.23      0.33       830
+
+    accuracy                           0.45      2490
+   macro avg       0.50      0.45      0.44      2490
+weighted avg       0.50      0.45      0.44      2490
+
+{'eval_loss': 1.0453641414642334, 'eval_accuracy': 0.4530120481927711, 'eval_runtime': 0.9159, 'eval_samples_per_second': 2718.703, 'eval_steps_per_second': 21.837, 'epoch': 80.0}
+{'train_runtime': 432.2489, 'train_samples_per_second': 460.846, 'train_steps_per_second': 3.702, 'train_loss': 1.0800975203514098, 'epoch': 80.0}

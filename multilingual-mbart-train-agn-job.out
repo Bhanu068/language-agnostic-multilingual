@@ -1,0 +1,300 @@
+Mon May  9 21:52:22 2022       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 460.32.03    Driver Version: 495.29.05    CUDA Version: 11.5     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                               |                      |               MIG M. |
+|===============================+======================+======================|
+|   0  Quadro RTX 6000     On   | 00000000:03:00.0 Off |                    0 |
+| N/A   54C    P8    57W / 250W |      0MiB / 22698MiB |      0%      Default |
+|                               |                      |                  N/A |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                                  |
+|  GPU   GI   CI        PID   Type   Process name                  GPU Memory |
+|        ID   ID                                                   Usage      |
+|=============================================================================|
+|  No running processes found                                                 |
++-----------------------------------------------------------------------------+
+Epoch1
+Train Loss: 5.294728461732256
+Validating
+Val Loss: 5.093515941074917
+Epoch2
+Train Loss: 4.455621526596394
+Validating
+Val Loss: 4.1842290333339145
+Epoch3
+Train Loss: 4.076851078804503
+Validating
+Val Loss: 3.897517510822841
+Epoch4
+Train Loss: 3.7799885983162738
+Validating
+Val Loss: 3.5886282920837402
+Epoch5
+Train Loss: 3.491828020582808
+Validating
+Val Loss: 3.28660317829677
+Epoch6
+Train Loss: 3.2003165813202554
+Validating
+Val Loss: 2.992154700415475
+Epoch7
+Train Loss: 2.9291594332837043
+Validating
+Val Loss: 2.7234508650643483
+Epoch8
+Train Loss: 2.6723567881482713
+Validating
+Val Loss: 2.483539342880249
+Epoch9
+Train Loss: 2.4536243093774672
+Validating
+Val Loss: 2.270372356687273
+Epoch10
+Train Loss: 2.248371443849929
+Validating
+Val Loss: 2.086779202733721
+Epoch11
+Train Loss: 2.0831837933114232
+Validating
+Val Loss: 1.9211684635707311
+Epoch12
+Train Loss: 1.9283308703848656
+Validating
+Val Loss: 1.7799499034881592
+Epoch13
+Train Loss: 1.7941007335135277
+Validating
+Val Loss: 1.6422183343342371
+Epoch14
+Train Loss: 1.6618160161566227
+Validating
+Val Loss: 1.5134763206754411
+Epoch15
+Train Loss: 1.542737788342415
+Validating
+Val Loss: 1.3989471197128296
+Epoch16
+Train Loss: 1.442059615825085
+Validating
+Val Loss: 1.3144913911819458
+Epoch17
+Train Loss: 1.3459422968803567
+Validating
+Val Loss: 1.215863653591701
+Epoch18
+Train Loss: 1.2696113941517282
+Validating
+Val Loss: 1.1413253034864153
+Epoch19
+Train Loss: 1.1899695852969556
+Validating
+Val Loss: 1.07240492105484
+Epoch20
+Train Loss: 1.1292910956321878
+Validating
+Val Loss: 1.0195940818105425
+Epoch21
+Train Loss: 1.0738905541440273
+Validating
+Val Loss: 0.9655136125428336
+Epoch22
+Train Loss: 1.025563951502455
+Validating
+Val Loss: 0.9229167444365365
+Epoch23
+Train Loss: 0.979010745565942
+Validating
+Val Loss: 0.892607433455331
+Epoch24
+Train Loss: 0.9446319189477475
+Validating
+Val Loss: 0.8578856842858451
+Epoch25
+Train Loss: 0.9114307380737142
+Validating
+Val Loss: 0.83030766248703
+Epoch26
+Train Loss: 0.8854471635311207
+Validating
+Val Loss: 0.8149561285972595
+Epoch27
+Train Loss: 0.8560291693565694
+Validating
+Val Loss: 0.7971174461500985
+Epoch28
+Train Loss: 0.8390446165774731
+Validating
+Val Loss: 0.7647356901850019
+Epoch29
+Train Loss: 0.8118056946612419
+Validating
+Val Loss: 0.7469981568200248
+Epoch30
+Train Loss: 0.7962042182049853
+Validating
+Val Loss: 0.731002858706883
+Epoch31
+Train Loss: 0.7801546555884341
+Validating
+Val Loss: 0.7217063222612653
+Epoch32
+Train Loss: 0.7634741296159461
+Validating
+Val Loss: 0.7034901039940971
+Epoch33
+Train Loss: 0.7500933598964772
+Validating
+Val Loss: 0.6941806503704616
+Epoch34
+Train Loss: 0.740915966794846
+Validating
+Val Loss: 0.6840599179267883
+Epoch35
+Train Loss: 0.7255672964643924
+Validating
+Val Loss: 0.6765406387192863
+Epoch36
+Train Loss: 0.7163284420967102
+Validating
+Val Loss: 0.6689857414790562
+Epoch37
+Train Loss: 0.7033869827047308
+Validating
+Val Loss: 0.6569933210100446
+Epoch38
+Train Loss: 0.6940709859766858
+Validating
+Val Loss: 0.6461191517966134
+Epoch39
+Train Loss: 0.6881066598790757
+Validating
+Val Loss: 0.6429752707481384
+Epoch40
+Train Loss: 0.6807014637805046
+Validating
+Val Loss: 0.6369665265083313
+Epoch41
+Train Loss: 0.6714612131423139
+Validating
+Val Loss: 0.6312951701028007
+Epoch42
+Train Loss: 0.6650725755285709
+Validating
+Val Loss: 0.6222067901066372
+Epoch43
+Train Loss: 0.6595939359766372
+Validating
+Val Loss: 0.6182558281081063
+Epoch44
+Train Loss: 0.6550417073229526
+Validating
+Val Loss: 0.6151694059371948
+Epoch45
+Train Loss: 0.652752788777047
+Validating
+Val Loss: 0.6200669407844543
+Epoch46
+Train Loss: 0.6459730533843345
+Validating
+Val Loss: 0.6081451433045524
+Epoch47
+Train Loss: 0.640246036204886
+Validating
+Val Loss: 0.6120608704430717
+Epoch48
+Train Loss: 0.6348625548342441
+Validating
+Val Loss: 0.5986948779651097
+Epoch49
+Train Loss: 0.6300267374261896
+Validating
+Val Loss: 0.5936554670333862
+Epoch50
+Train Loss: 0.630521757805601
+Validating
+Val Loss: 0.5922495807920184
+Epoch51
+Train Loss: 0.6201794692810546
+Validating
+Val Loss: 0.5943969488143921
+Epoch52
+Train Loss: 0.6174802501150902
+Validating
+Val Loss: 0.5876410518373761
+Epoch53
+Train Loss: 0.615366869784416
+Validating
+Val Loss: 0.5837413668632507
+Epoch54
+Train Loss: 0.611574169169081
+Validating
+Val Loss: 0.5839876106807164
+Epoch55
+Train Loss: 0.6090045000644441
+Validating
+Val Loss: 0.5813678247588021
+Epoch56
+Train Loss: 0.6058118444807986
+Validating
+Val Loss: 0.5824498789651054
+Epoch57
+Train Loss: 0.6019697138603698
+Validating
+Val Loss: 0.5771154761314392
+Epoch58
+Train Loss: 0.598806322889125
+Validating
+Val Loss: 0.5721262352807182
+Epoch59
+Train Loss: 0.5983960514372968
+Validating
+Val Loss: 0.5766805325235639
+Epoch60
+Train Loss: 0.5974127257123907
+Validating
+Val Loss: 0.5756021738052368
+Epoch61
+Train Loss: 0.5940533787646192
+Validating
+Val Loss: 0.5673173410551888
+Epoch62
+Train Loss: 0.5920609540127694
+Validating
+Val Loss: 0.5709994775908334
+Epoch63
+Train Loss: 0.5894442086524152
+Validating
+Val Loss: 0.5675897513117109
+Epoch64
+Train Loss: 0.5855161205251166
+Validating
+Val Loss: 0.565669127873012
+Epoch65
+Train Loss: 0.5831036631097185
+Validating
+Val Loss: 0.5619750193187169
+Epoch66
+Train Loss: 0.5829158285830883
+Validating
+Val Loss: 0.5678178071975708
+Epoch67
+Train Loss: 0.5818490582577726
+Validating
+Val Loss: 0.5647476826395307
+Epoch68
+Train Loss: 0.5756437283881167
+Validating
+Val Loss: 0.5593022278376988
+Epoch69
+Train Loss: 0.5774147307619135
+Validating
+Val Loss: 0.5590596795082092
+Epoch70
+Train Loss: 0.5773247429665099
+Validating
+Val Loss: 0.556127301284245

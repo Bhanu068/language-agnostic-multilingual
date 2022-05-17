@@ -1,0 +1,32 @@
+Tue May  3 21:40:17 2022       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 460.32.03    Driver Version: 495.29.05    CUDA Version: 11.5     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                               |                      |               MIG M. |
+|===============================+======================+======================|
+|   0  Quadro RTX 6000     On   | 00000000:03:00.0 Off |                    0 |
+| N/A   29C    P8    17W / 250W |      0MiB / 22698MiB |      0%      Default |
+|                               |                      |                  N/A |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                                  |
+|  GPU   GI   CI        PID   Type   Process name                  GPU Memory |
+|        ID   ID                                                   Usage      |
+|=============================================================================|
+|  No running processes found                                                 |
++-----------------------------------------------------------------------------+
+Downloading and preparing dataset xnli/default to /home/bhanuv/.cache/huggingface/datasets/xnli/default-language=ru/1.1.0/818164464f9c9fd15776ca8a00423b074344c3e929d00a2c1a84aa5a50c928bd...
+Dataset xnli downloaded and prepared to /home/bhanuv/.cache/huggingface/datasets/xnli/default-language=ru/1.1.0/818164464f9c9fd15776ca8a00423b074344c3e929d00a2c1a84aa5a50c928bd. Subsequent calls will reuse this data.
+              precision    recall  f1-score   support
+
+           0       0.50      0.45      0.47      1670
+           1       0.46      0.63      0.53      1670
+           2       0.58      0.42      0.49      1670
+
+    accuracy                           0.50      5010
+   macro avg       0.51      0.50      0.50      5010
+weighted avg       0.51      0.50      0.50      5010
+

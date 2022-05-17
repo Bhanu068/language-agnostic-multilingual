@@ -1,0 +1,13 @@
+Using custom data configuration default-language=ru
+Reusing dataset xnli (/home/bhanuv/.cache/huggingface/datasets/xnli/default-language=ru/1.1.0/818164464f9c9fd15776ca8a00423b074344c3e929d00a2c1a84aa5a50c928bd)
+Some weights of the model checkpoint at facebook/mbart-large-50-many-to-many-mmt were not used when initializing MBartModel: ['final_logits_bias', 'lm_head.weight']
+- This IS expected if you are initializing MBartModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing MBartModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+  0%|          | 0/6 [00:00<?, ?ba/s]Asking to truncate to max_length but no maximum length is provided and the model has no predefined maximum length. Default to no truncation.
+ 17%|█▋        | 1/6 [00:00<00:01,  4.58ba/s] 33%|███▎      | 2/6 [00:00<00:00,  6.27ba/s] 50%|█████     | 3/6 [00:00<00:00,  7.07ba/s] 67%|██████▋   | 4/6 [00:00<00:00,  7.10ba/s] 83%|████████▎ | 5/6 [00:00<00:00,  7.47ba/s]100%|██████████| 6/6 [00:00<00:00,  8.31ba/s]
+Using amp half precision backend
+The following columns in the test set  don't have a corresponding argument in `MBart.forward` and have been ignored: premise, hypothesis. If premise, hypothesis are not expected by `MBart.forward`,  you can safely ignore this message.
+***** Running Prediction *****
+  Num examples = 5010
+  Batch size = 128
+  0%|          | 0/40 [00:00<?, ?it/s]  8%|▊         | 3/40 [00:00<00:01, 29.52it/s] 15%|█▌        | 6/40 [00:00<00:01, 23.52it/s] 22%|██▎       | 9/40 [00:00<00:01, 20.83it/s] 30%|███       | 12/40 [00:00<00:01, 19.59it/s] 38%|███▊      | 15/40 [00:00<00:01, 19.18it/s] 42%|████▎     | 17/40 [00:00<00:01, 18.05it/s] 50%|█████     | 20/40 [00:01<00:01, 18.78it/s] 55%|█████▌    | 22/40 [00:01<00:00, 18.20it/s] 60%|██████    | 24/40 [00:01<00:00, 18.08it/s] 65%|██████▌   | 26/40 [00:01<00:00, 17.55it/s] 70%|███████   | 28/40 [00:01<00:00, 17.39it/s] 75%|███████▌  | 30/40 [00:01<00:00, 17.66it/s] 80%|████████  | 32/40 [00:01<00:00, 17.05it/s] 85%|████████▌ | 34/40 [00:01<00:00, 16.21it/s] 90%|█████████ | 36/40 [00:01<00:00, 15.97it/s] 95%|█████████▌| 38/40 [00:02<00:00, 15.50it/s]100%|██████████| 40/40 [00:02<00:00, 16.61it/s]

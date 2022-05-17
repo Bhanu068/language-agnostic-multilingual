@@ -1,0 +1,13 @@
+Using custom data configuration default-language=zh
+Reusing dataset xnli (/home/bhanuv/.cache/huggingface/datasets/xnli/default-language=zh/1.1.0/818164464f9c9fd15776ca8a00423b074344c3e929d00a2c1a84aa5a50c928bd)
+Some weights of the model checkpoint at facebook/mbart-large-50-many-to-many-mmt were not used when initializing MBartModel: ['lm_head.weight', 'final_logits_bias']
+- This IS expected if you are initializing MBartModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing MBartModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+  0%|          | 0/6 [00:00<?, ?ba/s]Asking to truncate to max_length but no maximum length is provided and the model has no predefined maximum length. Default to no truncation.
+ 33%|███▎      | 2/6 [00:00<00:00, 10.90ba/s] 67%|██████▋   | 4/6 [00:00<00:00, 11.54ba/s]100%|██████████| 6/6 [00:00<00:00, 13.72ba/s]
+Using amp half precision backend
+The following columns in the test set  don't have a corresponding argument in `MBart.forward` and have been ignored: hypothesis, premise. If hypothesis, premise are not expected by `MBart.forward`,  you can safely ignore this message.
+***** Running Prediction *****
+  Num examples = 5010
+  Batch size = 128
+  0%|          | 0/40 [00:00<?, ?it/s] 10%|█         | 4/40 [00:00<00:01, 32.64it/s] 20%|██        | 8/40 [00:00<00:01, 26.15it/s] 28%|██▊       | 11/40 [00:00<00:01, 24.15it/s] 35%|███▌      | 14/40 [00:00<00:01, 22.01it/s] 42%|████▎     | 17/40 [00:00<00:01, 22.22it/s] 50%|█████     | 20/40 [00:00<00:00, 23.21it/s] 57%|█████▊    | 23/40 [00:00<00:00, 23.02it/s] 65%|██████▌   | 26/40 [00:01<00:00, 22.63it/s] 72%|███████▎  | 29/40 [00:01<00:00, 22.24it/s] 80%|████████  | 32/40 [00:01<00:00, 21.85it/s] 88%|████████▊ | 35/40 [00:01<00:00, 20.79it/s] 95%|█████████▌| 38/40 [00:01<00:00, 19.62it/s]100%|██████████| 40/40 [00:01<00:00, 20.14it/s]

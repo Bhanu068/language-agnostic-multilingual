@@ -1,0 +1,1470 @@
+Using custom data configuration default-language=en
+Reusing dataset xnli (/home/bhanuv/.cache/huggingface/datasets/xnli/default-language=en/1.1.0/818164464f9c9fd15776ca8a00423b074344c3e929d00a2c1a84aa5a50c928bd)
+Some weights of the model checkpoint at facebook/m2m100_418M were not used when initializing M2M100Model: ['lm_head.weight']
+- This IS expected if you are initializing M2M100Model from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing M2M100Model from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of M2M100Model were not initialized from the model checkpoint at facebook/m2m100_418M and are newly initialized: ['model.decoder.embed_positions.weights', 'model.encoder.embed_positions.weights']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+  0%|          | 0/3 [00:00<?, ?ba/s] 33%|███▎      | 1/3 [00:00<00:00,  6.81ba/s] 67%|██████▋   | 2/3 [00:00<00:00,  7.05ba/s]100%|██████████| 3/3 [00:00<00:00,  8.41ba/s]
+Downloading builder script:   0%|          | 0.00/1.41k [00:00<?, ?B/s]Downloading builder script: 3.19kB [00:00, 3.60MB/s]                   
+Using amp half precision backend
+The following columns in the training set  don't have a corresponding argument in `M2M100.forward` and have been ignored: premise, hypothesis. If premise, hypothesis are not expected by `M2M100.forward`,  you can safely ignore this message.
+***** Running training *****
+  Num examples = 2490
+  Num Epochs = 80
+  Instantaneous batch size per device = 128
+  Total train batch size (w. parallel, distributed & accumulation) = 128
+  Gradient Accumulation steps = 1
+  Total optimization steps = 1600
+  0%|          | 0/1600 [00:00<?, ?it/s]  0%|          | 1/1600 [00:00<08:01,  3.32it/s]  0%|          | 4/1600 [00:00<02:30, 10.62it/s]  0%|          | 7/1600 [00:00<01:49, 14.54it/s]  1%|          | 10/1600 [00:00<01:32, 17.23it/s]  1%|          | 13/1600 [00:00<01:22, 19.26it/s]  1%|          | 16/1600 [00:00<01:17, 20.31it/s]  1%|          | 19/1600 [00:01<01:13, 21.42it/s]                                                   1%|▏         | 20/1600 [00:01<01:13, 21.42it/s]The following columns in the evaluation set  don't have a corresponding argument in `M2M100.forward` and have been ignored: premise, hypothesis. If premise, hypothesis are not expected by `M2M100.forward`,  you can safely ignore this message.
+***** Running Evaluation *****
+  Num examples = 2490
+  Batch size = 128
+
+  0%|          | 0/20 [00:00<?, ?it/s][A
+ 20%|██        | 4/20 [00:00<00:00, 35.06it/s][A
+ 40%|████      | 8/20 [00:00<00:00, 29.56it/s][A
+ 60%|██████    | 12/20 [00:00<00:00, 29.03it/s][A
+ 75%|███████▌  | 15/20 [00:00<00:00, 27.66it/s][A
+ 90%|█████████ | 18/20 [00:00<00:00, 26.52it/s][A                                                 
+                                               [A  1%|▏         | 20/1600 [00:02<01:13, 21.42it/s]
+100%|██████████| 20/20 [00:00<00:00, 26.52it/s][A
+                                               [ASaving model checkpoint to /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-20
+Trainer.model is not a `PreTrainedModel`, only saving its state dict.
+tokenizer config file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-20/tokenizer_config.json
+Special tokens file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-20/special_tokens_map.json
+  1%|▏         | 22/1600 [00:07<19:30,  1.35it/s]  2%|▏         | 25/1600 [00:07<13:41,  1.92it/s]  2%|▏         | 28/1600 [00:07<09:46,  2.68it/s]  2%|▏         | 31/1600 [00:08<07:07,  3.67it/s]  2%|▏         | 34/1600 [00:08<05:17,  4.93it/s]  2%|▏         | 37/1600 [00:08<04:02,  6.45it/s]  2%|▎         | 40/1600 [00:08<03:05,  8.41it/s]                                                   2%|▎         | 40/1600 [00:08<03:05,  8.41it/s]The following columns in the evaluation set  don't have a corresponding argument in `M2M100.forward` and have been ignored: premise, hypothesis. If premise, hypothesis are not expected by `M2M100.forward`,  you can safely ignore this message.
+***** Running Evaluation *****
+  Num examples = 2490
+  Batch size = 128
+
+  0%|          | 0/20 [00:00<?, ?it/s][A
+ 20%|██        | 4/20 [00:00<00:00, 35.38it/s][A
+ 40%|████      | 8/20 [00:00<00:00, 29.72it/s][A
+ 60%|██████    | 12/20 [00:00<00:00, 29.11it/s][A
+ 75%|███████▌  | 15/20 [00:00<00:00, 27.73it/s][A
+ 90%|█████████ | 18/20 [00:00<00:00, 26.68it/s][A                                                 
+                                               [A  2%|▎         | 40/1600 [00:09<03:05,  8.41it/s]
+100%|██████████| 20/20 [00:00<00:00, 26.68it/s][A
+                                               [ASaving model checkpoint to /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-40
+Trainer.model is not a `PreTrainedModel`, only saving its state dict.
+tokenizer config file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-40/tokenizer_config.json
+Special tokens file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-40/special_tokens_map.json
+Deleting older checkpoint [/home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-20] due to args.save_total_limit
+  3%|▎         | 43/1600 [00:15<20:22,  1.27it/s]  3%|▎         | 45/1600 [00:15<16:06,  1.61it/s]  3%|▎         | 48/1600 [00:15<11:14,  2.30it/s]  3%|▎         | 51/1600 [00:15<08:02,  3.21it/s]  3%|▎         | 54/1600 [00:15<05:51,  4.40it/s]  4%|▎         | 57/1600 [00:16<04:23,  5.86it/s]  4%|▍         | 60/1600 [00:16<03:20,  7.68it/s]                                                   4%|▍         | 60/1600 [00:16<03:20,  7.68it/s]The following columns in the evaluation set  don't have a corresponding argument in `M2M100.forward` and have been ignored: premise, hypothesis. If premise, hypothesis are not expected by `M2M100.forward`,  you can safely ignore this message.
+***** Running Evaluation *****
+  Num examples = 2490
+  Batch size = 128
+
+  0%|          | 0/20 [00:00<?, ?it/s][A
+ 20%|██        | 4/20 [00:00<00:00, 35.53it/s][A
+ 40%|████      | 8/20 [00:00<00:00, 29.85it/s][A
+ 60%|██████    | 12/20 [00:00<00:00, 29.17it/s][A
+ 75%|███████▌  | 15/20 [00:00<00:00, 27.74it/s][A
+ 90%|█████████ | 18/20 [00:00<00:00, 26.68it/s][A                                                 
+                                               [A  4%|▍         | 60/1600 [00:17<03:20,  7.68it/s]
+100%|██████████| 20/20 [00:00<00:00, 26.68it/s][A
+                                               [ASaving model checkpoint to /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-60
+Trainer.model is not a `PreTrainedModel`, only saving its state dict.
+tokenizer config file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-60/tokenizer_config.json
+Special tokens file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-60/special_tokens_map.json
+Deleting older checkpoint [/home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-40] due to args.save_total_limit
+  4%|▍         | 63/1600 [00:23<20:12,  1.27it/s]  4%|▍         | 66/1600 [00:23<14:26,  1.77it/s]  4%|▍         | 69/1600 [00:23<10:25,  2.45it/s]  4%|▍         | 72/1600 [00:23<07:37,  3.34it/s]  5%|▍         | 75/1600 [00:23<05:39,  4.49it/s]  5%|▍         | 78/1600 [00:23<04:17,  5.91it/s]                                                   5%|▌         | 80/1600 [00:23<04:17,  5.91it/s]The following columns in the evaluation set  don't have a corresponding argument in `M2M100.forward` and have been ignored: premise, hypothesis. If premise, hypothesis are not expected by `M2M100.forward`,  you can safely ignore this message.
+***** Running Evaluation *****
+  Num examples = 2490
+  Batch size = 128
+
+  0%|          | 0/20 [00:00<?, ?it/s][A
+ 20%|██        | 4/20 [00:00<00:00, 35.52it/s][A
+ 40%|████      | 8/20 [00:00<00:00, 29.66it/s][A
+ 60%|██████    | 12/20 [00:00<00:00, 29.05it/s][A
+ 75%|███████▌  | 15/20 [00:00<00:00, 27.69it/s][A
+ 90%|█████████ | 18/20 [00:00<00:00, 26.64it/s][A                                                 
+                                               [A  5%|▌         | 80/1600 [00:24<04:17,  5.91it/s]
+100%|██████████| 20/20 [00:00<00:00, 26.64it/s][A
+                                               [ASaving model checkpoint to /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-80
+Trainer.model is not a `PreTrainedModel`, only saving its state dict.
+tokenizer config file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-80/tokenizer_config.json
+Special tokens file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-80/special_tokens_map.json
+Deleting older checkpoint [/home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-60] due to args.save_total_limit
+  5%|▌         | 81/1600 [00:30<20:56,  1.21it/s]  5%|▌         | 83/1600 [00:30<16:32,  1.53it/s]  5%|▌         | 85/1600 [00:31<12:50,  1.97it/s]  6%|▌         | 88/1600 [00:31<08:50,  2.85it/s]  6%|▌         | 91/1600 [00:31<06:16,  4.01it/s]  6%|▌         | 94/1600 [00:31<04:37,  5.42it/s]  6%|▌         | 97/1600 [00:31<03:30,  7.14it/s]  6%|▋         | 100/1600 [00:31<02:42,  9.20it/s]                                                    6%|▋         | 100/1600 [00:31<02:42,  9.20it/s]The following columns in the evaluation set  don't have a corresponding argument in `M2M100.forward` and have been ignored: premise, hypothesis. If premise, hypothesis are not expected by `M2M100.forward`,  you can safely ignore this message.
+***** Running Evaluation *****
+  Num examples = 2490
+  Batch size = 128
+
+  0%|          | 0/20 [00:00<?, ?it/s][A
+ 20%|██        | 4/20 [00:00<00:00, 35.50it/s][A
+ 40%|████      | 8/20 [00:00<00:00, 29.81it/s][A
+ 60%|██████    | 12/20 [00:00<00:00, 29.14it/s][A
+ 75%|███████▌  | 15/20 [00:00<00:00, 27.74it/s][A
+ 90%|█████████ | 18/20 [00:00<00:00, 26.67it/s][A                                                  
+                                               [A  6%|▋         | 100/1600 [00:32<02:42,  9.20it/s]
+100%|██████████| 20/20 [00:00<00:00, 26.67it/s][A
+                                               [ASaving model checkpoint to /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-100
+Trainer.model is not a `PreTrainedModel`, only saving its state dict.
+tokenizer config file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-100/tokenizer_config.json
+Special tokens file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-100/special_tokens_map.json
+Deleting older checkpoint [/home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-80] due to args.save_total_limit
+  6%|▋         | 103/1600 [00:38<20:18,  1.23it/s]  7%|▋         | 106/1600 [00:39<14:26,  1.72it/s]  7%|▋         | 109/1600 [00:39<10:23,  2.39it/s]  7%|▋         | 112/1600 [00:39<07:31,  3.29it/s]  7%|▋         | 115/1600 [00:39<05:35,  4.42it/s]  7%|▋         | 118/1600 [00:39<04:12,  5.87it/s]                                                    8%|▊         | 120/1600 [00:39<04:11,  5.87it/s]The following columns in the evaluation set  don't have a corresponding argument in `M2M100.forward` and have been ignored: premise, hypothesis. If premise, hypothesis are not expected by `M2M100.forward`,  you can safely ignore this message.
+***** Running Evaluation *****
+  Num examples = 2490
+  Batch size = 128
+
+  0%|          | 0/20 [00:00<?, ?it/s][A
+ 20%|██        | 4/20 [00:00<00:00, 35.59it/s][A
+ 40%|████      | 8/20 [00:00<00:00, 29.85it/s][A
+ 60%|██████    | 12/20 [00:00<00:00, 29.20it/s][A
+ 75%|███████▌  | 15/20 [00:00<00:00, 27.75it/s][A
+ 90%|█████████ | 18/20 [00:00<00:00, 26.50it/s][A                                                  
+                                               [A  8%|▊         | 120/1600 [00:40<04:11,  5.87it/s]
+100%|██████████| 20/20 [00:00<00:00, 26.50it/s][A
+                                               [ASaving model checkpoint to /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-120
+Trainer.model is not a `PreTrainedModel`, only saving its state dict.
+tokenizer config file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-120/tokenizer_config.json
+Special tokens file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-120/special_tokens_map.json
+Deleting older checkpoint [/home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-100] due to args.save_total_limit
+  8%|▊         | 121/1600 [00:46<20:08,  1.22it/s]  8%|▊         | 123/1600 [00:46<15:54,  1.55it/s]  8%|▊         | 126/1600 [00:46<11:08,  2.21it/s]  8%|▊         | 129/1600 [00:46<07:55,  3.10it/s]  8%|▊         | 132/1600 [00:47<05:46,  4.24it/s]  8%|▊         | 135/1600 [00:47<04:18,  5.67it/s]  9%|▊         | 138/1600 [00:47<03:16,  7.43it/s]                                                    9%|▉         | 140/1600 [00:47<03:16,  7.43it/s]The following columns in the evaluation set  don't have a corresponding argument in `M2M100.forward` and have been ignored: premise, hypothesis. If premise, hypothesis are not expected by `M2M100.forward`,  you can safely ignore this message.
+***** Running Evaluation *****
+  Num examples = 2490
+  Batch size = 128
+
+  0%|          | 0/20 [00:00<?, ?it/s][A
+ 20%|██        | 4/20 [00:00<00:00, 35.58it/s][A
+ 40%|████      | 8/20 [00:00<00:00, 29.74it/s][A
+ 60%|██████    | 12/20 [00:00<00:00, 29.12it/s][A
+ 75%|███████▌  | 15/20 [00:00<00:00, 27.67it/s][A
+ 90%|█████████ | 18/20 [00:00<00:00, 26.59it/s][A                                                  
+                                               [A  9%|▉         | 140/1600 [00:48<03:16,  7.43it/s]
+100%|██████████| 20/20 [00:00<00:00, 26.59it/s][A
+                                               [ASaving model checkpoint to /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-140
+Trainer.model is not a `PreTrainedModel`, only saving its state dict.
+tokenizer config file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-140/tokenizer_config.json
+Special tokens file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-140/special_tokens_map.json
+Deleting older checkpoint [/home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-120] due to args.save_total_limit
+  9%|▉         | 141/1600 [00:54<19:13,  1.26it/s]  9%|▉         | 143/1600 [00:54<15:11,  1.60it/s]  9%|▉         | 146/1600 [00:54<10:35,  2.29it/s]  9%|▉         | 149/1600 [00:54<07:30,  3.22it/s] 10%|▉         | 152/1600 [00:54<05:29,  4.40it/s] 10%|▉         | 155/1600 [00:54<04:05,  5.90it/s] 10%|▉         | 158/1600 [00:54<03:08,  7.65it/s]                                                   10%|█         | 160/1600 [00:55<03:08,  7.65it/s]The following columns in the evaluation set  don't have a corresponding argument in `M2M100.forward` and have been ignored: premise, hypothesis. If premise, hypothesis are not expected by `M2M100.forward`,  you can safely ignore this message.
+***** Running Evaluation *****
+  Num examples = 2490
+  Batch size = 128
+
+  0%|          | 0/20 [00:00<?, ?it/s][A
+ 20%|██        | 4/20 [00:00<00:00, 35.32it/s][A
+ 40%|████      | 8/20 [00:00<00:00, 29.66it/s][A
+ 60%|██████    | 12/20 [00:00<00:00, 29.07it/s][A
+ 75%|███████▌  | 15/20 [00:00<00:00, 27.70it/s][A
+ 90%|█████████ | 18/20 [00:00<00:00, 26.64it/s][A                                                  
+                                               [A 10%|█         | 160/1600 [00:55<03:08,  7.65it/s]
+100%|██████████| 20/20 [00:00<00:00, 26.64it/s][A
+                                               [ASaving model checkpoint to /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-160
+Trainer.model is not a `PreTrainedModel`, only saving its state dict.
+tokenizer config file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-160/tokenizer_config.json
+Special tokens file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-160/special_tokens_map.json
+Deleting older checkpoint [/home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-140] due to args.save_total_limit
+ 10%|█         | 161/1600 [01:02<19:41,  1.22it/s] 10%|█         | 163/1600 [01:02<15:32,  1.54it/s] 10%|█         | 165/1600 [01:02<12:03,  1.98it/s] 10%|█         | 168/1600 [01:02<08:18,  2.88it/s] 11%|█         | 171/1600 [01:02<05:53,  4.05it/s] 11%|█         | 174/1600 [01:02<04:18,  5.51it/s] 11%|█         | 177/1600 [01:02<03:16,  7.25it/s] 11%|█▏        | 180/1600 [01:02<02:31,  9.38it/s]                                                   11%|█▏        | 180/1600 [01:02<02:31,  9.38it/s]The following columns in the evaluation set  don't have a corresponding argument in `M2M100.forward` and have been ignored: premise, hypothesis. If premise, hypothesis are not expected by `M2M100.forward`,  you can safely ignore this message.
+***** Running Evaluation *****
+  Num examples = 2490
+  Batch size = 128
+
+  0%|          | 0/20 [00:00<?, ?it/s][A
+ 20%|██        | 4/20 [00:00<00:00, 35.55it/s][A
+ 40%|████      | 8/20 [00:00<00:00, 29.79it/s][A
+ 60%|██████    | 12/20 [00:00<00:00, 29.13it/s][A
+ 75%|███████▌  | 15/20 [00:00<00:00, 27.73it/s][A
+ 90%|█████████ | 18/20 [00:00<00:00, 26.67it/s][A                                                  
+                                               [A 11%|█▏        | 180/1600 [01:03<02:31,  9.38it/s]
+100%|██████████| 20/20 [00:00<00:00, 26.67it/s][A
+                                               [ASaving model checkpoint to /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-180
+Trainer.model is not a `PreTrainedModel`, only saving its state dict.
+tokenizer config file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-180/tokenizer_config.json
+Special tokens file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-180/special_tokens_map.json
+Deleting older checkpoint [/home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-160] due to args.save_total_limit
+ 11%|█▏        | 183/1600 [01:10<18:47,  1.26it/s] 12%|█▏        | 186/1600 [01:10<13:21,  1.76it/s] 12%|█▏        | 189/1600 [01:10<09:35,  2.45it/s] 12%|█▏        | 192/1600 [01:10<06:59,  3.35it/s] 12%|█▏        | 195/1600 [01:10<05:10,  4.52it/s] 12%|█▏        | 198/1600 [01:10<03:54,  5.97it/s]                                                   12%|█▎        | 200/1600 [01:10<03:54,  5.97it/s]The following columns in the evaluation set  don't have a corresponding argument in `M2M100.forward` and have been ignored: premise, hypothesis. If premise, hypothesis are not expected by `M2M100.forward`,  you can safely ignore this message.
+***** Running Evaluation *****
+  Num examples = 2490
+  Batch size = 128
+
+  0%|          | 0/20 [00:00<?, ?it/s][A
+ 20%|██        | 4/20 [00:00<00:00, 35.21it/s][A
+ 40%|████      | 8/20 [00:00<00:00, 29.70it/s][A
+ 60%|██████    | 12/20 [00:00<00:00, 29.10it/s][A
+ 75%|███████▌  | 15/20 [00:00<00:00, 27.71it/s][A
+ 90%|█████████ | 18/20 [00:00<00:00, 26.65it/s][A                                                  
+                                               [A 12%|█▎        | 200/1600 [01:11<03:54,  5.97it/s]
+100%|██████████| 20/20 [00:00<00:00, 26.65it/s][A
+                                               [ASaving model checkpoint to /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-200
+Trainer.model is not a `PreTrainedModel`, only saving its state dict.
+tokenizer config file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-200/tokenizer_config.json
+Special tokens file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-200/special_tokens_map.json
+Deleting older checkpoint [/home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-180] due to args.save_total_limit
+ 13%|█▎        | 201/1600 [01:17<19:08,  1.22it/s] 13%|█▎        | 203/1600 [01:17<15:07,  1.54it/s] 13%|█▎        | 206/1600 [01:17<10:33,  2.20it/s] 13%|█▎        | 209/1600 [01:18<07:31,  3.08it/s] 13%|█▎        | 212/1600 [01:18<05:28,  4.22it/s] 13%|█▎        | 215/1600 [01:18<04:06,  5.62it/s] 14%|█▎        | 218/1600 [01:18<03:09,  7.29it/s]                                                   14%|█▍        | 220/1600 [01:18<03:09,  7.29it/s]The following columns in the evaluation set  don't have a corresponding argument in `M2M100.forward` and have been ignored: premise, hypothesis. If premise, hypothesis are not expected by `M2M100.forward`,  you can safely ignore this message.
+***** Running Evaluation *****
+  Num examples = 2490
+  Batch size = 128
+
+  0%|          | 0/20 [00:00<?, ?it/s][A
+ 20%|██        | 4/20 [00:00<00:00, 35.50it/s][A
+ 40%|████      | 8/20 [00:00<00:00, 29.78it/s][A
+ 60%|██████    | 12/20 [00:00<00:00, 29.12it/s][A
+ 75%|███████▌  | 15/20 [00:00<00:00, 27.71it/s][A
+ 90%|█████████ | 18/20 [00:00<00:00, 26.64it/s][A                                                  
+                                               [A 14%|█▍        | 220/1600 [01:19<03:09,  7.29it/s]
+100%|██████████| 20/20 [00:00<00:00, 26.64it/s][A
+                                               [ASaving model checkpoint to /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-220
+Trainer.model is not a `PreTrainedModel`, only saving its state dict.
+tokenizer config file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-220/tokenizer_config.json
+Special tokens file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-220/special_tokens_map.json
+Deleting older checkpoint [/home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-200] due to args.save_total_limit
+ 14%|█▍        | 221/1600 [01:25<18:23,  1.25it/s] 14%|█▍        | 224/1600 [01:25<13:09,  1.74it/s] 14%|█▍        | 227/1600 [01:25<09:28,  2.42it/s] 14%|█▍        | 230/1600 [01:25<06:53,  3.31it/s] 15%|█▍        | 233/1600 [01:25<05:07,  4.45it/s] 15%|█▍        | 236/1600 [01:26<03:50,  5.92it/s] 15%|█▍        | 239/1600 [01:26<02:57,  7.67it/s]                                                   15%|█▌        | 240/1600 [01:26<02:57,  7.67it/s]The following columns in the evaluation set  don't have a corresponding argument in `M2M100.forward` and have been ignored: premise, hypothesis. If premise, hypothesis are not expected by `M2M100.forward`,  you can safely ignore this message.
+***** Running Evaluation *****
+  Num examples = 2490
+  Batch size = 128
+
+  0%|          | 0/20 [00:00<?, ?it/s][A
+ 20%|██        | 4/20 [00:00<00:00, 35.28it/s][A
+ 40%|████      | 8/20 [00:00<00:00, 29.60it/s][A
+ 60%|██████    | 12/20 [00:00<00:00, 28.97it/s][A
+ 75%|███████▌  | 15/20 [00:00<00:00, 27.63it/s][A
+ 90%|█████████ | 18/20 [00:00<00:00, 26.60it/s][A                                                  
+                                               [A 15%|█▌        | 240/1600 [01:27<02:57,  7.67it/s]
+100%|██████████| 20/20 [00:00<00:00, 26.60it/s][A
+                                               [ASaving model checkpoint to /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-240
+Trainer.model is not a `PreTrainedModel`, only saving its state dict.
+tokenizer config file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-240/tokenizer_config.json
+Special tokens file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-240/special_tokens_map.json
+Deleting older checkpoint [/home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-220] due to args.save_total_limit
+ 15%|█▌        | 242/1600 [01:33<17:55,  1.26it/s] 15%|█▌        | 245/1600 [01:33<12:48,  1.76it/s] 16%|█▌        | 248/1600 [01:33<09:14,  2.44it/s] 16%|█▌        | 251/1600 [01:33<06:44,  3.33it/s] 16%|█▌        | 254/1600 [01:33<05:01,  4.47it/s] 16%|█▌        | 257/1600 [01:33<03:48,  5.88it/s] 16%|█▋        | 260/1600 [01:33<02:53,  7.71it/s]                                                   16%|█▋        | 260/1600 [01:34<02:53,  7.71it/s]The following columns in the evaluation set  don't have a corresponding argument in `M2M100.forward` and have been ignored: premise, hypothesis. If premise, hypothesis are not expected by `M2M100.forward`,  you can safely ignore this message.
+***** Running Evaluation *****
+  Num examples = 2490
+  Batch size = 128
+
+  0%|          | 0/20 [00:00<?, ?it/s][A
+ 20%|██        | 4/20 [00:00<00:00, 35.46it/s][A
+ 40%|████      | 8/20 [00:00<00:00, 29.79it/s][A
+ 60%|██████    | 12/20 [00:00<00:00, 29.11it/s][A
+ 75%|███████▌  | 15/20 [00:00<00:00, 27.70it/s][A
+ 90%|█████████ | 18/20 [00:00<00:00, 26.62it/s][A                                                  
+                                               [A 16%|█▋        | 260/1600 [01:34<02:53,  7.71it/s]
+100%|██████████| 20/20 [00:00<00:00, 26.62it/s][A
+                                               [ASaving model checkpoint to /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-260
+Trainer.model is not a `PreTrainedModel`, only saving its state dict.
+tokenizer config file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-260/tokenizer_config.json
+Special tokens file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-260/special_tokens_map.json
+Deleting older checkpoint [/home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-240] due to args.save_total_limit
+ 16%|█▋        | 263/1600 [01:41<17:48,  1.25it/s] 17%|█▋        | 265/1600 [01:41<14:04,  1.58it/s] 17%|█▋        | 268/1600 [01:41<09:49,  2.26it/s] 17%|█▋        | 271/1600 [01:41<07:00,  3.16it/s] 17%|█▋        | 274/1600 [01:41<05:08,  4.30it/s] 17%|█▋        | 277/1600 [01:41<03:51,  5.72it/s] 18%|█▊        | 280/1600 [01:41<02:54,  7.58it/s]                                                   18%|█▊        | 280/1600 [01:41<02:54,  7.58it/s]The following columns in the evaluation set  don't have a corresponding argument in `M2M100.forward` and have been ignored: premise, hypothesis. If premise, hypothesis are not expected by `M2M100.forward`,  you can safely ignore this message.
+***** Running Evaluation *****
+  Num examples = 2490
+  Batch size = 128
+
+  0%|          | 0/20 [00:00<?, ?it/s][A
+ 20%|██        | 4/20 [00:00<00:00, 35.53it/s][A
+ 40%|████      | 8/20 [00:00<00:00, 29.80it/s][A
+ 60%|██████    | 12/20 [00:00<00:00, 29.15it/s][A
+ 75%|███████▌  | 15/20 [00:00<00:00, 27.71it/s][A
+ 90%|█████████ | 18/20 [00:00<00:00, 26.53it/s][A                                                  
+                                               [A 18%|█▊        | 280/1600 [01:42<02:54,  7.58it/s]
+100%|██████████| 20/20 [00:00<00:00, 26.53it/s][A
+                                               [ASaving model checkpoint to /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-280
+Trainer.model is not a `PreTrainedModel`, only saving its state dict.
+tokenizer config file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-280/tokenizer_config.json
+Special tokens file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-280/special_tokens_map.json
+Deleting older checkpoint [/home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-260] due to args.save_total_limit
+ 18%|█▊        | 283/1600 [01:48<17:31,  1.25it/s] 18%|█▊        | 285/1600 [01:48<13:49,  1.59it/s] 18%|█▊        | 288/1600 [01:48<09:38,  2.27it/s] 18%|█▊        | 291/1600 [01:49<06:52,  3.17it/s] 18%|█▊        | 294/1600 [01:49<05:01,  4.33it/s] 19%|█▊        | 297/1600 [01:49<03:44,  5.80it/s] 19%|█▉        | 300/1600 [01:49<02:49,  7.67it/s]                                                   19%|█▉        | 300/1600 [01:49<02:49,  7.67it/s]The following columns in the evaluation set  don't have a corresponding argument in `M2M100.forward` and have been ignored: premise, hypothesis. If premise, hypothesis are not expected by `M2M100.forward`,  you can safely ignore this message.
+***** Running Evaluation *****
+  Num examples = 2490
+  Batch size = 128
+
+  0%|          | 0/20 [00:00<?, ?it/s][A
+ 20%|██        | 4/20 [00:00<00:00, 35.50it/s][A
+ 40%|████      | 8/20 [00:00<00:00, 29.83it/s][A
+ 60%|██████    | 12/20 [00:00<00:00, 29.17it/s][A
+ 75%|███████▌  | 15/20 [00:00<00:00, 27.77it/s][A
+ 90%|█████████ | 18/20 [00:00<00:00, 26.71it/s][A                                                  
+                                               [A 19%|█▉        | 300/1600 [01:50<02:49,  7.67it/s]
+100%|██████████| 20/20 [00:00<00:00, 26.71it/s][A
+                                               [ASaving model checkpoint to /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-300
+Trainer.model is not a `PreTrainedModel`, only saving its state dict.
+tokenizer config file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-300/tokenizer_config.json
+Special tokens file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-300/special_tokens_map.json
+Deleting older checkpoint [/home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-280] due to args.save_total_limit
+ 19%|█▉        | 303/1600 [01:56<17:10,  1.26it/s] 19%|█▉        | 306/1600 [01:56<12:15,  1.76it/s] 19%|█▉        | 309/1600 [01:56<08:49,  2.44it/s] 20%|█▉        | 312/1600 [01:56<06:26,  3.33it/s] 20%|█▉        | 315/1600 [01:56<04:45,  4.50it/s] 20%|█▉        | 318/1600 [01:57<03:36,  5.91it/s]                                                   20%|██        | 320/1600 [01:57<03:36,  5.91it/s]The following columns in the evaluation set  don't have a corresponding argument in `M2M100.forward` and have been ignored: premise, hypothesis. If premise, hypothesis are not expected by `M2M100.forward`,  you can safely ignore this message.
+***** Running Evaluation *****
+  Num examples = 2490
+  Batch size = 128
+
+  0%|          | 0/20 [00:00<?, ?it/s][A
+ 20%|██        | 4/20 [00:00<00:00, 35.56it/s][A
+ 40%|████      | 8/20 [00:00<00:00, 29.84it/s][A
+ 60%|██████    | 12/20 [00:00<00:00, 29.16it/s][A
+ 75%|███████▌  | 15/20 [00:00<00:00, 27.74it/s][A
+ 90%|█████████ | 18/20 [00:00<00:00, 26.66it/s][A                                                  
+                                               [A 20%|██        | 320/1600 [01:58<03:36,  5.91it/s]
+100%|██████████| 20/20 [00:00<00:00, 26.66it/s][A
+                                               [ASaving model checkpoint to /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-320
+Trainer.model is not a `PreTrainedModel`, only saving its state dict.
+tokenizer config file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-320/tokenizer_config.json
+Special tokens file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-320/special_tokens_map.json
+Deleting older checkpoint [/home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-300] due to args.save_total_limit
+ 20%|██        | 321/1600 [02:04<17:31,  1.22it/s] 20%|██        | 323/1600 [02:04<13:51,  1.54it/s] 20%|██        | 326/1600 [02:04<09:39,  2.20it/s] 21%|██        | 329/1600 [02:04<06:54,  3.06it/s] 21%|██        | 332/1600 [02:04<05:03,  4.18it/s] 21%|██        | 335/1600 [02:04<03:46,  5.59it/s] 21%|██        | 338/1600 [02:04<02:54,  7.22it/s]                                                   21%|██▏       | 340/1600 [02:05<02:54,  7.22it/s]The following columns in the evaluation set  don't have a corresponding argument in `M2M100.forward` and have been ignored: premise, hypothesis. If premise, hypothesis are not expected by `M2M100.forward`,  you can safely ignore this message.
+***** Running Evaluation *****
+  Num examples = 2490
+  Batch size = 128
+
+  0%|          | 0/20 [00:00<?, ?it/s][A
+ 20%|██        | 4/20 [00:00<00:00, 35.52it/s][A
+ 40%|████      | 8/20 [00:00<00:00, 29.85it/s][A
+ 60%|██████    | 12/20 [00:00<00:00, 29.19it/s][A
+ 75%|███████▌  | 15/20 [00:00<00:00, 27.78it/s][A
+ 90%|█████████ | 18/20 [00:00<00:00, 26.70it/s][A                                                  
+                                               [A 21%|██▏       | 340/1600 [02:06<02:54,  7.22it/s]
+100%|██████████| 20/20 [00:00<00:00, 26.70it/s][A
+                                               [ASaving model checkpoint to /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-340
+Trainer.model is not a `PreTrainedModel`, only saving its state dict.
+tokenizer config file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-340/tokenizer_config.json
+Special tokens file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-340/special_tokens_map.json
+Deleting older checkpoint [/home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-320] due to args.save_total_limit
+ 21%|██▏       | 341/1600 [02:11<16:57,  1.24it/s] 21%|██▏       | 343/1600 [02:12<13:22,  1.57it/s] 22%|██▏       | 346/1600 [02:12<09:19,  2.24it/s] 22%|██▏       | 349/1600 [02:12<06:38,  3.14it/s] 22%|██▏       | 352/1600 [02:12<04:50,  4.30it/s] 22%|██▏       | 355/1600 [02:12<03:36,  5.76it/s] 22%|██▏       | 358/1600 [02:12<02:44,  7.56it/s]                                                   22%|██▎       | 360/1600 [02:12<02:44,  7.56it/s]The following columns in the evaluation set  don't have a corresponding argument in `M2M100.forward` and have been ignored: premise, hypothesis. If premise, hypothesis are not expected by `M2M100.forward`,  you can safely ignore this message.
+***** Running Evaluation *****
+  Num examples = 2490
+  Batch size = 128
+
+  0%|          | 0/20 [00:00<?, ?it/s][A
+ 20%|██        | 4/20 [00:00<00:00, 35.55it/s][A
+ 40%|████      | 8/20 [00:00<00:00, 29.85it/s][A
+ 60%|██████    | 12/20 [00:00<00:00, 29.18it/s][A
+ 75%|███████▌  | 15/20 [00:00<00:00, 27.78it/s][A
+ 90%|█████████ | 18/20 [00:00<00:00, 26.71it/s][A                                                  
+                                               [A 22%|██▎       | 360/1600 [02:13<02:44,  7.56it/s]
+100%|██████████| 20/20 [00:00<00:00, 26.71it/s][A
+                                               [ASaving model checkpoint to /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-360
+Trainer.model is not a `PreTrainedModel`, only saving its state dict.
+tokenizer config file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-360/tokenizer_config.json
+Special tokens file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-360/special_tokens_map.json
+Deleting older checkpoint [/home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-340] due to args.save_total_limit
+ 23%|██▎       | 361/1600 [02:19<16:31,  1.25it/s] 23%|██▎       | 364/1600 [02:19<11:46,  1.75it/s] 23%|██▎       | 367/1600 [02:19<08:28,  2.42it/s] 23%|██▎       | 370/1600 [02:20<06:11,  3.31it/s] 23%|██▎       | 373/1600 [02:20<04:34,  4.47it/s] 24%|██▎       | 376/1600 [02:20<03:27,  5.89it/s] 24%|██▎       | 379/1600 [02:20<02:41,  7.54it/s]                                                   24%|██▍       | 380/1600 [02:20<02:41,  7.54it/s]The following columns in the evaluation set  don't have a corresponding argument in `M2M100.forward` and have been ignored: premise, hypothesis. If premise, hypothesis are not expected by `M2M100.forward`,  you can safely ignore this message.
+***** Running Evaluation *****
+  Num examples = 2490
+  Batch size = 128
+
+  0%|          | 0/20 [00:00<?, ?it/s][A
+ 20%|██        | 4/20 [00:00<00:00, 35.44it/s][A
+ 40%|████      | 8/20 [00:00<00:00, 29.76it/s][A
+ 60%|██████    | 12/20 [00:00<00:00, 29.09it/s][A
+ 75%|███████▌  | 15/20 [00:00<00:00, 27.68it/s][A
+ 90%|█████████ | 18/20 [00:00<00:00, 26.63it/s][A                                                  
+                                               [A 24%|██▍       | 380/1600 [02:21<02:41,  7.54it/s]
+100%|██████████| 20/20 [00:00<00:00, 26.63it/s][A
+                                               [ASaving model checkpoint to /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-380
+Trainer.model is not a `PreTrainedModel`, only saving its state dict.
+tokenizer config file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-380/tokenizer_config.json
+Special tokens file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-380/special_tokens_map.json
+Deleting older checkpoint [/home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-360] due to args.save_total_limit
+ 24%|██▍       | 382/1600 [02:27<16:04,  1.26it/s] 24%|██▍       | 384/1600 [02:27<12:42,  1.60it/s] 24%|██▍       | 387/1600 [02:27<08:53,  2.27it/s] 24%|██▍       | 390/1600 [02:27<06:21,  3.17it/s] 25%|██▍       | 393/1600 [02:27<04:39,  4.32it/s] 25%|██▍       | 396/1600 [02:28<03:29,  5.75it/s] 25%|██▍       | 399/1600 [02:28<02:40,  7.46it/s]                                                   25%|██▌       | 400/1600 [02:28<02:40,  7.46it/s]The following columns in the evaluation set  don't have a corresponding argument in `M2M100.forward` and have been ignored: premise, hypothesis. If premise, hypothesis are not expected by `M2M100.forward`,  you can safely ignore this message.
+***** Running Evaluation *****
+  Num examples = 2490
+  Batch size = 128
+
+  0%|          | 0/20 [00:00<?, ?it/s][A
+ 20%|██        | 4/20 [00:00<00:00, 35.56it/s][A
+ 40%|████      | 8/20 [00:00<00:00, 29.84it/s][A
+ 60%|██████    | 12/20 [00:00<00:00, 29.17it/s][A
+ 75%|███████▌  | 15/20 [00:00<00:00, 27.75it/s][A
+ 90%|█████████ | 18/20 [00:00<00:00, 26.68it/s][A                                                  
+                                               [A 25%|██▌       | 400/1600 [02:29<02:40,  7.46it/s]
+100%|██████████| 20/20 [00:00<00:00, 26.68it/s][A
+                                               [ASaving model checkpoint to /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-400
+Trainer.model is not a `PreTrainedModel`, only saving its state dict.
+tokenizer config file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-400/tokenizer_config.json
+Special tokens file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-400/special_tokens_map.json
+Deleting older checkpoint [/home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-380] due to args.save_total_limit
+ 25%|██▌       | 402/1600 [02:35<15:49,  1.26it/s] 25%|██▌       | 404/1600 [02:35<12:29,  1.60it/s] 25%|██▌       | 407/1600 [02:35<08:41,  2.29it/s] 26%|██▌       | 410/1600 [02:35<06:14,  3.18it/s] 26%|██▌       | 413/1600 [02:35<04:33,  4.34it/s] 26%|██▌       | 416/1600 [02:35<03:23,  5.81it/s] 26%|██▌       | 419/1600 [02:35<02:37,  7.51it/s]                                                   26%|██▋       | 420/1600 [02:36<02:37,  7.51it/s]The following columns in the evaluation set  don't have a corresponding argument in `M2M100.forward` and have been ignored: premise, hypothesis. If premise, hypothesis are not expected by `M2M100.forward`,  you can safely ignore this message.
+***** Running Evaluation *****
+  Num examples = 2490
+  Batch size = 128
+
+  0%|          | 0/20 [00:00<?, ?it/s][A
+ 20%|██        | 4/20 [00:00<00:00, 35.14it/s][A
+ 40%|████      | 8/20 [00:00<00:00, 29.62it/s][A
+ 60%|██████    | 12/20 [00:00<00:00, 29.04it/s][A
+ 75%|███████▌  | 15/20 [00:00<00:00, 27.68it/s][A
+ 90%|█████████ | 18/20 [00:00<00:00, 26.64it/s][A                                                  
+                                               [A 26%|██▋       | 420/1600 [02:36<02:37,  7.51it/s]
+100%|██████████| 20/20 [00:00<00:00, 26.64it/s][A
+                                               [ASaving model checkpoint to /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-420
+Trainer.model is not a `PreTrainedModel`, only saving its state dict.
+tokenizer config file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-420/tokenizer_config.json
+Special tokens file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-420/special_tokens_map.json
+Deleting older checkpoint [/home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-400] due to args.save_total_limit
+ 26%|██▋       | 422/1600 [02:42<15:42,  1.25it/s] 27%|██▋       | 425/1600 [02:43<11:11,  1.75it/s] 27%|██▋       | 428/1600 [02:43<08:04,  2.42it/s] 27%|██▋       | 431/1600 [02:43<05:53,  3.31it/s] 27%|██▋       | 434/1600 [02:43<04:20,  4.48it/s] 27%|██▋       | 437/1600 [02:43<03:17,  5.88it/s] 28%|██▊       | 440/1600 [02:43<02:30,  7.69it/s]                                                   28%|██▊       | 440/1600 [02:43<02:30,  7.69it/s]The following columns in the evaluation set  don't have a corresponding argument in `M2M100.forward` and have been ignored: premise, hypothesis. If premise, hypothesis are not expected by `M2M100.forward`,  you can safely ignore this message.
+***** Running Evaluation *****
+  Num examples = 2490
+  Batch size = 128
+
+  0%|          | 0/20 [00:00<?, ?it/s][A
+ 20%|██        | 4/20 [00:00<00:00, 35.51it/s][A
+ 40%|████      | 8/20 [00:00<00:00, 29.80it/s][A
+ 60%|██████    | 12/20 [00:00<00:00, 29.11it/s][A
+ 75%|███████▌  | 15/20 [00:00<00:00, 27.72it/s][A
+ 90%|█████████ | 18/20 [00:00<00:00, 26.65it/s][A                                                  
+                                               [A 28%|██▊       | 440/1600 [02:44<02:30,  7.69it/s]
+100%|██████████| 20/20 [00:00<00:00, 26.65it/s][A
+                                               [ASaving model checkpoint to /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-440
+Trainer.model is not a `PreTrainedModel`, only saving its state dict.
+tokenizer config file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-440/tokenizer_config.json
+Special tokens file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-440/special_tokens_map.json
+Deleting older checkpoint [/home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-420] due to args.save_total_limit
+ 28%|██▊       | 443/1600 [02:50<15:21,  1.26it/s] 28%|██▊       | 446/1600 [02:50<10:58,  1.75it/s] 28%|██▊       | 449/1600 [02:51<07:54,  2.42it/s] 28%|██▊       | 452/1600 [02:51<05:46,  3.31it/s] 28%|██▊       | 455/1600 [02:51<04:17,  4.45it/s] 29%|██▊       | 458/1600 [02:51<03:13,  5.90it/s]                                                   29%|██▉       | 460/1600 [02:51<03:13,  5.90it/s]The following columns in the evaluation set  don't have a corresponding argument in `M2M100.forward` and have been ignored: premise, hypothesis. If premise, hypothesis are not expected by `M2M100.forward`,  you can safely ignore this message.
+***** Running Evaluation *****
+  Num examples = 2490
+  Batch size = 128
+
+  0%|          | 0/20 [00:00<?, ?it/s][A
+ 20%|██        | 4/20 [00:00<00:00, 35.54it/s][A
+ 40%|████      | 8/20 [00:00<00:00, 29.82it/s][A
+ 60%|██████    | 12/20 [00:00<00:00, 29.11it/s][A
+ 75%|███████▌  | 15/20 [00:00<00:00, 27.71it/s][A
+ 90%|█████████ | 18/20 [00:00<00:00, 26.65it/s][A                                                  
+                                               [A 29%|██▉       | 460/1600 [02:52<03:13,  5.90it/s]
+100%|██████████| 20/20 [00:00<00:00, 26.65it/s][A
+                                               [ASaving model checkpoint to /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-460
+Trainer.model is not a `PreTrainedModel`, only saving its state dict.
+tokenizer config file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-460/tokenizer_config.json
+Special tokens file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-460/special_tokens_map.json
+Deleting older checkpoint [/home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-440] due to args.save_total_limit
+ 29%|██▉       | 461/1600 [02:58<15:32,  1.22it/s] 29%|██▉       | 464/1600 [02:58<11:07,  1.70it/s] 29%|██▉       | 467/1600 [02:58<08:00,  2.36it/s] 29%|██▉       | 470/1600 [02:58<05:50,  3.22it/s] 30%|██▉       | 473/1600 [02:58<04:19,  4.34it/s] 30%|██▉       | 476/1600 [02:59<03:14,  5.78it/s] 30%|██▉       | 479/1600 [02:59<02:31,  7.39it/s]                                                   30%|███       | 480/1600 [02:59<02:31,  7.39it/s]The following columns in the evaluation set  don't have a corresponding argument in `M2M100.forward` and have been ignored: premise, hypothesis. If premise, hypothesis are not expected by `M2M100.forward`,  you can safely ignore this message.
+***** Running Evaluation *****
+  Num examples = 2490
+  Batch size = 128
+
+  0%|          | 0/20 [00:00<?, ?it/s][A
+ 20%|██        | 4/20 [00:00<00:00, 35.27it/s][A
+ 40%|████      | 8/20 [00:00<00:00, 29.73it/s][A
+ 60%|██████    | 12/20 [00:00<00:00, 29.12it/s][A
+ 75%|███████▌  | 15/20 [00:00<00:00, 27.73it/s][A
+ 90%|█████████ | 18/20 [00:00<00:00, 26.67it/s][A                                                  
+                                               [A 30%|███       | 480/1600 [03:00<02:31,  7.39it/s]
+100%|██████████| 20/20 [00:00<00:00, 26.67it/s][A
+                                               [ASaving model checkpoint to /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-480
+Trainer.model is not a `PreTrainedModel`, only saving its state dict.
+tokenizer config file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-480/tokenizer_config.json
+Special tokens file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-480/special_tokens_map.json
+Deleting older checkpoint [/home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-460] due to args.save_total_limit
+ 30%|███       | 482/1600 [03:06<14:49,  1.26it/s] 30%|███       | 485/1600 [03:06<10:37,  1.75it/s] 30%|███       | 488/1600 [03:06<07:41,  2.41it/s] 31%|███       | 491/1600 [03:06<05:35,  3.30it/s] 31%|███       | 494/1600 [03:06<04:07,  4.47it/s] 31%|███       | 497/1600 [03:06<03:08,  5.86it/s] 31%|███▏      | 500/1600 [03:07<02:24,  7.63it/s]                                                   31%|███▏      | 500/1600 [03:07<02:24,  7.63it/s]The following columns in the evaluation set  don't have a corresponding argument in `M2M100.forward` and have been ignored: premise, hypothesis. If premise, hypothesis are not expected by `M2M100.forward`,  you can safely ignore this message.
+***** Running Evaluation *****
+  Num examples = 2490
+  Batch size = 128
+
+  0%|          | 0/20 [00:00<?, ?it/s][A
+ 20%|██        | 4/20 [00:00<00:00, 35.58it/s][A
+ 40%|████      | 8/20 [00:00<00:00, 29.88it/s][A
+ 60%|██████    | 12/20 [00:00<00:00, 29.21it/s][A
+ 75%|███████▌  | 15/20 [00:00<00:00, 27.80it/s][A
+ 90%|█████████ | 18/20 [00:00<00:00, 26.72it/s][A                                                  
+                                               [A 31%|███▏      | 500/1600 [03:08<02:24,  7.63it/s]
+100%|██████████| 20/20 [00:00<00:00, 26.72it/s][A
+                                               [ASaving model checkpoint to /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-500
+Trainer.model is not a `PreTrainedModel`, only saving its state dict.
+tokenizer config file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-500/tokenizer_config.json
+Special tokens file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-500/special_tokens_map.json
+Deleting older checkpoint [/home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-480] due to args.save_total_limit
+ 31%|███▏      | 503/1600 [03:14<14:31,  1.26it/s] 32%|███▏      | 506/1600 [03:14<10:23,  1.76it/s] 32%|███▏      | 509/1600 [03:14<07:29,  2.43it/s] 32%|███▏      | 512/1600 [03:14<05:27,  3.32it/s] 32%|███▏      | 515/1600 [03:14<04:02,  4.48it/s] 32%|███▏      | 518/1600 [03:14<03:02,  5.93it/s]                                                   32%|███▎      | 520/1600 [03:14<03:02,  5.93it/s]The following columns in the evaluation set  don't have a corresponding argument in `M2M100.forward` and have been ignored: premise, hypothesis. If premise, hypothesis are not expected by `M2M100.forward`,  you can safely ignore this message.
+***** Running Evaluation *****
+  Num examples = 2490
+  Batch size = 128
+
+  0%|          | 0/20 [00:00<?, ?it/s][A
+ 20%|██        | 4/20 [00:00<00:00, 35.54it/s][A
+ 40%|████      | 8/20 [00:00<00:00, 29.84it/s][A
+ 60%|██████    | 12/20 [00:00<00:00, 29.17it/s][A
+ 75%|███████▌  | 15/20 [00:00<00:00, 27.72it/s][A
+ 90%|█████████ | 18/20 [00:00<00:00, 26.64it/s][A                                                  
+                                               [A 32%|███▎      | 520/1600 [03:15<03:02,  5.93it/s]
+100%|██████████| 20/20 [00:00<00:00, 26.64it/s][A
+                                               [ASaving model checkpoint to /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-520
+Trainer.model is not a `PreTrainedModel`, only saving its state dict.
+tokenizer config file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-520/tokenizer_config.json
+Special tokens file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-520/special_tokens_map.json
+Deleting older checkpoint [/home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-500] due to args.save_total_limit
+ 33%|███▎      | 521/1600 [03:21<14:35,  1.23it/s] 33%|███▎      | 524/1600 [03:21<10:26,  1.72it/s] 33%|███▎      | 526/1600 [03:21<08:18,  2.15it/s] 33%|███▎      | 529/1600 [03:21<05:51,  3.05it/s] 33%|███▎      | 532/1600 [03:22<04:13,  4.21it/s] 33%|███▎      | 535/1600 [03:22<03:08,  5.65it/s] 34%|███▎      | 538/1600 [03:22<02:23,  7.40it/s]                                                   34%|███▍      | 540/1600 [03:22<02:23,  7.40it/s]The following columns in the evaluation set  don't have a corresponding argument in `M2M100.forward` and have been ignored: premise, hypothesis. If premise, hypothesis are not expected by `M2M100.forward`,  you can safely ignore this message.
+***** Running Evaluation *****
+  Num examples = 2490
+  Batch size = 128
+
+  0%|          | 0/20 [00:00<?, ?it/s][A
+ 20%|██        | 4/20 [00:00<00:00, 35.55it/s][A
+ 40%|████      | 8/20 [00:00<00:00, 29.82it/s][A
+ 60%|██████    | 12/20 [00:00<00:00, 29.16it/s][A
+ 75%|███████▌  | 15/20 [00:00<00:00, 27.75it/s][A
+ 90%|█████████ | 18/20 [00:00<00:00, 26.67it/s][A                                                  
+                                               [A 34%|███▍      | 540/1600 [03:23<02:23,  7.40it/s]
+100%|██████████| 20/20 [00:00<00:00, 26.67it/s][A
+                                               [ASaving model checkpoint to /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-540
+Trainer.model is not a `PreTrainedModel`, only saving its state dict.
+tokenizer config file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-540/tokenizer_config.json
+Special tokens file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-540/special_tokens_map.json
+Deleting older checkpoint [/home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-520] due to args.save_total_limit
+ 34%|███▍      | 541/1600 [03:29<14:07,  1.25it/s] 34%|███▍      | 543/1600 [03:29<11:07,  1.58it/s] 34%|███▍      | 546/1600 [03:29<07:43,  2.28it/s] 34%|███▍      | 549/1600 [03:29<05:28,  3.20it/s] 34%|███▍      | 552/1600 [03:29<03:59,  4.38it/s] 35%|███▍      | 555/1600 [03:29<02:59,  5.82it/s] 35%|███▍      | 558/1600 [03:30<02:17,  7.56it/s]                                                   35%|███▌      | 560/1600 [03:30<02:17,  7.56it/s]The following columns in the evaluation set  don't have a corresponding argument in `M2M100.forward` and have been ignored: premise, hypothesis. If premise, hypothesis are not expected by `M2M100.forward`,  you can safely ignore this message.
+***** Running Evaluation *****
+  Num examples = 2490
+  Batch size = 128
+
+  0%|          | 0/20 [00:00<?, ?it/s][A
+ 20%|██        | 4/20 [00:00<00:00, 35.53it/s][A
+ 40%|████      | 8/20 [00:00<00:00, 29.82it/s][A
+ 60%|██████    | 12/20 [00:00<00:00, 29.16it/s][A
+ 75%|███████▌  | 15/20 [00:00<00:00, 27.73it/s][A
+ 90%|█████████ | 18/20 [00:00<00:00, 26.66it/s][A                                                  
+                                               [A 35%|███▌      | 560/1600 [03:31<02:17,  7.56it/s]
+100%|██████████| 20/20 [00:00<00:00, 26.66it/s][A
+                                               [ASaving model checkpoint to /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-560
+Trainer.model is not a `PreTrainedModel`, only saving its state dict.
+tokenizer config file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-560/tokenizer_config.json
+Special tokens file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-560/special_tokens_map.json
+Deleting older checkpoint [/home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-540] due to args.save_total_limit
+ 35%|███▌      | 561/1600 [03:37<14:00,  1.24it/s] 35%|███▌      | 563/1600 [03:37<11:02,  1.57it/s] 35%|███▌      | 566/1600 [03:37<07:42,  2.24it/s] 36%|███▌      | 569/1600 [03:37<05:28,  3.14it/s] 36%|███▌      | 572/1600 [03:37<03:58,  4.31it/s] 36%|███▌      | 575/1600 [03:37<02:58,  5.75it/s] 36%|███▌      | 578/1600 [03:37<02:17,  7.45it/s]                                                   36%|███▋      | 580/1600 [03:37<02:16,  7.45it/s]The following columns in the evaluation set  don't have a corresponding argument in `M2M100.forward` and have been ignored: premise, hypothesis. If premise, hypothesis are not expected by `M2M100.forward`,  you can safely ignore this message.
+***** Running Evaluation *****
+  Num examples = 2490
+  Batch size = 128
+
+  0%|          | 0/20 [00:00<?, ?it/s][A
+ 20%|██        | 4/20 [00:00<00:00, 35.25it/s][A
+ 40%|████      | 8/20 [00:00<00:00, 29.70it/s][A
+ 60%|██████    | 12/20 [00:00<00:00, 29.12it/s][A
+ 75%|███████▌  | 15/20 [00:00<00:00, 27.74it/s][A
+ 90%|█████████ | 18/20 [00:00<00:00, 26.68it/s][A                                                  
+                                               [A 36%|███▋      | 580/1600 [03:38<02:16,  7.45it/s]
+100%|██████████| 20/20 [00:00<00:00, 26.68it/s][A
+                                               [ASaving model checkpoint to /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-580
+Trainer.model is not a `PreTrainedModel`, only saving its state dict.
+tokenizer config file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-580/tokenizer_config.json
+Special tokens file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-580/special_tokens_map.json
+Deleting older checkpoint [/home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-560] due to args.save_total_limit
+ 36%|███▋      | 581/1600 [03:44<13:37,  1.25it/s] 36%|███▋      | 584/1600 [03:45<09:43,  1.74it/s] 37%|███▋      | 587/1600 [03:45<06:59,  2.41it/s] 37%|███▋      | 590/1600 [03:45<05:06,  3.30it/s] 37%|███▋      | 593/1600 [03:45<03:47,  4.43it/s] 37%|███▋      | 596/1600 [03:45<02:51,  5.85it/s] 37%|███▋      | 599/1600 [03:45<02:11,  7.59it/s]                                                   38%|███▊      | 600/1600 [03:45<02:11,  7.59it/s]The following columns in the evaluation set  don't have a corresponding argument in `M2M100.forward` and have been ignored: premise, hypothesis. If premise, hypothesis are not expected by `M2M100.forward`,  you can safely ignore this message.
+***** Running Evaluation *****
+  Num examples = 2490
+  Batch size = 128
+
+  0%|          | 0/20 [00:00<?, ?it/s][A
+ 20%|██        | 4/20 [00:00<00:00, 35.55it/s][A
+ 40%|████      | 8/20 [00:00<00:00, 29.82it/s][A
+ 60%|██████    | 12/20 [00:00<00:00, 29.14it/s][A
+ 75%|███████▌  | 15/20 [00:00<00:00, 27.73it/s][A
+ 90%|█████████ | 18/20 [00:00<00:00, 26.66it/s][A                                                  
+                                               [A 38%|███▊      | 600/1600 [03:46<02:11,  7.59it/s]
+100%|██████████| 20/20 [00:00<00:00, 26.66it/s][A
+                                               [ASaving model checkpoint to /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-600
+Trainer.model is not a `PreTrainedModel`, only saving its state dict.
+tokenizer config file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-600/tokenizer_config.json
+Special tokens file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-600/special_tokens_map.json
+Deleting older checkpoint [/home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-580] due to args.save_total_limit
+ 38%|███▊      | 602/1600 [03:52<13:11,  1.26it/s] 38%|███▊      | 605/1600 [03:52<09:26,  1.76it/s] 38%|███▊      | 608/1600 [03:52<06:48,  2.43it/s] 38%|███▊      | 611/1600 [03:53<04:58,  3.31it/s] 38%|███▊      | 614/1600 [03:53<03:41,  4.46it/s] 39%|███▊      | 617/1600 [03:53<02:47,  5.88it/s] 39%|███▉      | 620/1600 [03:53<02:08,  7.65it/s]                                                   39%|███▉      | 620/1600 [03:53<02:08,  7.65it/s]The following columns in the evaluation set  don't have a corresponding argument in `M2M100.forward` and have been ignored: premise, hypothesis. If premise, hypothesis are not expected by `M2M100.forward`,  you can safely ignore this message.
+***** Running Evaluation *****
+  Num examples = 2490
+  Batch size = 128
+
+  0%|          | 0/20 [00:00<?, ?it/s][A
+ 20%|██        | 4/20 [00:00<00:00, 35.57it/s][A
+ 40%|████      | 8/20 [00:00<00:00, 29.85it/s][A
+ 60%|██████    | 12/20 [00:00<00:00, 29.16it/s][A
+ 75%|███████▌  | 15/20 [00:00<00:00, 27.65it/s][A
+ 90%|█████████ | 18/20 [00:00<00:00, 26.54it/s][A                                                  
+                                               [A 39%|███▉      | 620/1600 [03:54<02:08,  7.65it/s]
+100%|██████████| 20/20 [00:00<00:00, 26.54it/s][A
+                                               [ASaving model checkpoint to /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-620
+Trainer.model is not a `PreTrainedModel`, only saving its state dict.
+tokenizer config file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-620/tokenizer_config.json
+Special tokens file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-620/special_tokens_map.json
+Deleting older checkpoint [/home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-600] due to args.save_total_limit
+ 39%|███▉      | 623/1600 [04:00<12:59,  1.25it/s] 39%|███▉      | 626/1600 [04:00<09:16,  1.75it/s] 39%|███▉      | 629/1600 [04:00<06:40,  2.42it/s] 40%|███▉      | 632/1600 [04:00<04:53,  3.30it/s] 40%|███▉      | 635/1600 [04:01<03:36,  4.46it/s] 40%|███▉      | 638/1600 [04:01<02:43,  5.90it/s]                                                   40%|████      | 640/1600 [04:01<02:42,  5.90it/s]The following columns in the evaluation set  don't have a corresponding argument in `M2M100.forward` and have been ignored: premise, hypothesis. If premise, hypothesis are not expected by `M2M100.forward`,  you can safely ignore this message.
+***** Running Evaluation *****
+  Num examples = 2490
+  Batch size = 128
+
+  0%|          | 0/20 [00:00<?, ?it/s][A
+ 20%|██        | 4/20 [00:00<00:00, 35.61it/s][A
+ 40%|████      | 8/20 [00:00<00:00, 29.87it/s][A
+ 60%|██████    | 12/20 [00:00<00:00, 29.19it/s][A
+ 75%|███████▌  | 15/20 [00:00<00:00, 27.78it/s][A
+ 90%|█████████ | 18/20 [00:00<00:00, 26.71it/s][A                                                  
+                                               [A 40%|████      | 640/1600 [04:02<02:42,  5.90it/s]
+100%|██████████| 20/20 [00:00<00:00, 26.71it/s][A
+                                               [ASaving model checkpoint to /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-640
+Trainer.model is not a `PreTrainedModel`, only saving its state dict.
+tokenizer config file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-640/tokenizer_config.json
+Special tokens file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-640/special_tokens_map.json
+Deleting older checkpoint [/home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-620] due to args.save_total_limit
+ 40%|████      | 641/1600 [04:08<13:12,  1.21it/s] 40%|████      | 643/1600 [04:08<10:25,  1.53it/s] 40%|████      | 645/1600 [04:08<08:05,  1.97it/s] 40%|████      | 648/1600 [04:08<05:31,  2.87it/s] 41%|████      | 651/1600 [04:08<03:56,  4.01it/s] 41%|████      | 654/1600 [04:08<02:54,  5.43it/s] 41%|████      | 657/1600 [04:08<02:12,  7.11it/s] 41%|████▏     | 660/1600 [04:09<01:42,  9.13it/s]                                                   41%|████▏     | 660/1600 [04:09<01:42,  9.13it/s]The following columns in the evaluation set  don't have a corresponding argument in `M2M100.forward` and have been ignored: premise, hypothesis. If premise, hypothesis are not expected by `M2M100.forward`,  you can safely ignore this message.
+***** Running Evaluation *****
+  Num examples = 2490
+  Batch size = 128
+
+  0%|          | 0/20 [00:00<?, ?it/s][A
+ 20%|██        | 4/20 [00:00<00:00, 35.59it/s][A
+ 40%|████      | 8/20 [00:00<00:00, 29.88it/s][A
+ 60%|██████    | 12/20 [00:00<00:00, 29.20it/s][A
+ 75%|███████▌  | 15/20 [00:00<00:00, 27.78it/s][A
+ 90%|█████████ | 18/20 [00:00<00:00, 26.69it/s][A                                                  
+                                               [A 41%|████▏     | 660/1600 [04:10<01:42,  9.13it/s]
+100%|██████████| 20/20 [00:00<00:00, 26.69it/s][A
+                                               [ASaving model checkpoint to /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-660
+Trainer.model is not a `PreTrainedModel`, only saving its state dict.
+tokenizer config file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-660/tokenizer_config.json
+Special tokens file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-660/special_tokens_map.json
+Deleting older checkpoint [/home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-640] due to args.save_total_limit
+ 41%|████▏     | 663/1600 [04:16<12:18,  1.27it/s] 42%|████▏     | 665/1600 [04:16<09:41,  1.61it/s] 42%|████▏     | 668/1600 [04:16<06:44,  2.30it/s] 42%|████▏     | 671/1600 [04:16<04:46,  3.24it/s] 42%|████▏     | 674/1600 [04:16<03:30,  4.41it/s] 42%|████▏     | 677/1600 [04:16<02:37,  5.85it/s] 42%|████▎     | 680/1600 [04:16<01:59,  7.69it/s]                                                   42%|████▎     | 680/1600 [04:16<01:59,  7.69it/s]The following columns in the evaluation set  don't have a corresponding argument in `M2M100.forward` and have been ignored: premise, hypothesis. If premise, hypothesis are not expected by `M2M100.forward`,  you can safely ignore this message.
+***** Running Evaluation *****
+  Num examples = 2490
+  Batch size = 128
+
+  0%|          | 0/20 [00:00<?, ?it/s][A
+ 20%|██        | 4/20 [00:00<00:00, 35.54it/s][A
+ 40%|████      | 8/20 [00:00<00:00, 29.77it/s][A
+ 60%|██████    | 12/20 [00:00<00:00, 29.07it/s][A
+ 75%|███████▌  | 15/20 [00:00<00:00, 27.70it/s][A
+ 90%|█████████ | 18/20 [00:00<00:00, 26.62it/s][A                                                  
+                                               [A 42%|████▎     | 680/1600 [04:17<01:59,  7.69it/s]
+100%|██████████| 20/20 [00:00<00:00, 26.62it/s][A
+                                               [ASaving model checkpoint to /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-680
+Trainer.model is not a `PreTrainedModel`, only saving its state dict.
+tokenizer config file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-680/tokenizer_config.json
+Special tokens file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-680/special_tokens_map.json
+Deleting older checkpoint [/home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-660] due to args.save_total_limit
+ 43%|████▎     | 683/1600 [04:23<12:05,  1.26it/s] 43%|████▎     | 686/1600 [04:23<08:36,  1.77it/s] 43%|████▎     | 689/1600 [04:23<06:11,  2.45it/s] 43%|████▎     | 692/1600 [04:24<04:31,  3.35it/s] 43%|████▎     | 695/1600 [04:24<03:21,  4.50it/s] 44%|████▎     | 698/1600 [04:24<02:31,  5.96it/s]                                                   44%|████▍     | 700/1600 [04:24<02:31,  5.96it/s]The following columns in the evaluation set  don't have a corresponding argument in `M2M100.forward` and have been ignored: premise, hypothesis. If premise, hypothesis are not expected by `M2M100.forward`,  you can safely ignore this message.
+***** Running Evaluation *****
+  Num examples = 2490
+  Batch size = 128
+
+  0%|          | 0/20 [00:00<?, ?it/s][A
+ 20%|██        | 4/20 [00:00<00:00, 35.47it/s][A
+ 40%|████      | 8/20 [00:00<00:00, 29.79it/s][A
+ 60%|██████    | 12/20 [00:00<00:00, 29.07it/s][A
+ 75%|███████▌  | 15/20 [00:00<00:00, 27.69it/s][A
+ 90%|█████████ | 18/20 [00:00<00:00, 26.62it/s][A                                                  
+                                               [A 44%|████▍     | 700/1600 [04:25<02:31,  5.96it/s]
+100%|██████████| 20/20 [00:00<00:00, 26.62it/s][A
+                                               [ASaving model checkpoint to /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-700
+Trainer.model is not a `PreTrainedModel`, only saving its state dict.
+tokenizer config file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-700/tokenizer_config.json
+Special tokens file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-700/special_tokens_map.json
+Deleting older checkpoint [/home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-680] due to args.save_total_limit
+ 44%|████▍     | 701/1600 [04:31<12:18,  1.22it/s] 44%|████▍     | 703/1600 [04:31<09:43,  1.54it/s] 44%|████▍     | 705/1600 [04:31<07:32,  1.98it/s] 44%|████▍     | 708/1600 [04:31<05:10,  2.87it/s] 44%|████▍     | 710/1600 [04:31<04:05,  3.63it/s] 45%|████▍     | 713/1600 [04:31<02:52,  5.15it/s] 45%|████▍     | 716/1600 [04:32<02:08,  6.90it/s] 45%|████▍     | 719/1600 [04:32<01:38,  8.95it/s]                                                   45%|████▌     | 720/1600 [04:32<01:38,  8.95it/s]The following columns in the evaluation set  don't have a corresponding argument in `M2M100.forward` and have been ignored: premise, hypothesis. If premise, hypothesis are not expected by `M2M100.forward`,  you can safely ignore this message.
+***** Running Evaluation *****
+  Num examples = 2490
+  Batch size = 128
+
+  0%|          | 0/20 [00:00<?, ?it/s][A
+ 20%|██        | 4/20 [00:00<00:00, 35.55it/s][A
+ 40%|████      | 8/20 [00:00<00:00, 29.82it/s][A
+ 60%|██████    | 12/20 [00:00<00:00, 29.13it/s][A
+ 75%|███████▌  | 15/20 [00:00<00:00, 27.73it/s][A
+ 90%|█████████ | 18/20 [00:00<00:00, 26.65it/s][A                                                  
+                                               [A 45%|████▌     | 720/1600 [04:33<01:38,  8.95it/s]
+100%|██████████| 20/20 [00:00<00:00, 26.65it/s][A
+                                               [ASaving model checkpoint to /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-720
+Trainer.model is not a `PreTrainedModel`, only saving its state dict.
+tokenizer config file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-720/tokenizer_config.json
+Special tokens file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-720/special_tokens_map.json
+Deleting older checkpoint [/home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-700] due to args.save_total_limit
+ 45%|████▌     | 722/1600 [04:39<11:53,  1.23it/s] 45%|████▌     | 725/1600 [04:39<08:23,  1.74it/s] 46%|████▌     | 728/1600 [04:39<05:59,  2.43it/s] 46%|████▌     | 731/1600 [04:39<04:20,  3.34it/s] 46%|████▌     | 734/1600 [04:39<03:11,  4.51it/s] 46%|████▌     | 737/1600 [04:39<02:24,  5.95it/s] 46%|████▋     | 740/1600 [04:40<01:50,  7.77it/s]                                                   46%|████▋     | 740/1600 [04:40<01:50,  7.77it/s]The following columns in the evaluation set  don't have a corresponding argument in `M2M100.forward` and have been ignored: premise, hypothesis. If premise, hypothesis are not expected by `M2M100.forward`,  you can safely ignore this message.
+***** Running Evaluation *****
+  Num examples = 2490
+  Batch size = 128
+
+  0%|          | 0/20 [00:00<?, ?it/s][A
+ 20%|██        | 4/20 [00:00<00:00, 35.49it/s][A
+ 40%|████      | 8/20 [00:00<00:00, 29.82it/s][A
+ 60%|██████    | 12/20 [00:00<00:00, 29.22it/s][A
+ 75%|███████▌  | 15/20 [00:00<00:00, 27.82it/s][A
+ 90%|█████████ | 18/20 [00:00<00:00, 26.73it/s][A                                                  
+                                               [A 46%|████▋     | 740/1600 [04:41<01:50,  7.77it/s]
+100%|██████████| 20/20 [00:00<00:00, 26.73it/s][A
+                                               [ASaving model checkpoint to /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-740
+Trainer.model is not a `PreTrainedModel`, only saving its state dict.
+tokenizer config file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-740/tokenizer_config.json
+Special tokens file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-740/special_tokens_map.json
+Deleting older checkpoint [/home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-720] due to args.save_total_limit
+ 46%|████▋     | 743/1600 [04:46<11:13,  1.27it/s] 47%|████▋     | 745/1600 [04:47<08:51,  1.61it/s] 47%|████▋     | 747/1600 [04:47<06:52,  2.07it/s] 47%|████▋     | 750/1600 [04:47<04:44,  2.99it/s] 47%|████▋     | 753/1600 [04:47<03:21,  4.19it/s] 47%|████▋     | 756/1600 [04:47<02:29,  5.66it/s] 47%|████▋     | 759/1600 [04:47<01:52,  7.45it/s]                                                   48%|████▊     | 760/1600 [04:48<01:52,  7.45it/s]The following columns in the evaluation set  don't have a corresponding argument in `M2M100.forward` and have been ignored: premise, hypothesis. If premise, hypothesis are not expected by `M2M100.forward`,  you can safely ignore this message.
+***** Running Evaluation *****
+  Num examples = 2490
+  Batch size = 128
+
+  0%|          | 0/20 [00:00<?, ?it/s][A
+ 20%|██        | 4/20 [00:00<00:00, 35.71it/s][A
+ 40%|████      | 8/20 [00:00<00:00, 29.96it/s][A
+ 60%|██████    | 12/20 [00:00<00:00, 29.30it/s][A
+ 75%|███████▌  | 15/20 [00:00<00:00, 27.88it/s][A
+ 90%|█████████ | 18/20 [00:00<00:00, 26.80it/s][A                                                  
+                                               [A 48%|████▊     | 760/1600 [04:49<01:52,  7.45it/s]
+100%|██████████| 20/20 [00:00<00:00, 26.80it/s][A
+                                               [ASaving model checkpoint to /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-760
+Trainer.model is not a `PreTrainedModel`, only saving its state dict.
+tokenizer config file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-760/tokenizer_config.json
+Special tokens file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-760/special_tokens_map.json
+Deleting older checkpoint [/home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-740] due to args.save_total_limit
+ 48%|████▊     | 762/1600 [04:55<12:03,  1.16it/s] 48%|████▊     | 765/1600 [04:55<08:32,  1.63it/s] 48%|████▊     | 768/1600 [04:55<06:07,  2.27it/s] 48%|████▊     | 771/1600 [04:55<04:24,  3.13it/s] 48%|████▊     | 774/1600 [04:55<03:16,  4.20it/s] 49%|████▊     | 777/1600 [04:55<02:28,  5.56it/s] 49%|████▉     | 780/1600 [04:55<01:53,  7.24it/s]                                                   49%|████▉     | 780/1600 [04:56<01:53,  7.24it/s]The following columns in the evaluation set  don't have a corresponding argument in `M2M100.forward` and have been ignored: premise, hypothesis. If premise, hypothesis are not expected by `M2M100.forward`,  you can safely ignore this message.
+***** Running Evaluation *****
+  Num examples = 2490
+  Batch size = 128
+
+  0%|          | 0/20 [00:00<?, ?it/s][A
+ 20%|██        | 4/20 [00:00<00:00, 35.71it/s][A
+ 40%|████      | 8/20 [00:00<00:00, 29.99it/s][A
+ 60%|██████    | 12/20 [00:00<00:00, 29.33it/s][A
+ 75%|███████▌  | 15/20 [00:00<00:00, 27.90it/s][A
+ 90%|█████████ | 18/20 [00:00<00:00, 26.80it/s][A                                                  
+                                               [A 49%|████▉     | 780/1600 [04:56<01:53,  7.24it/s]
+100%|██████████| 20/20 [00:00<00:00, 26.80it/s][A
+                                               [ASaving model checkpoint to /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-780
+Trainer.model is not a `PreTrainedModel`, only saving its state dict.
+tokenizer config file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-780/tokenizer_config.json
+Special tokens file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-780/special_tokens_map.json
+Deleting older checkpoint [/home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-760] due to args.save_total_limit
+ 49%|████▉     | 783/1600 [05:02<10:33,  1.29it/s] 49%|████▉     | 786/1600 [05:02<07:32,  1.80it/s] 49%|████▉     | 789/1600 [05:03<05:26,  2.49it/s] 50%|████▉     | 792/1600 [05:03<03:58,  3.38it/s] 50%|████▉     | 795/1600 [05:03<02:57,  4.54it/s] 50%|████▉     | 798/1600 [05:03<02:13,  6.00it/s]                                                   50%|█████     | 800/1600 [05:03<02:13,  6.00it/s]The following columns in the evaluation set  don't have a corresponding argument in `M2M100.forward` and have been ignored: premise, hypothesis. If premise, hypothesis are not expected by `M2M100.forward`,  you can safely ignore this message.
+***** Running Evaluation *****
+  Num examples = 2490
+  Batch size = 128
+
+  0%|          | 0/20 [00:00<?, ?it/s][A
+ 20%|██        | 4/20 [00:00<00:00, 35.72it/s][A
+ 40%|████      | 8/20 [00:00<00:00, 29.97it/s][A
+ 60%|██████    | 12/20 [00:00<00:00, 29.32it/s][A
+ 75%|███████▌  | 15/20 [00:00<00:00, 27.89it/s][A
+ 90%|█████████ | 18/20 [00:00<00:00, 26.75it/s][A                                                  
+                                               [A 50%|█████     | 800/1600 [05:04<02:13,  6.00it/s]
+100%|██████████| 20/20 [00:00<00:00, 26.75it/s][A
+                                               [ASaving model checkpoint to /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-800
+Trainer.model is not a `PreTrainedModel`, only saving its state dict.
+tokenizer config file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-800/tokenizer_config.json
+Special tokens file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-800/special_tokens_map.json
+Deleting older checkpoint [/home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-780] due to args.save_total_limit
+ 50%|█████     | 801/1600 [05:10<10:41,  1.25it/s] 50%|█████     | 803/1600 [05:10<08:27,  1.57it/s] 50%|█████     | 806/1600 [05:10<05:53,  2.25it/s] 51%|█████     | 809/1600 [05:10<04:12,  3.13it/s] 51%|█████     | 812/1600 [05:10<03:03,  4.29it/s] 51%|█████     | 815/1600 [05:10<02:16,  5.73it/s] 51%|█████     | 818/1600 [05:11<01:45,  7.43it/s]                                                   51%|█████▏    | 820/1600 [05:11<01:44,  7.43it/s]The following columns in the evaluation set  don't have a corresponding argument in `M2M100.forward` and have been ignored: premise, hypothesis. If premise, hypothesis are not expected by `M2M100.forward`,  you can safely ignore this message.
+***** Running Evaluation *****
+  Num examples = 2490
+  Batch size = 128
+
+  0%|          | 0/20 [00:00<?, ?it/s][A
+ 20%|██        | 4/20 [00:00<00:00, 35.51it/s][A
+ 40%|████      | 8/20 [00:00<00:00, 29.76it/s][A
+ 60%|██████    | 12/20 [00:00<00:00, 29.16it/s][A
+ 75%|███████▌  | 15/20 [00:00<00:00, 27.77it/s][A
+ 90%|█████████ | 18/20 [00:00<00:00, 26.67it/s][A                                                  
+                                               [A 51%|█████▏    | 820/1600 [05:12<01:44,  7.43it/s]
+100%|██████████| 20/20 [00:00<00:00, 26.67it/s][A
+                                               [ASaving model checkpoint to /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-820
+Trainer.model is not a `PreTrainedModel`, only saving its state dict.
+tokenizer config file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-820/tokenizer_config.json
+Special tokens file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-820/special_tokens_map.json
+Deleting older checkpoint [/home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-800] due to args.save_total_limit
+ 51%|█████▏    | 821/1600 [05:18<10:31,  1.23it/s] 52%|█████▏    | 824/1600 [05:18<07:29,  1.72it/s] 52%|█████▏    | 827/1600 [05:18<05:23,  2.39it/s] 52%|█████▏    | 830/1600 [05:18<03:56,  3.26it/s] 52%|█████▏    | 833/1600 [05:18<02:53,  4.43it/s] 52%|█████▏    | 836/1600 [05:18<02:10,  5.85it/s] 52%|█████▏    | 839/1600 [05:18<01:40,  7.56it/s]                                                   52%|█████▎    | 840/1600 [05:18<01:40,  7.56it/s]The following columns in the evaluation set  don't have a corresponding argument in `M2M100.forward` and have been ignored: premise, hypothesis. If premise, hypothesis are not expected by `M2M100.forward`,  you can safely ignore this message.
+***** Running Evaluation *****
+  Num examples = 2490
+  Batch size = 128
+
+  0%|          | 0/20 [00:00<?, ?it/s][A
+ 20%|██        | 4/20 [00:00<00:00, 35.57it/s][A
+ 40%|████      | 8/20 [00:00<00:00, 29.92it/s][A
+ 60%|██████    | 12/20 [00:00<00:00, 29.28it/s][A
+ 75%|███████▌  | 15/20 [00:00<00:00, 27.86it/s][A
+ 90%|█████████ | 18/20 [00:00<00:00, 26.73it/s][A                                                  
+                                               [A 52%|█████▎    | 840/1600 [05:19<01:40,  7.56it/s]
+100%|██████████| 20/20 [00:00<00:00, 26.73it/s][A
+                                               [ASaving model checkpoint to /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-840
+Trainer.model is not a `PreTrainedModel`, only saving its state dict.
+tokenizer config file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-840/tokenizer_config.json
+Special tokens file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-840/special_tokens_map.json
+Deleting older checkpoint [/home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-820] due to args.save_total_limit
+ 53%|█████▎    | 842/1600 [05:25<09:54,  1.28it/s] 53%|█████▎    | 845/1600 [05:25<07:04,  1.78it/s] 53%|█████▎    | 848/1600 [05:26<05:05,  2.46it/s] 53%|█████▎    | 851/1600 [05:26<03:43,  3.35it/s] 53%|█████▎    | 854/1600 [05:26<02:46,  4.49it/s] 54%|█████▎    | 857/1600 [05:26<02:05,  5.94it/s] 54%|█████▍    | 860/1600 [05:26<01:35,  7.74it/s]                                                   54%|█████▍    | 860/1600 [05:26<01:35,  7.74it/s]The following columns in the evaluation set  don't have a corresponding argument in `M2M100.forward` and have been ignored: premise, hypothesis. If premise, hypothesis are not expected by `M2M100.forward`,  you can safely ignore this message.
+***** Running Evaluation *****
+  Num examples = 2490
+  Batch size = 128
+
+  0%|          | 0/20 [00:00<?, ?it/s][A
+ 20%|██        | 4/20 [00:00<00:00, 35.67it/s][A
+ 40%|████      | 8/20 [00:00<00:00, 29.96it/s][A
+ 60%|██████    | 12/20 [00:00<00:00, 29.30it/s][A
+ 75%|███████▌  | 15/20 [00:00<00:00, 27.85it/s][A
+ 90%|█████████ | 18/20 [00:00<00:00, 26.73it/s][A                                                  
+                                               [A 54%|█████▍    | 860/1600 [05:27<01:35,  7.74it/s]
+100%|██████████| 20/20 [00:00<00:00, 26.73it/s][A
+                                               [ASaving model checkpoint to /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-860
+Trainer.model is not a `PreTrainedModel`, only saving its state dict.
+tokenizer config file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-860/tokenizer_config.json
+Special tokens file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-860/special_tokens_map.json
+Deleting older checkpoint [/home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-840] due to args.save_total_limit
+ 54%|█████▍    | 863/1600 [05:33<09:39,  1.27it/s] 54%|█████▍    | 865/1600 [05:33<07:38,  1.60it/s] 54%|█████▍    | 868/1600 [05:33<05:18,  2.30it/s] 54%|█████▍    | 871/1600 [05:33<03:47,  3.20it/s] 55%|█████▍    | 874/1600 [05:34<02:46,  4.35it/s] 55%|█████▍    | 877/1600 [05:34<02:04,  5.80it/s] 55%|█████▌    | 880/1600 [05:34<01:34,  7.62it/s]                                                   55%|█████▌    | 880/1600 [05:34<01:34,  7.62it/s]The following columns in the evaluation set  don't have a corresponding argument in `M2M100.forward` and have been ignored: premise, hypothesis. If premise, hypothesis are not expected by `M2M100.forward`,  you can safely ignore this message.
+***** Running Evaluation *****
+  Num examples = 2490
+  Batch size = 128
+
+  0%|          | 0/20 [00:00<?, ?it/s][A
+ 20%|██        | 4/20 [00:00<00:00, 35.63it/s][A
+ 40%|████      | 8/20 [00:00<00:00, 29.94it/s][A
+ 60%|██████    | 12/20 [00:00<00:00, 29.26it/s][A
+ 75%|███████▌  | 15/20 [00:00<00:00, 27.85it/s][A
+ 90%|█████████ | 18/20 [00:00<00:00, 26.75it/s][A                                                  
+                                               [A 55%|█████▌    | 880/1600 [05:35<01:34,  7.62it/s]
+100%|██████████| 20/20 [00:00<00:00, 26.75it/s][A
+                                               [ASaving model checkpoint to /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-880
+Trainer.model is not a `PreTrainedModel`, only saving its state dict.
+tokenizer config file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-880/tokenizer_config.json
+Special tokens file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-880/special_tokens_map.json
+Deleting older checkpoint [/home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-860] due to args.save_total_limit
+ 55%|█████▌    | 883/1600 [05:41<09:32,  1.25it/s] 55%|█████▌    | 886/1600 [05:41<06:47,  1.75it/s] 56%|█████▌    | 889/1600 [05:41<04:53,  2.42it/s] 56%|█████▌    | 892/1600 [05:41<03:33,  3.31it/s] 56%|█████▌    | 895/1600 [05:41<02:38,  4.46it/s] 56%|█████▌    | 898/1600 [05:41<01:58,  5.93it/s]                                                   56%|█████▋    | 900/1600 [05:42<01:58,  5.93it/s]The following columns in the evaluation set  don't have a corresponding argument in `M2M100.forward` and have been ignored: premise, hypothesis. If premise, hypothesis are not expected by `M2M100.forward`,  you can safely ignore this message.
+***** Running Evaluation *****
+  Num examples = 2490
+  Batch size = 128
+
+  0%|          | 0/20 [00:00<?, ?it/s][A
+ 20%|██        | 4/20 [00:00<00:00, 35.53it/s][A
+ 40%|████      | 8/20 [00:00<00:00, 29.91it/s][A
+ 60%|██████    | 12/20 [00:00<00:00, 29.27it/s][A
+ 75%|███████▌  | 15/20 [00:00<00:00, 27.85it/s][A
+ 90%|█████████ | 18/20 [00:00<00:00, 26.72it/s][A                                                  
+                                               [A 56%|█████▋    | 900/1600 [05:43<01:58,  5.93it/s]
+100%|██████████| 20/20 [00:00<00:00, 26.72it/s][A
+                                               [ASaving model checkpoint to /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-900
+Trainer.model is not a `PreTrainedModel`, only saving its state dict.
+tokenizer config file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-900/tokenizer_config.json
+Special tokens file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-900/special_tokens_map.json
+ 56%|█████▋    | 901/1600 [05:48<09:17,  1.25it/s] 56%|█████▋    | 904/1600 [05:48<06:38,  1.75it/s] 57%|█████▋    | 907/1600 [05:49<04:47,  2.41it/s] 57%|█████▋    | 910/1600 [05:49<03:29,  3.30it/s] 57%|█████▋    | 913/1600 [05:49<02:35,  4.42it/s] 57%|█████▋    | 916/1600 [05:49<01:57,  5.84it/s] 57%|█████▋    | 919/1600 [05:49<01:29,  7.59it/s]                                                   57%|█████▊    | 920/1600 [05:49<01:29,  7.59it/s]The following columns in the evaluation set  don't have a corresponding argument in `M2M100.forward` and have been ignored: premise, hypothesis. If premise, hypothesis are not expected by `M2M100.forward`,  you can safely ignore this message.
+***** Running Evaluation *****
+  Num examples = 2490
+  Batch size = 128
+
+  0%|          | 0/20 [00:00<?, ?it/s][A
+ 20%|██        | 4/20 [00:00<00:00, 35.67it/s][A
+ 40%|████      | 8/20 [00:00<00:00, 29.97it/s][A
+ 60%|██████    | 12/20 [00:00<00:00, 29.27it/s][A
+ 75%|███████▌  | 15/20 [00:00<00:00, 27.86it/s][A
+ 90%|█████████ | 18/20 [00:00<00:00, 26.77it/s][A                                                  
+                                               [A 57%|█████▊    | 920/1600 [05:50<01:29,  7.59it/s]
+100%|██████████| 20/20 [00:00<00:00, 26.77it/s][A
+                                               [ASaving model checkpoint to /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-920
+Trainer.model is not a `PreTrainedModel`, only saving its state dict.
+tokenizer config file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-920/tokenizer_config.json
+Special tokens file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-920/special_tokens_map.json
+Deleting older checkpoint [/home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-900] due to args.save_total_limit
+ 58%|█████▊    | 922/1600 [05:57<09:44,  1.16it/s] 58%|█████▊    | 924/1600 [05:57<07:40,  1.47it/s] 58%|█████▊    | 927/1600 [05:57<05:20,  2.10it/s] 58%|█████▊    | 930/1600 [05:57<03:49,  2.93it/s] 58%|█████▊    | 933/1600 [05:57<02:47,  3.99it/s] 58%|█████▊    | 936/1600 [05:57<02:04,  5.34it/s] 59%|█████▊    | 939/1600 [05:58<01:35,  6.90it/s]                                                   59%|█████▉    | 940/1600 [05:58<01:35,  6.90it/s]The following columns in the evaluation set  don't have a corresponding argument in `M2M100.forward` and have been ignored: premise, hypothesis. If premise, hypothesis are not expected by `M2M100.forward`,  you can safely ignore this message.
+***** Running Evaluation *****
+  Num examples = 2490
+  Batch size = 128
+
+  0%|          | 0/20 [00:00<?, ?it/s][A
+ 20%|██        | 4/20 [00:00<00:00, 35.03it/s][A
+ 40%|████      | 8/20 [00:00<00:00, 29.35it/s][A
+ 55%|█████▌    | 11/20 [00:00<00:00, 28.99it/s][A
+ 70%|███████   | 14/20 [00:00<00:00, 27.39it/s][A
+ 85%|████████▌ | 17/20 [00:00<00:00, 26.37it/s][A
+100%|██████████| 20/20 [00:00<00:00, 27.29it/s][A                                                  
+                                               [A 59%|█████▉    | 940/1600 [05:59<01:35,  6.90it/s]
+100%|██████████| 20/20 [00:00<00:00, 27.29it/s][A
+                                               [ASaving model checkpoint to /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-940
+Trainer.model is not a `PreTrainedModel`, only saving its state dict.
+tokenizer config file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-940/tokenizer_config.json
+Special tokens file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-940/special_tokens_map.json
+Deleting older checkpoint [/home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-880] due to args.save_total_limit
+Deleting older checkpoint [/home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-920] due to args.save_total_limit
+ 59%|█████▉    | 942/1600 [06:05<09:45,  1.12it/s] 59%|█████▉    | 945/1600 [06:06<06:55,  1.57it/s] 59%|█████▉    | 948/1600 [06:06<04:58,  2.19it/s] 59%|█████▉    | 951/1600 [06:06<03:36,  3.00it/s] 60%|█████▉    | 954/1600 [06:06<02:39,  4.05it/s] 60%|█████▉    | 957/1600 [06:06<01:59,  5.36it/s] 60%|██████    | 960/1600 [06:06<01:30,  7.07it/s]                                                   60%|██████    | 960/1600 [06:06<01:30,  7.07it/s]The following columns in the evaluation set  don't have a corresponding argument in `M2M100.forward` and have been ignored: premise, hypothesis. If premise, hypothesis are not expected by `M2M100.forward`,  you can safely ignore this message.
+***** Running Evaluation *****
+  Num examples = 2490
+  Batch size = 128
+
+  0%|          | 0/20 [00:00<?, ?it/s][A
+ 20%|██        | 4/20 [00:00<00:00, 35.11it/s][A
+ 40%|████      | 8/20 [00:00<00:00, 29.44it/s][A
+ 60%|██████    | 12/20 [00:00<00:00, 28.86it/s][A
+ 75%|███████▌  | 15/20 [00:00<00:00, 27.57it/s][A
+ 90%|█████████ | 18/20 [00:00<00:00, 26.59it/s][A                                                  
+                                               [A 60%|██████    | 960/1600 [06:07<01:30,  7.07it/s]
+100%|██████████| 20/20 [00:00<00:00, 26.59it/s][A
+                                               [ASaving model checkpoint to /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-960
+Trainer.model is not a `PreTrainedModel`, only saving its state dict.
+tokenizer config file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-960/tokenizer_config.json
+Special tokens file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-960/special_tokens_map.json
+Deleting older checkpoint [/home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-940] due to args.save_total_limit
+ 60%|██████    | 963/1600 [06:13<08:40,  1.22it/s] 60%|██████    | 966/1600 [06:13<06:10,  1.71it/s] 61%|██████    | 969/1600 [06:14<04:26,  2.37it/s] 61%|██████    | 972/1600 [06:14<03:14,  3.22it/s] 61%|██████    | 975/1600 [06:14<02:24,  4.33it/s] 61%|██████    | 978/1600 [06:14<01:48,  5.73it/s]                                                   61%|██████▏   | 980/1600 [06:14<01:48,  5.73it/s]The following columns in the evaluation set  don't have a corresponding argument in `M2M100.forward` and have been ignored: premise, hypothesis. If premise, hypothesis are not expected by `M2M100.forward`,  you can safely ignore this message.
+***** Running Evaluation *****
+  Num examples = 2490
+  Batch size = 128
+
+  0%|          | 0/20 [00:00<?, ?it/s][A
+ 20%|██        | 4/20 [00:00<00:00, 35.49it/s][A
+ 40%|████      | 8/20 [00:00<00:00, 29.79it/s][A
+ 60%|██████    | 12/20 [00:00<00:00, 29.11it/s][A
+ 75%|███████▌  | 15/20 [00:00<00:00, 27.69it/s][A
+ 90%|█████████ | 18/20 [00:00<00:00, 26.63it/s][A                                                  
+                                               [A 61%|██████▏   | 980/1600 [06:15<01:48,  5.73it/s]
+100%|██████████| 20/20 [00:00<00:00, 26.63it/s][A
+                                               [ASaving model checkpoint to /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-980
+Trainer.model is not a `PreTrainedModel`, only saving its state dict.
+tokenizer config file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-980/tokenizer_config.json
+Special tokens file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-980/special_tokens_map.json
+ 61%|██████▏   | 981/1600 [06:21<08:20,  1.24it/s] 61%|██████▏   | 983/1600 [06:21<06:35,  1.56it/s] 62%|██████▏   | 986/1600 [06:21<04:35,  2.23it/s] 62%|██████▏   | 989/1600 [06:21<03:16,  3.10it/s] 62%|██████▏   | 992/1600 [06:21<02:22,  4.26it/s] 62%|██████▏   | 995/1600 [06:22<01:47,  5.64it/s] 62%|██████▏   | 998/1600 [06:22<01:22,  7.33it/s]                                                   62%|██████▎   | 1000/1600 [06:22<01:21,  7.33it/s]The following columns in the evaluation set  don't have a corresponding argument in `M2M100.forward` and have been ignored: premise, hypothesis. If premise, hypothesis are not expected by `M2M100.forward`,  you can safely ignore this message.
+***** Running Evaluation *****
+  Num examples = 2490
+  Batch size = 128
+
+  0%|          | 0/20 [00:00<?, ?it/s][A
+ 20%|██        | 4/20 [00:00<00:00, 35.45it/s][A
+ 40%|████      | 8/20 [00:00<00:00, 29.76it/s][A
+ 60%|██████    | 12/20 [00:00<00:00, 29.07it/s][A
+ 75%|███████▌  | 15/20 [00:00<00:00, 27.59it/s][A
+ 90%|█████████ | 18/20 [00:00<00:00, 26.50it/s][A                                                   
+                                               [A 62%|██████▎   | 1000/1600 [06:23<01:21,  7.33it/s]
+100%|██████████| 20/20 [00:00<00:00, 26.50it/s][A
+                                               [ASaving model checkpoint to /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-1000
+Trainer.model is not a `PreTrainedModel`, only saving its state dict.
+tokenizer config file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-1000/tokenizer_config.json
+Special tokens file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-1000/special_tokens_map.json
+Deleting older checkpoint [/home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-960] due to args.save_total_limit
+Deleting older checkpoint [/home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-980] due to args.save_total_limit
+ 63%|██████▎   | 1001/1600 [06:29<08:17,  1.20it/s] 63%|██████▎   | 1003/1600 [06:29<06:31,  1.53it/s] 63%|██████▎   | 1006/1600 [06:29<04:32,  2.18it/s] 63%|██████▎   | 1009/1600 [06:29<03:12,  3.07it/s] 63%|██████▎   | 1012/1600 [06:29<02:19,  4.20it/s] 63%|██████▎   | 1015/1600 [06:30<01:44,  5.59it/s] 64%|██████▎   | 1018/1600 [06:30<01:19,  7.30it/s]                                                    64%|██████▍   | 1020/1600 [06:30<01:19,  7.30it/s]The following columns in the evaluation set  don't have a corresponding argument in `M2M100.forward` and have been ignored: premise, hypothesis. If premise, hypothesis are not expected by `M2M100.forward`,  you can safely ignore this message.
+***** Running Evaluation *****
+  Num examples = 2490
+  Batch size = 128
+
+  0%|          | 0/20 [00:00<?, ?it/s][A
+ 20%|██        | 4/20 [00:00<00:00, 35.09it/s][A
+ 40%|████      | 8/20 [00:00<00:00, 29.39it/s][A
+ 55%|█████▌    | 11/20 [00:00<00:00, 28.98it/s][A
+ 70%|███████   | 14/20 [00:00<00:00, 27.33it/s][A
+ 85%|████████▌ | 17/20 [00:00<00:00, 26.34it/s][A
+100%|██████████| 20/20 [00:00<00:00, 27.20it/s][A                                                   
+                                               [A 64%|██████▍   | 1020/1600 [06:31<01:19,  7.30it/s]
+100%|██████████| 20/20 [00:00<00:00, 27.20it/s][A
+                                               [ASaving model checkpoint to /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-1020
+Trainer.model is not a `PreTrainedModel`, only saving its state dict.
+tokenizer config file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-1020/tokenizer_config.json
+Special tokens file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-1020/special_tokens_map.json
+Deleting older checkpoint [/home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-1000] due to args.save_total_limit
+ 64%|██████▍   | 1021/1600 [06:38<09:10,  1.05it/s] 64%|██████▍   | 1023/1600 [06:38<07:12,  1.33it/s] 64%|██████▍   | 1026/1600 [06:38<04:59,  1.92it/s] 64%|██████▍   | 1029/1600 [06:39<03:31,  2.70it/s] 64%|██████▍   | 1032/1600 [06:39<02:32,  3.72it/s] 65%|██████▍   | 1035/1600 [06:39<01:52,  5.01it/s] 65%|██████▍   | 1038/1600 [06:39<01:25,  6.56it/s]                                                    65%|██████▌   | 1040/1600 [06:39<01:25,  6.56it/s]The following columns in the evaluation set  don't have a corresponding argument in `M2M100.forward` and have been ignored: premise, hypothesis. If premise, hypothesis are not expected by `M2M100.forward`,  you can safely ignore this message.
+***** Running Evaluation *****
+  Num examples = 2490
+  Batch size = 128
+
+  0%|          | 0/20 [00:00<?, ?it/s][A
+ 20%|██        | 4/20 [00:00<00:00, 35.24it/s][A
+ 40%|████      | 8/20 [00:00<00:00, 29.54it/s][A
+ 60%|██████    | 12/20 [00:00<00:00, 28.84it/s][A
+ 75%|███████▌  | 15/20 [00:00<00:00, 27.45it/s][A
+ 90%|█████████ | 18/20 [00:00<00:00, 26.38it/s][A                                                   
+                                               [A 65%|██████▌   | 1040/1600 [06:40<01:25,  6.56it/s]
+100%|██████████| 20/20 [00:00<00:00, 26.38it/s][A
+                                               [ASaving model checkpoint to /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-1040
+Trainer.model is not a `PreTrainedModel`, only saving its state dict.
+tokenizer config file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-1040/tokenizer_config.json
+Special tokens file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-1040/special_tokens_map.json
+Deleting older checkpoint [/home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-1020] due to args.save_total_limit
+ 65%|██████▌   | 1041/1600 [06:46<07:54,  1.18it/s] 65%|██████▌   | 1044/1600 [06:46<05:36,  1.65it/s] 65%|██████▌   | 1047/1600 [06:47<04:01,  2.29it/s] 66%|██████▌   | 1050/1600 [06:47<02:54,  3.15it/s] 66%|██████▌   | 1053/1600 [06:47<02:09,  4.24it/s] 66%|██████▌   | 1056/1600 [06:47<01:36,  5.64it/s] 66%|██████▌   | 1059/1600 [06:47<01:14,  7.31it/s]                                                    66%|██████▋   | 1060/1600 [06:47<01:13,  7.31it/s]The following columns in the evaluation set  don't have a corresponding argument in `M2M100.forward` and have been ignored: premise, hypothesis. If premise, hypothesis are not expected by `M2M100.forward`,  you can safely ignore this message.
+***** Running Evaluation *****
+  Num examples = 2490
+  Batch size = 128
+
+  0%|          | 0/20 [00:00<?, ?it/s][A
+ 20%|██        | 4/20 [00:00<00:00, 35.63it/s][A
+ 40%|████      | 8/20 [00:00<00:00, 29.86it/s][A
+ 60%|██████    | 12/20 [00:00<00:00, 29.21it/s][A
+ 75%|███████▌  | 15/20 [00:00<00:00, 27.82it/s][A
+ 90%|█████████ | 18/20 [00:00<00:00, 26.72it/s][A                                                   
+                                               [A 66%|██████▋   | 1060/1600 [06:48<01:13,  7.31it/s]
+100%|██████████| 20/20 [00:00<00:00, 26.72it/s][A
+                                               [ASaving model checkpoint to /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-1060
+Trainer.model is not a `PreTrainedModel`, only saving its state dict.
+tokenizer config file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-1060/tokenizer_config.json
+Special tokens file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-1060/special_tokens_map.json
+Deleting older checkpoint [/home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-1040] due to args.save_total_limit
+ 66%|██████▋   | 1062/1600 [06:54<07:00,  1.28it/s] 67%|██████▋   | 1065/1600 [06:54<05:00,  1.78it/s] 67%|██████▋   | 1068/1600 [06:54<03:36,  2.46it/s] 67%|██████▋   | 1071/1600 [06:54<02:37,  3.35it/s] 67%|██████▋   | 1074/1600 [06:54<01:56,  4.52it/s] 67%|██████▋   | 1077/1600 [06:55<01:27,  5.96it/s] 68%|██████▊   | 1080/1600 [06:55<01:07,  7.76it/s]                                                    68%|██████▊   | 1080/1600 [06:55<01:07,  7.76it/s]The following columns in the evaluation set  don't have a corresponding argument in `M2M100.forward` and have been ignored: premise, hypothesis. If premise, hypothesis are not expected by `M2M100.forward`,  you can safely ignore this message.
+***** Running Evaluation *****
+  Num examples = 2490
+  Batch size = 128
+
+  0%|          | 0/20 [00:00<?, ?it/s][A
+ 20%|██        | 4/20 [00:00<00:00, 35.62it/s][A
+ 40%|████      | 8/20 [00:00<00:00, 29.95it/s][A
+ 60%|██████    | 12/20 [00:00<00:00, 29.15it/s][A
+ 75%|███████▌  | 15/20 [00:00<00:00, 27.75it/s][A
+ 90%|█████████ | 18/20 [00:00<00:00, 26.71it/s][A                                                   
+                                               [A 68%|██████▊   | 1080/1600 [06:56<01:07,  7.76it/s]
+100%|██████████| 20/20 [00:00<00:00, 26.71it/s][A
+                                               [ASaving model checkpoint to /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-1080
+Trainer.model is not a `PreTrainedModel`, only saving its state dict.
+tokenizer config file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-1080/tokenizer_config.json
+Special tokens file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-1080/special_tokens_map.json
+Deleting older checkpoint [/home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-1060] due to args.save_total_limit
+ 68%|██████▊   | 1083/1600 [07:02<06:47,  1.27it/s] 68%|██████▊   | 1086/1600 [07:02<04:50,  1.77it/s] 68%|██████▊   | 1089/1600 [07:02<03:29,  2.44it/s] 68%|██████▊   | 1092/1600 [07:02<02:32,  3.34it/s] 68%|██████▊   | 1095/1600 [07:02<01:52,  4.48it/s] 69%|██████▊   | 1098/1600 [07:02<01:24,  5.95it/s]                                                    69%|██████▉   | 1100/1600 [07:02<01:24,  5.95it/s]The following columns in the evaluation set  don't have a corresponding argument in `M2M100.forward` and have been ignored: premise, hypothesis. If premise, hypothesis are not expected by `M2M100.forward`,  you can safely ignore this message.
+***** Running Evaluation *****
+  Num examples = 2490
+  Batch size = 128
+
+  0%|          | 0/20 [00:00<?, ?it/s][A
+ 20%|██        | 4/20 [00:00<00:00, 35.64it/s][A
+ 40%|████      | 8/20 [00:00<00:00, 29.93it/s][A
+ 60%|██████    | 12/20 [00:00<00:00, 29.26it/s][A
+ 75%|███████▌  | 15/20 [00:00<00:00, 27.84it/s][A
+ 90%|█████████ | 18/20 [00:00<00:00, 26.77it/s][A                                                   
+                                               [A 69%|██████▉   | 1100/1600 [07:03<01:24,  5.95it/s]
+100%|██████████| 20/20 [00:00<00:00, 26.77it/s][A
+                                               [ASaving model checkpoint to /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-1100
+Trainer.model is not a `PreTrainedModel`, only saving its state dict.
+tokenizer config file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-1100/tokenizer_config.json
+Special tokens file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-1100/special_tokens_map.json
+Deleting older checkpoint [/home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-1080] due to args.save_total_limit
+ 69%|██████▉   | 1101/1600 [07:09<06:43,  1.24it/s] 69%|██████▉   | 1103/1600 [07:09<05:18,  1.56it/s] 69%|██████▉   | 1106/1600 [07:09<03:41,  2.23it/s] 69%|██████▉   | 1109/1600 [07:10<02:37,  3.12it/s] 70%|██████▉   | 1112/1600 [07:10<01:54,  4.27it/s] 70%|██████▉   | 1115/1600 [07:10<01:24,  5.71it/s] 70%|██████▉   | 1118/1600 [07:10<01:05,  7.38it/s]                                                    70%|███████   | 1120/1600 [07:10<01:05,  7.38it/s]The following columns in the evaluation set  don't have a corresponding argument in `M2M100.forward` and have been ignored: premise, hypothesis. If premise, hypothesis are not expected by `M2M100.forward`,  you can safely ignore this message.
+***** Running Evaluation *****
+  Num examples = 2490
+  Batch size = 128
+
+  0%|          | 0/20 [00:00<?, ?it/s][A
+ 20%|██        | 4/20 [00:00<00:00, 35.60it/s][A
+ 40%|████      | 8/20 [00:00<00:00, 29.92it/s][A
+ 60%|██████    | 12/20 [00:00<00:00, 29.26it/s][A
+ 75%|███████▌  | 15/20 [00:00<00:00, 27.84it/s][A
+ 90%|█████████ | 18/20 [00:00<00:00, 26.74it/s][A                                                   
+                                               [A 70%|███████   | 1120/1600 [07:11<01:05,  7.38it/s]
+100%|██████████| 20/20 [00:00<00:00, 26.74it/s][A
+                                               [ASaving model checkpoint to /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-1120
+Trainer.model is not a `PreTrainedModel`, only saving its state dict.
+tokenizer config file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-1120/tokenizer_config.json
+Special tokens file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-1120/special_tokens_map.json
+Deleting older checkpoint [/home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-1100] due to args.save_total_limit
+ 70%|███████   | 1121/1600 [07:17<06:18,  1.27it/s] 70%|███████   | 1124/1600 [07:17<04:29,  1.77it/s] 70%|███████   | 1127/1600 [07:17<03:13,  2.45it/s] 71%|███████   | 1130/1600 [07:17<02:20,  3.35it/s] 71%|███████   | 1133/1600 [07:17<01:43,  4.49it/s] 71%|███████   | 1136/1600 [07:18<01:18,  5.92it/s] 71%|███████   | 1139/1600 [07:18<01:00,  7.68it/s]                                                    71%|███████▏  | 1140/1600 [07:18<00:59,  7.68it/s]The following columns in the evaluation set  don't have a corresponding argument in `M2M100.forward` and have been ignored: premise, hypothesis. If premise, hypothesis are not expected by `M2M100.forward`,  you can safely ignore this message.
+***** Running Evaluation *****
+  Num examples = 2490
+  Batch size = 128
+
+  0%|          | 0/20 [00:00<?, ?it/s][A
+ 20%|██        | 4/20 [00:00<00:00, 35.68it/s][A
+ 40%|████      | 8/20 [00:00<00:00, 29.84it/s][A
+ 60%|██████    | 12/20 [00:00<00:00, 29.18it/s][A
+ 75%|███████▌  | 15/20 [00:00<00:00, 27.80it/s][A
+ 90%|█████████ | 18/20 [00:00<00:00, 26.72it/s][A                                                   
+                                               [A 71%|███████▏  | 1140/1600 [07:19<00:59,  7.68it/s]
+100%|██████████| 20/20 [00:00<00:00, 26.72it/s][A
+                                               [ASaving model checkpoint to /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-1140
+Trainer.model is not a `PreTrainedModel`, only saving its state dict.
+tokenizer config file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-1140/tokenizer_config.json
+Special tokens file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-1140/special_tokens_map.json
+Deleting older checkpoint [/home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-1120] due to args.save_total_limit
+ 71%|███████▏  | 1142/1600 [07:25<06:03,  1.26it/s] 72%|███████▏  | 1145/1600 [07:25<04:18,  1.76it/s] 72%|███████▏  | 1148/1600 [07:25<03:06,  2.43it/s] 72%|███████▏  | 1151/1600 [07:25<02:15,  3.32it/s] 72%|███████▏  | 1154/1600 [07:25<01:39,  4.46it/s] 72%|███████▏  | 1157/1600 [07:25<01:15,  5.90it/s] 72%|███████▎  | 1160/1600 [07:25<00:57,  7.69it/s]                                                    72%|███████▎  | 1160/1600 [07:25<00:57,  7.69it/s]The following columns in the evaluation set  don't have a corresponding argument in `M2M100.forward` and have been ignored: premise, hypothesis. If premise, hypothesis are not expected by `M2M100.forward`,  you can safely ignore this message.
+***** Running Evaluation *****
+  Num examples = 2490
+  Batch size = 128
+
+  0%|          | 0/20 [00:00<?, ?it/s][A
+ 20%|██        | 4/20 [00:00<00:00, 35.63it/s][A
+ 40%|████      | 8/20 [00:00<00:00, 29.92it/s][A
+ 60%|██████    | 12/20 [00:00<00:00, 29.26it/s][A
+ 75%|███████▌  | 15/20 [00:00<00:00, 27.85it/s][A
+ 90%|█████████ | 18/20 [00:00<00:00, 26.76it/s][A                                                   
+                                               [A 72%|███████▎  | 1160/1600 [07:27<00:57,  7.69it/s]
+100%|██████████| 20/20 [00:00<00:00, 26.76it/s][A
+                                               [ASaving model checkpoint to /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-1160
+Trainer.model is not a `PreTrainedModel`, only saving its state dict.
+tokenizer config file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-1160/tokenizer_config.json
+Special tokens file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-1160/special_tokens_map.json
+Deleting older checkpoint [/home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-1140] due to args.save_total_limit
+ 73%|███████▎  | 1163/1600 [07:33<05:55,  1.23it/s] 73%|███████▎  | 1166/1600 [07:33<04:12,  1.72it/s] 73%|███████▎  | 1169/1600 [07:33<03:01,  2.38it/s] 73%|███████▎  | 1172/1600 [07:33<02:11,  3.25it/s] 73%|███████▎  | 1175/1600 [07:33<01:37,  4.36it/s] 74%|███████▎  | 1178/1600 [07:33<01:13,  5.77it/s]                                                    74%|███████▍  | 1180/1600 [07:33<01:12,  5.77it/s]The following columns in the evaluation set  don't have a corresponding argument in `M2M100.forward` and have been ignored: premise, hypothesis. If premise, hypothesis are not expected by `M2M100.forward`,  you can safely ignore this message.
+***** Running Evaluation *****
+  Num examples = 2490
+  Batch size = 128
+
+  0%|          | 0/20 [00:00<?, ?it/s][A
+ 20%|██        | 4/20 [00:00<00:00, 35.69it/s][A
+ 40%|████      | 8/20 [00:00<00:00, 29.97it/s][A
+ 60%|██████    | 12/20 [00:00<00:00, 29.32it/s][A
+ 75%|███████▌  | 15/20 [00:00<00:00, 27.89it/s][A
+ 90%|█████████ | 18/20 [00:00<00:00, 26.80it/s][A                                                   
+                                               [A 74%|███████▍  | 1180/1600 [07:34<01:12,  5.77it/s]
+100%|██████████| 20/20 [00:00<00:00, 26.80it/s][A
+                                               [ASaving model checkpoint to /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-1180
+Trainer.model is not a `PreTrainedModel`, only saving its state dict.
+tokenizer config file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-1180/tokenizer_config.json
+Special tokens file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-1180/special_tokens_map.json
+ 74%|███████▍  | 1181/1600 [07:40<05:33,  1.25it/s] 74%|███████▍  | 1183/1600 [07:40<04:23,  1.58it/s] 74%|███████▍  | 1186/1600 [07:40<03:03,  2.26it/s] 74%|███████▍  | 1189/1600 [07:40<02:09,  3.16it/s] 74%|███████▍  | 1192/1600 [07:41<01:34,  4.30it/s] 75%|███████▍  | 1195/1600 [07:41<01:10,  5.74it/s] 75%|███████▍  | 1198/1600 [07:41<00:53,  7.45it/s]                                                    75%|███████▌  | 1200/1600 [07:41<00:53,  7.45it/s]The following columns in the evaluation set  don't have a corresponding argument in `M2M100.forward` and have been ignored: premise, hypothesis. If premise, hypothesis are not expected by `M2M100.forward`,  you can safely ignore this message.
+***** Running Evaluation *****
+  Num examples = 2490
+  Batch size = 128
+
+  0%|          | 0/20 [00:00<?, ?it/s][A
+ 20%|██        | 4/20 [00:00<00:00, 35.70it/s][A
+ 40%|████      | 8/20 [00:00<00:00, 29.95it/s][A
+ 60%|██████    | 12/20 [00:00<00:00, 29.30it/s][A
+ 75%|███████▌  | 15/20 [00:00<00:00, 27.88it/s][A
+ 90%|█████████ | 18/20 [00:00<00:00, 26.79it/s][A                                                   
+                                               [A 75%|███████▌  | 1200/1600 [07:42<00:53,  7.45it/s]
+100%|██████████| 20/20 [00:00<00:00, 26.79it/s][A
+                                               [ASaving model checkpoint to /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-1200
+Trainer.model is not a `PreTrainedModel`, only saving its state dict.
+tokenizer config file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-1200/tokenizer_config.json
+Special tokens file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-1200/special_tokens_map.json
+Deleting older checkpoint [/home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-1160] due to args.save_total_limit
+Deleting older checkpoint [/home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-1180] due to args.save_total_limit
+ 75%|███████▌  | 1201/1600 [07:48<05:27,  1.22it/s] 75%|███████▌  | 1204/1600 [07:48<03:51,  1.71it/s] 75%|███████▌  | 1207/1600 [07:48<02:45,  2.37it/s] 76%|███████▌  | 1210/1600 [07:48<02:00,  3.24it/s] 76%|███████▌  | 1213/1600 [07:49<01:28,  4.35it/s] 76%|███████▌  | 1216/1600 [07:49<01:06,  5.77it/s] 76%|███████▌  | 1219/1600 [07:49<00:51,  7.39it/s]                                                    76%|███████▋  | 1220/1600 [07:49<00:51,  7.39it/s]The following columns in the evaluation set  don't have a corresponding argument in `M2M100.forward` and have been ignored: premise, hypothesis. If premise, hypothesis are not expected by `M2M100.forward`,  you can safely ignore this message.
+***** Running Evaluation *****
+  Num examples = 2490
+  Batch size = 128
+
+  0%|          | 0/20 [00:00<?, ?it/s][A
+ 20%|██        | 4/20 [00:00<00:00, 35.64it/s][A
+ 40%|████      | 8/20 [00:00<00:00, 29.95it/s][A
+ 60%|██████    | 12/20 [00:00<00:00, 29.19it/s][A
+ 75%|███████▌  | 15/20 [00:00<00:00, 27.74it/s][A
+ 90%|█████████ | 18/20 [00:00<00:00, 26.66it/s][A                                                   
+                                               [A 76%|███████▋  | 1220/1600 [07:50<00:51,  7.39it/s]
+100%|██████████| 20/20 [00:00<00:00, 26.66it/s][A
+                                               [ASaving model checkpoint to /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-1220
+Trainer.model is not a `PreTrainedModel`, only saving its state dict.
+tokenizer config file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-1220/tokenizer_config.json
+Special tokens file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-1220/special_tokens_map.json
+Deleting older checkpoint [/home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-1200] due to args.save_total_limit
+ 76%|███████▋  | 1222/1600 [07:56<04:55,  1.28it/s] 77%|███████▋  | 1225/1600 [07:56<03:30,  1.78it/s] 77%|███████▋  | 1228/1600 [07:56<02:31,  2.46it/s] 77%|███████▋  | 1231/1600 [07:56<01:49,  3.36it/s] 77%|███████▋  | 1234/1600 [07:56<01:21,  4.51it/s] 77%|███████▋  | 1237/1600 [07:56<01:00,  6.01it/s] 78%|███████▊  | 1240/1600 [07:56<00:45,  7.90it/s]                                                    78%|███████▊  | 1240/1600 [07:57<00:45,  7.90it/s]The following columns in the evaluation set  don't have a corresponding argument in `M2M100.forward` and have been ignored: premise, hypothesis. If premise, hypothesis are not expected by `M2M100.forward`,  you can safely ignore this message.
+***** Running Evaluation *****
+  Num examples = 2490
+  Batch size = 128
+
+  0%|          | 0/20 [00:00<?, ?it/s][A
+ 20%|██        | 4/20 [00:00<00:00, 35.66it/s][A
+ 40%|████      | 8/20 [00:00<00:00, 29.96it/s][A
+ 60%|██████    | 12/20 [00:00<00:00, 29.29it/s][A
+ 75%|███████▌  | 15/20 [00:00<00:00, 27.87it/s][A
+ 90%|█████████ | 18/20 [00:00<00:00, 26.78it/s][A                                                   
+                                               [A 78%|███████▊  | 1240/1600 [07:57<00:45,  7.90it/s]
+100%|██████████| 20/20 [00:00<00:00, 26.78it/s][A
+                                               [ASaving model checkpoint to /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-1240
+Trainer.model is not a `PreTrainedModel`, only saving its state dict.
+tokenizer config file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-1240/tokenizer_config.json
+Special tokens file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-1240/special_tokens_map.json
+Deleting older checkpoint [/home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-1220] due to args.save_total_limit
+ 78%|███████▊  | 1243/1600 [08:03<04:40,  1.27it/s] 78%|███████▊  | 1246/1600 [08:04<03:19,  1.77it/s] 78%|███████▊  | 1249/1600 [08:04<02:23,  2.45it/s] 78%|███████▊  | 1252/1600 [08:04<01:44,  3.34it/s] 78%|███████▊  | 1255/1600 [08:04<01:16,  4.50it/s] 79%|███████▊  | 1258/1600 [08:04<00:57,  5.93it/s]                                                    79%|███████▉  | 1260/1600 [08:04<00:57,  5.93it/s]The following columns in the evaluation set  don't have a corresponding argument in `M2M100.forward` and have been ignored: premise, hypothesis. If premise, hypothesis are not expected by `M2M100.forward`,  you can safely ignore this message.
+***** Running Evaluation *****
+  Num examples = 2490
+  Batch size = 128
+
+  0%|          | 0/20 [00:00<?, ?it/s][A
+ 20%|██        | 4/20 [00:00<00:00, 35.71it/s][A
+ 40%|████      | 8/20 [00:00<00:00, 29.98it/s][A
+ 60%|██████    | 12/20 [00:00<00:00, 29.31it/s][A
+ 75%|███████▌  | 15/20 [00:00<00:00, 27.87it/s][A
+ 90%|█████████ | 18/20 [00:00<00:00, 26.79it/s][A                                                   
+                                               [A 79%|███████▉  | 1260/1600 [08:05<00:57,  5.93it/s]
+100%|██████████| 20/20 [00:00<00:00, 26.79it/s][A
+                                               [ASaving model checkpoint to /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-1260
+Trainer.model is not a `PreTrainedModel`, only saving its state dict.
+tokenizer config file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-1260/tokenizer_config.json
+Special tokens file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-1260/special_tokens_map.json
+Deleting older checkpoint [/home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-1240] due to args.save_total_limit
+ 79%|███████▉  | 1261/1600 [08:11<04:34,  1.24it/s] 79%|███████▉  | 1264/1600 [08:11<03:14,  1.73it/s] 79%|███████▉  | 1266/1600 [08:11<02:34,  2.16it/s] 79%|███████▉  | 1269/1600 [08:11<01:48,  3.05it/s] 80%|███████▉  | 1272/1600 [08:12<01:17,  4.21it/s] 80%|███████▉  | 1275/1600 [08:12<00:57,  5.61it/s] 80%|███████▉  | 1278/1600 [08:12<00:43,  7.34it/s]                                                    80%|████████  | 1280/1600 [08:12<00:43,  7.34it/s]The following columns in the evaluation set  don't have a corresponding argument in `M2M100.forward` and have been ignored: premise, hypothesis. If premise, hypothesis are not expected by `M2M100.forward`,  you can safely ignore this message.
+***** Running Evaluation *****
+  Num examples = 2490
+  Batch size = 128
+
+  0%|          | 0/20 [00:00<?, ?it/s][A
+ 20%|██        | 4/20 [00:00<00:00, 35.59it/s][A
+ 40%|████      | 8/20 [00:00<00:00, 29.84it/s][A
+ 60%|██████    | 12/20 [00:00<00:00, 29.17it/s][A
+ 75%|███████▌  | 15/20 [00:00<00:00, 27.77it/s][A
+ 90%|█████████ | 18/20 [00:00<00:00, 26.71it/s][A                                                   
+                                               [A 80%|████████  | 1280/1600 [08:13<00:43,  7.34it/s]
+100%|██████████| 20/20 [00:00<00:00, 26.71it/s][A
+                                               [ASaving model checkpoint to /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-1280
+Trainer.model is not a `PreTrainedModel`, only saving its state dict.
+tokenizer config file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-1280/tokenizer_config.json
+Special tokens file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-1280/special_tokens_map.json
+Deleting older checkpoint [/home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-1260] due to args.save_total_limit
+ 80%|████████  | 1281/1600 [08:19<04:12,  1.26it/s] 80%|████████  | 1284/1600 [08:19<02:58,  1.77it/s] 80%|████████  | 1287/1600 [08:19<02:07,  2.45it/s] 81%|████████  | 1290/1600 [08:19<01:32,  3.35it/s] 81%|████████  | 1293/1600 [08:19<01:07,  4.52it/s] 81%|████████  | 1296/1600 [08:19<00:51,  5.96it/s] 81%|████████  | 1299/1600 [08:19<00:39,  7.64it/s]                                                    81%|████████▏ | 1300/1600 [08:19<00:39,  7.64it/s]The following columns in the evaluation set  don't have a corresponding argument in `M2M100.forward` and have been ignored: premise, hypothesis. If premise, hypothesis are not expected by `M2M100.forward`,  you can safely ignore this message.
+***** Running Evaluation *****
+  Num examples = 2490
+  Batch size = 128
+
+  0%|          | 0/20 [00:00<?, ?it/s][A
+ 20%|██        | 4/20 [00:00<00:00, 35.71it/s][A
+ 40%|████      | 8/20 [00:00<00:00, 29.93it/s][A
+ 60%|██████    | 12/20 [00:00<00:00, 29.29it/s][A
+ 75%|███████▌  | 15/20 [00:00<00:00, 27.88it/s][A
+ 90%|█████████ | 18/20 [00:00<00:00, 26.79it/s][A                                                   
+                                               [A 81%|████████▏ | 1300/1600 [08:20<00:39,  7.64it/s]
+100%|██████████| 20/20 [00:00<00:00, 26.79it/s][A
+                                               [ASaving model checkpoint to /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-1300
+Trainer.model is not a `PreTrainedModel`, only saving its state dict.
+tokenizer config file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-1300/tokenizer_config.json
+Special tokens file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-1300/special_tokens_map.json
+Deleting older checkpoint [/home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-1280] due to args.save_total_limit
+ 81%|████████▏ | 1302/1600 [08:26<03:55,  1.27it/s] 82%|████████▏ | 1305/1600 [08:27<02:47,  1.77it/s] 82%|████████▏ | 1308/1600 [08:27<01:59,  2.44it/s] 82%|████████▏ | 1311/1600 [08:27<01:26,  3.35it/s] 82%|████████▏ | 1314/1600 [08:27<01:03,  4.50it/s] 82%|████████▏ | 1317/1600 [08:27<00:47,  5.91it/s] 82%|████████▎ | 1320/1600 [08:27<00:36,  7.71it/s]                                                    82%|████████▎ | 1320/1600 [08:27<00:36,  7.71it/s]The following columns in the evaluation set  don't have a corresponding argument in `M2M100.forward` and have been ignored: premise, hypothesis. If premise, hypothesis are not expected by `M2M100.forward`,  you can safely ignore this message.
+***** Running Evaluation *****
+  Num examples = 2490
+  Batch size = 128
+
+  0%|          | 0/20 [00:00<?, ?it/s][A
+ 20%|██        | 4/20 [00:00<00:00, 35.68it/s][A
+ 40%|████      | 8/20 [00:00<00:00, 29.97it/s][A
+ 60%|██████    | 12/20 [00:00<00:00, 29.27it/s][A
+ 75%|███████▌  | 15/20 [00:00<00:00, 27.74it/s][A
+ 90%|█████████ | 18/20 [00:00<00:00, 26.69it/s][A                                                   
+                                               [A 82%|████████▎ | 1320/1600 [08:28<00:36,  7.71it/s]
+100%|██████████| 20/20 [00:00<00:00, 26.69it/s][A
+                                               [ASaving model checkpoint to /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-1320
+Trainer.model is not a `PreTrainedModel`, only saving its state dict.
+tokenizer config file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-1320/tokenizer_config.json
+Special tokens file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-1320/special_tokens_map.json
+Deleting older checkpoint [/home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-1300] due to args.save_total_limit
+ 83%|████████▎ | 1323/1600 [08:34<03:38,  1.27it/s] 83%|████████▎ | 1326/1600 [08:34<02:34,  1.77it/s] 83%|████████▎ | 1329/1600 [08:34<01:50,  2.45it/s] 83%|████████▎ | 1332/1600 [08:35<01:20,  3.35it/s] 83%|████████▎ | 1335/1600 [08:35<00:58,  4.50it/s] 84%|████████▎ | 1338/1600 [08:35<00:44,  5.89it/s]                                                    84%|████████▍ | 1340/1600 [08:35<00:44,  5.89it/s]The following columns in the evaluation set  don't have a corresponding argument in `M2M100.forward` and have been ignored: premise, hypothesis. If premise, hypothesis are not expected by `M2M100.forward`,  you can safely ignore this message.
+***** Running Evaluation *****
+  Num examples = 2490
+  Batch size = 128
+
+  0%|          | 0/20 [00:00<?, ?it/s][A
+ 20%|██        | 4/20 [00:00<00:00, 35.23it/s][A
+ 40%|████      | 8/20 [00:00<00:00, 29.60it/s][A
+ 60%|██████    | 12/20 [00:00<00:00, 28.94it/s][A
+ 75%|███████▌  | 15/20 [00:00<00:00, 27.53it/s][A
+ 90%|█████████ | 18/20 [00:00<00:00, 26.48it/s][A                                                   
+                                               [A 84%|████████▍ | 1340/1600 [08:36<00:44,  5.89it/s]
+100%|██████████| 20/20 [00:00<00:00, 26.48it/s][A
+                                               [ASaving model checkpoint to /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-1340
+Trainer.model is not a `PreTrainedModel`, only saving its state dict.
+tokenizer config file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-1340/tokenizer_config.json
+Special tokens file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-1340/special_tokens_map.json
+ 84%|████████▍ | 1341/1600 [08:42<03:25,  1.26it/s] 84%|████████▍ | 1344/1600 [08:42<02:25,  1.76it/s] 84%|████████▍ | 1347/1600 [08:42<01:44,  2.43it/s] 84%|████████▍ | 1350/1600 [08:42<01:15,  3.31it/s] 85%|████████▍ | 1353/1600 [08:42<00:55,  4.47it/s] 85%|████████▍ | 1356/1600 [08:42<00:41,  5.93it/s] 85%|████████▍ | 1359/1600 [08:42<00:31,  7.67it/s]                                                    85%|████████▌ | 1360/1600 [08:42<00:31,  7.67it/s]The following columns in the evaluation set  don't have a corresponding argument in `M2M100.forward` and have been ignored: premise, hypothesis. If premise, hypothesis are not expected by `M2M100.forward`,  you can safely ignore this message.
+***** Running Evaluation *****
+  Num examples = 2490
+  Batch size = 128
+
+  0%|          | 0/20 [00:00<?, ?it/s][A
+ 20%|██        | 4/20 [00:00<00:00, 35.70it/s][A
+ 40%|████      | 8/20 [00:00<00:00, 29.97it/s][A
+ 60%|██████    | 12/20 [00:00<00:00, 29.30it/s][A
+ 75%|███████▌  | 15/20 [00:00<00:00, 27.87it/s][A
+ 90%|█████████ | 18/20 [00:00<00:00, 26.79it/s][A                                                   
+                                               [A 85%|████████▌ | 1360/1600 [08:43<00:31,  7.67it/s]
+100%|██████████| 20/20 [00:00<00:00, 26.79it/s][A
+                                               [ASaving model checkpoint to /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-1360
+Trainer.model is not a `PreTrainedModel`, only saving its state dict.
+tokenizer config file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-1360/tokenizer_config.json
+Special tokens file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-1360/special_tokens_map.json
+Deleting older checkpoint [/home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-1320] due to args.save_total_limit
+Deleting older checkpoint [/home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-1340] due to args.save_total_limit
+ 85%|████████▌ | 1362/1600 [08:50<03:13,  1.23it/s] 85%|████████▌ | 1365/1600 [08:50<02:16,  1.72it/s] 86%|████████▌ | 1368/1600 [08:50<01:37,  2.38it/s] 86%|████████▌ | 1371/1600 [08:50<01:10,  3.26it/s] 86%|████████▌ | 1374/1600 [08:50<00:51,  4.38it/s] 86%|████████▌ | 1377/1600 [08:50<00:38,  5.80it/s] 86%|████████▋ | 1380/1600 [08:50<00:29,  7.53it/s]                                                    86%|████████▋ | 1380/1600 [08:50<00:29,  7.53it/s]The following columns in the evaluation set  don't have a corresponding argument in `M2M100.forward` and have been ignored: premise, hypothesis. If premise, hypothesis are not expected by `M2M100.forward`,  you can safely ignore this message.
+***** Running Evaluation *****
+  Num examples = 2490
+  Batch size = 128
+
+  0%|          | 0/20 [00:00<?, ?it/s][A
+ 20%|██        | 4/20 [00:00<00:00, 35.67it/s][A
+ 40%|████      | 8/20 [00:00<00:00, 29.93it/s][A
+ 60%|██████    | 12/20 [00:00<00:00, 29.28it/s][A
+ 75%|███████▌  | 15/20 [00:00<00:00, 27.86it/s][A
+ 90%|█████████ | 18/20 [00:00<00:00, 26.77it/s][A                                                   
+                                               [A 86%|████████▋ | 1380/1600 [08:51<00:29,  7.53it/s]
+100%|██████████| 20/20 [00:00<00:00, 26.77it/s][A
+                                               [ASaving model checkpoint to /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-1380
+Trainer.model is not a `PreTrainedModel`, only saving its state dict.
+tokenizer config file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-1380/tokenizer_config.json
+Special tokens file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-1380/special_tokens_map.json
+Deleting older checkpoint [/home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-1360] due to args.save_total_limit
+ 86%|████████▋ | 1383/1600 [08:57<02:51,  1.26it/s] 87%|████████▋ | 1386/1600 [08:57<02:01,  1.76it/s] 87%|████████▋ | 1389/1600 [08:58<01:26,  2.45it/s] 87%|████████▋ | 1392/1600 [08:58<01:02,  3.34it/s] 87%|████████▋ | 1395/1600 [08:58<00:45,  4.51it/s] 87%|████████▋ | 1398/1600 [08:58<00:33,  5.94it/s]                                                    88%|████████▊ | 1400/1600 [08:58<00:33,  5.94it/s]The following columns in the evaluation set  don't have a corresponding argument in `M2M100.forward` and have been ignored: premise, hypothesis. If premise, hypothesis are not expected by `M2M100.forward`,  you can safely ignore this message.
+***** Running Evaluation *****
+  Num examples = 2490
+  Batch size = 128
+
+  0%|          | 0/20 [00:00<?, ?it/s][A
+ 20%|██        | 4/20 [00:00<00:00, 35.67it/s][A
+ 40%|████      | 8/20 [00:00<00:00, 29.95it/s][A
+ 60%|██████    | 12/20 [00:00<00:00, 29.29it/s][A
+ 75%|███████▌  | 15/20 [00:00<00:00, 27.86it/s][A
+ 90%|█████████ | 18/20 [00:00<00:00, 26.68it/s][A                                                   
+                                               [A 88%|████████▊ | 1400/1600 [08:59<00:33,  5.94it/s]
+100%|██████████| 20/20 [00:00<00:00, 26.68it/s][A
+                                               [ASaving model checkpoint to /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-1400
+Trainer.model is not a `PreTrainedModel`, only saving its state dict.
+tokenizer config file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-1400/tokenizer_config.json
+Special tokens file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-1400/special_tokens_map.json
+Deleting older checkpoint [/home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-1380] due to args.save_total_limit
+ 88%|████████▊ | 1401/1600 [09:05<02:40,  1.24it/s] 88%|████████▊ | 1404/1600 [09:05<01:53,  1.73it/s] 88%|████████▊ | 1407/1600 [09:05<01:20,  2.39it/s] 88%|████████▊ | 1410/1600 [09:05<00:58,  3.27it/s] 88%|████████▊ | 1413/1600 [09:05<00:42,  4.39it/s] 88%|████████▊ | 1416/1600 [09:05<00:31,  5.77it/s] 89%|████████▊ | 1419/1600 [09:06<00:24,  7.45it/s]                                                    89%|████████▉ | 1420/1600 [09:06<00:24,  7.45it/s]The following columns in the evaluation set  don't have a corresponding argument in `M2M100.forward` and have been ignored: premise, hypothesis. If premise, hypothesis are not expected by `M2M100.forward`,  you can safely ignore this message.
+***** Running Evaluation *****
+  Num examples = 2490
+  Batch size = 128
+
+  0%|          | 0/20 [00:00<?, ?it/s][A
+ 20%|██        | 4/20 [00:00<00:00, 35.64it/s][A
+ 40%|████      | 8/20 [00:00<00:00, 29.95it/s][A
+ 60%|██████    | 12/20 [00:00<00:00, 29.27it/s][A
+ 75%|███████▌  | 15/20 [00:00<00:00, 27.85it/s][A
+ 90%|█████████ | 18/20 [00:00<00:00, 26.77it/s][A                                                   
+                                               [A 89%|████████▉ | 1420/1600 [09:07<00:24,  7.45it/s]
+100%|██████████| 20/20 [00:00<00:00, 26.77it/s][A
+                                               [ASaving model checkpoint to /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-1420
+Trainer.model is not a `PreTrainedModel`, only saving its state dict.
+tokenizer config file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-1420/tokenizer_config.json
+Special tokens file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-1420/special_tokens_map.json
+Deleting older checkpoint [/home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-1400] due to args.save_total_limit
+ 89%|████████▉ | 1422/1600 [09:13<02:20,  1.27it/s] 89%|████████▉ | 1425/1600 [09:13<01:38,  1.77it/s] 89%|████████▉ | 1428/1600 [09:13<01:10,  2.44it/s] 89%|████████▉ | 1431/1600 [09:13<00:50,  3.34it/s] 90%|████████▉ | 1434/1600 [09:13<00:37,  4.47it/s] 90%|████████▉ | 1437/1600 [09:13<00:27,  5.89it/s]                                                    90%|█████████ | 1440/1600 [09:13<00:27,  5.89it/s]The following columns in the evaluation set  don't have a corresponding argument in `M2M100.forward` and have been ignored: premise, hypothesis. If premise, hypothesis are not expected by `M2M100.forward`,  you can safely ignore this message.
+***** Running Evaluation *****
+  Num examples = 2490
+  Batch size = 128
+
+  0%|          | 0/20 [00:00<?, ?it/s][A
+ 20%|██        | 4/20 [00:00<00:00, 35.67it/s][A
+ 40%|████      | 8/20 [00:00<00:00, 29.96it/s][A
+ 60%|██████    | 12/20 [00:00<00:00, 29.29it/s][A
+ 75%|███████▌  | 15/20 [00:00<00:00, 27.78it/s][A
+ 90%|█████████ | 18/20 [00:00<00:00, 26.57it/s][A                                                   
+                                               [A 90%|█████████ | 1440/1600 [09:14<00:27,  5.89it/s]
+100%|██████████| 20/20 [00:00<00:00, 26.57it/s][A
+                                               [ASaving model checkpoint to /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-1440
+Trainer.model is not a `PreTrainedModel`, only saving its state dict.
+tokenizer config file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-1440/tokenizer_config.json
+Special tokens file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-1440/special_tokens_map.json
+ 90%|█████████ | 1441/1600 [09:20<01:52,  1.41it/s] 90%|█████████ | 1443/1600 [09:20<01:29,  1.75it/s] 90%|█████████ | 1446/1600 [09:20<01:03,  2.44it/s] 91%|█████████ | 1449/1600 [09:20<00:45,  3.35it/s] 91%|█████████ | 1452/1600 [09:20<00:32,  4.52it/s] 91%|█████████ | 1455/1600 [09:20<00:24,  5.96it/s] 91%|█████████ | 1458/1600 [09:21<00:18,  7.65it/s]                                                    91%|█████████▏| 1460/1600 [09:21<00:18,  7.65it/s]The following columns in the evaluation set  don't have a corresponding argument in `M2M100.forward` and have been ignored: premise, hypothesis. If premise, hypothesis are not expected by `M2M100.forward`,  you can safely ignore this message.
+***** Running Evaluation *****
+  Num examples = 2490
+  Batch size = 128
+
+  0%|          | 0/20 [00:00<?, ?it/s][A
+ 20%|██        | 4/20 [00:00<00:00, 35.68it/s][A
+ 40%|████      | 8/20 [00:00<00:00, 29.98it/s][A
+ 60%|██████    | 12/20 [00:00<00:00, 29.22it/s][A
+ 75%|███████▌  | 15/20 [00:00<00:00, 27.77it/s][A
+ 90%|█████████ | 18/20 [00:00<00:00, 26.67it/s][A                                                   
+                                               [A 91%|█████████▏| 1460/1600 [09:22<00:18,  7.65it/s]
+100%|██████████| 20/20 [00:00<00:00, 26.67it/s][A
+                                               [ASaving model checkpoint to /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-1460
+Trainer.model is not a `PreTrainedModel`, only saving its state dict.
+tokenizer config file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-1460/tokenizer_config.json
+Special tokens file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-1460/special_tokens_map.json
+Deleting older checkpoint [/home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-1420] due to args.save_total_limit
+Deleting older checkpoint [/home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-1440] due to args.save_total_limit
+ 91%|█████████▏| 1461/1600 [09:28<01:53,  1.22it/s] 91%|█████████▏| 1463/1600 [09:28<01:28,  1.54it/s] 92%|█████████▏| 1466/1600 [09:28<01:00,  2.21it/s] 92%|█████████▏| 1469/1600 [09:28<00:42,  3.11it/s] 92%|█████████▏| 1472/1600 [09:28<00:30,  4.27it/s] 92%|█████████▏| 1475/1600 [09:28<00:21,  5.68it/s] 92%|█████████▏| 1478/1600 [09:29<00:16,  7.28it/s]                                                    92%|█████████▎| 1480/1600 [09:29<00:16,  7.28it/s]The following columns in the evaluation set  don't have a corresponding argument in `M2M100.forward` and have been ignored: premise, hypothesis. If premise, hypothesis are not expected by `M2M100.forward`,  you can safely ignore this message.
+***** Running Evaluation *****
+  Num examples = 2490
+  Batch size = 128
+
+  0%|          | 0/20 [00:00<?, ?it/s][A
+ 20%|██        | 4/20 [00:00<00:00, 35.66it/s][A
+ 40%|████      | 8/20 [00:00<00:00, 29.97it/s][A
+ 60%|██████    | 12/20 [00:00<00:00, 29.31it/s][A
+ 75%|███████▌  | 15/20 [00:00<00:00, 27.87it/s][A
+ 90%|█████████ | 18/20 [00:00<00:00, 26.73it/s][A                                                   
+                                               [A 92%|█████████▎| 1480/1600 [09:30<00:16,  7.28it/s]
+100%|██████████| 20/20 [00:00<00:00, 26.73it/s][A
+                                               [ASaving model checkpoint to /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-1480
+Trainer.model is not a `PreTrainedModel`, only saving its state dict.
+tokenizer config file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-1480/tokenizer_config.json
+Special tokens file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-1480/special_tokens_map.json
+Deleting older checkpoint [/home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-1460] due to args.save_total_limit
+ 93%|█████████▎| 1481/1600 [09:35<01:34,  1.26it/s] 93%|█████████▎| 1483/1600 [09:36<01:13,  1.60it/s] 93%|█████████▎| 1486/1600 [09:36<00:49,  2.29it/s] 93%|█████████▎| 1489/1600 [09:36<00:34,  3.20it/s] 93%|█████████▎| 1492/1600 [09:36<00:24,  4.38it/s] 93%|█████████▎| 1495/1600 [09:36<00:17,  5.85it/s] 94%|█████████▎| 1498/1600 [09:36<00:13,  7.65it/s]                                                    94%|█████████▍| 1500/1600 [09:36<00:13,  7.65it/s]The following columns in the evaluation set  don't have a corresponding argument in `M2M100.forward` and have been ignored: premise, hypothesis. If premise, hypothesis are not expected by `M2M100.forward`,  you can safely ignore this message.
+***** Running Evaluation *****
+  Num examples = 2490
+  Batch size = 128
+
+  0%|          | 0/20 [00:00<?, ?it/s][A
+ 20%|██        | 4/20 [00:00<00:00, 35.69it/s][A
+ 40%|████      | 8/20 [00:00<00:00, 29.98it/s][A
+ 60%|██████    | 12/20 [00:00<00:00, 29.32it/s][A
+ 75%|███████▌  | 15/20 [00:00<00:00, 27.88it/s][A
+ 90%|█████████ | 18/20 [00:00<00:00, 26.79it/s][A                                                   
+                                               [A 94%|█████████▍| 1500/1600 [09:37<00:13,  7.65it/s]
+100%|██████████| 20/20 [00:00<00:00, 26.79it/s][A
+                                               [ASaving model checkpoint to /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-1500
+Trainer.model is not a `PreTrainedModel`, only saving its state dict.
+tokenizer config file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-1500/tokenizer_config.json
+Special tokens file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-1500/special_tokens_map.json
+Deleting older checkpoint [/home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-1480] due to args.save_total_limit
+ 94%|█████████▍| 1501/1600 [09:43<01:18,  1.26it/s] 94%|█████████▍| 1504/1600 [09:43<00:54,  1.77it/s] 94%|█████████▍| 1507/1600 [09:43<00:38,  2.44it/s] 94%|█████████▍| 1510/1600 [09:44<00:26,  3.35it/s] 95%|█████████▍| 1513/1600 [09:44<00:19,  4.53it/s] 95%|█████████▍| 1516/1600 [09:44<00:14,  5.95it/s] 95%|█████████▍| 1519/1600 [09:44<00:10,  7.64it/s]                                                    95%|█████████▌| 1520/1600 [09:44<00:10,  7.64it/s]The following columns in the evaluation set  don't have a corresponding argument in `M2M100.forward` and have been ignored: premise, hypothesis. If premise, hypothesis are not expected by `M2M100.forward`,  you can safely ignore this message.
+***** Running Evaluation *****
+  Num examples = 2490
+  Batch size = 128
+
+  0%|          | 0/20 [00:00<?, ?it/s][A
+ 20%|██        | 4/20 [00:00<00:00, 35.68it/s][A
+ 40%|████      | 8/20 [00:00<00:00, 29.94it/s][A
+ 60%|██████    | 12/20 [00:00<00:00, 29.22it/s][A
+ 75%|███████▌  | 15/20 [00:00<00:00, 27.82it/s][A
+ 90%|█████████ | 18/20 [00:00<00:00, 26.75it/s][A                                                   
+                                               [A 95%|█████████▌| 1520/1600 [09:45<00:10,  7.64it/s]
+100%|██████████| 20/20 [00:00<00:00, 26.75it/s][A
+                                               [ASaving model checkpoint to /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-1520
+Trainer.model is not a `PreTrainedModel`, only saving its state dict.
+tokenizer config file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-1520/tokenizer_config.json
+Special tokens file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-1520/special_tokens_map.json
+Deleting older checkpoint [/home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-1500] due to args.save_total_limit
+ 95%|█████████▌| 1522/1600 [09:51<01:00,  1.29it/s] 95%|█████████▌| 1524/1600 [09:51<00:46,  1.62it/s] 95%|█████████▌| 1527/1600 [09:51<00:31,  2.31it/s] 96%|█████████▌| 1530/1600 [09:51<00:21,  3.24it/s] 96%|█████████▌| 1533/1600 [09:51<00:15,  4.41it/s] 96%|█████████▌| 1536/1600 [09:51<00:10,  5.84it/s] 96%|█████████▌| 1539/1600 [09:52<00:08,  7.57it/s]                                                    96%|█████████▋| 1540/1600 [09:52<00:07,  7.57it/s]The following columns in the evaluation set  don't have a corresponding argument in `M2M100.forward` and have been ignored: premise, hypothesis. If premise, hypothesis are not expected by `M2M100.forward`,  you can safely ignore this message.
+***** Running Evaluation *****
+  Num examples = 2490
+  Batch size = 128
+
+  0%|          | 0/20 [00:00<?, ?it/s][A
+ 20%|██        | 4/20 [00:00<00:00, 35.70it/s][A
+ 40%|████      | 8/20 [00:00<00:00, 29.98it/s][A
+ 60%|██████    | 12/20 [00:00<00:00, 29.31it/s][A
+ 75%|███████▌  | 15/20 [00:00<00:00, 27.88it/s][A
+ 90%|█████████ | 18/20 [00:00<00:00, 26.79it/s][A                                                   
+                                               [A 96%|█████████▋| 1540/1600 [09:53<00:07,  7.57it/s]
+100%|██████████| 20/20 [00:00<00:00, 26.79it/s][A
+                                               [ASaving model checkpoint to /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-1540
+Trainer.model is not a `PreTrainedModel`, only saving its state dict.
+tokenizer config file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-1540/tokenizer_config.json
+Special tokens file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-1540/special_tokens_map.json
+Deleting older checkpoint [/home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-1520] due to args.save_total_limit
+ 96%|█████████▋| 1542/1600 [09:58<00:45,  1.26it/s] 97%|█████████▋| 1545/1600 [09:59<00:31,  1.76it/s] 97%|█████████▋| 1548/1600 [09:59<00:21,  2.44it/s] 97%|█████████▋| 1551/1600 [09:59<00:14,  3.35it/s] 97%|█████████▋| 1554/1600 [09:59<00:10,  4.50it/s] 97%|█████████▋| 1557/1600 [09:59<00:07,  5.98it/s] 98%|█████████▊| 1560/1600 [09:59<00:05,  7.86it/s]                                                    98%|█████████▊| 1560/1600 [09:59<00:05,  7.86it/s]The following columns in the evaluation set  don't have a corresponding argument in `M2M100.forward` and have been ignored: premise, hypothesis. If premise, hypothesis are not expected by `M2M100.forward`,  you can safely ignore this message.
+***** Running Evaluation *****
+  Num examples = 2490
+  Batch size = 128
+
+  0%|          | 0/20 [00:00<?, ?it/s][A
+ 20%|██        | 4/20 [00:00<00:00, 35.65it/s][A
+ 40%|████      | 8/20 [00:00<00:00, 29.96it/s][A
+ 60%|██████    | 12/20 [00:00<00:00, 29.28it/s][A
+ 75%|███████▌  | 15/20 [00:00<00:00, 27.85it/s][A
+ 90%|█████████ | 18/20 [00:00<00:00, 26.72it/s][A                                                   
+                                               [A 98%|█████████▊| 1560/1600 [10:00<00:05,  7.86it/s]
+100%|██████████| 20/20 [00:00<00:00, 26.72it/s][A
+                                               [ASaving model checkpoint to /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-1560
+Trainer.model is not a `PreTrainedModel`, only saving its state dict.
+tokenizer config file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-1560/tokenizer_config.json
+Special tokens file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-1560/special_tokens_map.json
+Deleting older checkpoint [/home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-1540] due to args.save_total_limit
+ 98%|█████████▊| 1563/1600 [10:06<00:28,  1.28it/s] 98%|█████████▊| 1566/1600 [10:06<00:19,  1.78it/s] 98%|█████████▊| 1569/1600 [10:06<00:12,  2.46it/s] 98%|█████████▊| 1572/1600 [10:07<00:08,  3.37it/s] 98%|█████████▊| 1575/1600 [10:07<00:05,  4.53it/s] 99%|█████████▊| 1578/1600 [10:07<00:03,  5.97it/s]                                                    99%|█████████▉| 1580/1600 [10:07<00:03,  5.97it/s]The following columns in the evaluation set  don't have a corresponding argument in `M2M100.forward` and have been ignored: premise, hypothesis. If premise, hypothesis are not expected by `M2M100.forward`,  you can safely ignore this message.
+***** Running Evaluation *****
+  Num examples = 2490
+  Batch size = 128
+
+  0%|          | 0/20 [00:00<?, ?it/s][A
+ 20%|██        | 4/20 [00:00<00:00, 35.65it/s][A
+ 40%|████      | 8/20 [00:00<00:00, 29.93it/s][A
+ 60%|██████    | 12/20 [00:00<00:00, 29.18it/s][A
+ 75%|███████▌  | 15/20 [00:00<00:00, 27.78it/s][A
+ 90%|█████████ | 18/20 [00:00<00:00, 26.72it/s][A                                                   
+                                               [A 99%|█████████▉| 1580/1600 [10:08<00:03,  5.97it/s]
+100%|██████████| 20/20 [00:00<00:00, 26.72it/s][A
+                                               [ASaving model checkpoint to /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-1580
+Trainer.model is not a `PreTrainedModel`, only saving its state dict.
+tokenizer config file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-1580/tokenizer_config.json
+Special tokens file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-1580/special_tokens_map.json
+Deleting older checkpoint [/home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-1560] due to args.save_total_limit
+ 99%|█████████▉| 1581/1600 [10:14<00:15,  1.21it/s] 99%|█████████▉| 1584/1600 [10:14<00:09,  1.69it/s] 99%|█████████▉| 1587/1600 [10:14<00:05,  2.34it/s] 99%|█████████▉| 1590/1600 [10:14<00:03,  3.21it/s]100%|█████████▉| 1593/1600 [10:14<00:01,  4.34it/s]100%|█████████▉| 1596/1600 [10:15<00:00,  5.72it/s]100%|█████████▉| 1599/1600 [10:15<00:00,  7.38it/s]                                                   100%|██████████| 1600/1600 [10:15<00:00,  7.38it/s]The following columns in the evaluation set  don't have a corresponding argument in `M2M100.forward` and have been ignored: premise, hypothesis. If premise, hypothesis are not expected by `M2M100.forward`,  you can safely ignore this message.
+***** Running Evaluation *****
+  Num examples = 2490
+  Batch size = 128
+
+  0%|          | 0/20 [00:00<?, ?it/s][A
+ 20%|██        | 4/20 [00:00<00:00, 35.62it/s][A
+ 40%|████      | 8/20 [00:00<00:00, 29.91it/s][A
+ 60%|██████    | 12/20 [00:00<00:00, 29.25it/s][A
+ 75%|███████▌  | 15/20 [00:00<00:00, 27.84it/s][A
+ 90%|█████████ | 18/20 [00:00<00:00, 26.76it/s][A                                                   
+                                               [A100%|██████████| 1600/1600 [10:16<00:00,  7.38it/s]
+100%|██████████| 20/20 [00:00<00:00, 26.76it/s][A
+                                               [ASaving model checkpoint to /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-1600
+Trainer.model is not a `PreTrainedModel`, only saving its state dict.
+tokenizer config file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-1600/tokenizer_config.json
+Special tokens file saved in /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-1600/special_tokens_map.json
+
+
+Training completed. Do not forget to share your model on huggingface.co/models =)
+
+
+Loading best model from /home/bhanuv/projects/classification_checkpoints/m2m100/checkpoint-1580 (score: 0.9760383367538452).
+                                                   100%|██████████| 1600/1600 [10:23<00:00,  7.38it/s]100%|██████████| 1600/1600 [10:23<00:00,  2.57it/s]
+The following columns in the test set  don't have a corresponding argument in `M2M100.forward` and have been ignored: premise, hypothesis. If premise, hypothesis are not expected by `M2M100.forward`,  you can safely ignore this message.
+***** Running Prediction *****
+  Num examples = 2490
+  Batch size = 128
+  0%|          | 0/20 [00:00<?, ?it/s] 20%|██        | 4/20 [00:00<00:00, 28.67it/s] 35%|███▌      | 7/20 [00:00<00:00, 24.78it/s] 50%|█████     | 10/20 [00:00<00:00, 23.56it/s] 65%|██████▌   | 13/20 [00:00<00:00, 22.53it/s] 80%|████████  | 16/20 [00:00<00:00, 21.61it/s] 95%|█████████▌| 19/20 [00:00<00:00, 21.00it/s]100%|██████████| 20/20 [00:01<00:00, 19.48it/s]

@@ -1,0 +1,14 @@
+Using custom data configuration default-language=zh
+Reusing dataset xnli (/home/bhanuv/.cache/huggingface/datasets/xnli/default-language=zh/1.1.0/818164464f9c9fd15776ca8a00423b074344c3e929d00a2c1a84aa5a50c928bd)
+Some weights of the model checkpoint at facebook/m2m100_418M were not used when initializing M2M100Model: ['lm_head.weight']
+- This IS expected if you are initializing M2M100Model from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing M2M100Model from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of M2M100Model were not initialized from the model checkpoint at facebook/m2m100_418M and are newly initialized: ['model.encoder.embed_positions.weights', 'model.decoder.embed_positions.weights']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+  0%|          | 0/6 [00:00<?, ?ba/s] 17%|█▋        | 1/6 [00:00<00:00,  5.51ba/s] 33%|███▎      | 2/6 [00:00<00:00,  7.47ba/s] 67%|██████▋   | 4/6 [00:00<00:00,  8.84ba/s] 83%|████████▎ | 5/6 [00:00<00:00,  9.13ba/s]100%|██████████| 6/6 [00:00<00:00, 10.20ba/s]
+Using amp half precision backend
+The following columns in the test set  don't have a corresponding argument in `M2M100.forward` and have been ignored: premise, hypothesis. If premise, hypothesis are not expected by `M2M100.forward`,  you can safely ignore this message.
+***** Running Prediction *****
+  Num examples = 5010
+  Batch size = 128
+  0%|          | 0/40 [00:00<?, ?it/s] 10%|█         | 4/40 [00:00<00:01, 27.47it/s] 18%|█▊        | 7/40 [00:00<00:01, 22.41it/s] 25%|██▌       | 10/40 [00:00<00:01, 21.24it/s] 32%|███▎      | 13/40 [00:00<00:01, 19.42it/s] 38%|███▊      | 15/40 [00:00<00:01, 19.50it/s] 45%|████▌     | 18/40 [00:00<00:01, 20.30it/s] 52%|█████▎    | 21/40 [00:01<00:00, 20.52it/s] 60%|██████    | 24/40 [00:01<00:00, 19.95it/s] 68%|██████▊   | 27/40 [00:01<00:00, 19.92it/s] 72%|███████▎  | 29/40 [00:01<00:00, 19.82it/s] 78%|███████▊  | 31/40 [00:01<00:00, 19.59it/s] 82%|████████▎ | 33/40 [00:01<00:00, 18.74it/s] 88%|████████▊ | 35/40 [00:01<00:00, 18.27it/s] 92%|█████████▎| 37/40 [00:01<00:00, 17.46it/s] 98%|█████████▊| 39/40 [00:02<00:00, 17.72it/s]100%|██████████| 40/40 [00:02<00:00, 17.98it/s]
